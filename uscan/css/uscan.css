@@ -1,0 +1,130 @@
+body {
+  background-color: #FFFFFF;
+}
+
+body,
+a {
+  color: #000000;
+}
+
+a.selected {
+  font-style: italic;
+}
+
+a > img[src^="https://chart.googleapis.com/"] {
+  display: none;
+}
+
+a:hover > img[src^="https://chart.googleapis.com/"] {
+  display: block;
+  position: absolute;
+  top: 90px;
+  z-index: 1;
+}
+
+img[src^="https://chart.googleapis.com/"] {
+  border: 1px solid #E3E3E3;
+}
+
+summary {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+table {
+  background-color: #E3E3E3;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+  background-color: #CEECFF;
+}
+
+tr:hover {
+  background-color: #F0E68C;
+}
+
+th {
+  background-color: #EEEEEE;
+}
+
+td:first-child,
+.upstream,
+.cve > a {
+  font-weight: bold;
+}
+
+.current > td:first-child,
+.current > .upstream,
+.current > .upstream > a {
+  color: #00FF00;
+}
+
+.notCurrent > td:first-child,
+.notCurrent > .upstream,
+.notCurrent > .upstream > a {
+  color: #FF0000;
+}
+
+.variable > td:first-child,
+.variable > .upstream,
+.variable > .upstream > a {
+  color: #C0C0C0;
+}
+
+.notApplicable > td:first-child,
+.notApplicable > .upstream,
+.notApplicable > .upstream > a {
+  color: #0000FF;
+}
+
+.indeterminable > td:first-child,
+.indeterminable > .upstream,
+.indeterminable > .upstream > a {
+  color: #FFA500;
+}
+
+.noWatchFile > td:first-child,
+.noWatchFile > .upstream,
+.noWatchFile > .upstream > a {
+  color: #FF00FF;
+}
+
+td:first-child {
+  text-align: center;
+}
+
+td:nth-child(3) > a {
+  text-decoration: none;
+}
+
+img[src^="icons/"] {
+  border-style: none;
+}
+
+.downstream,
+.upstream {
+  max-width: 10em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cve > a.low {
+  color: #00FF00;
+}
+
+.cve > a.medium {
+  color: #FFA500;
+}
+
+.cve > a.high {
+  color: #FF0000;
+}
+
+footer {
+  font-style: italic;
+}
