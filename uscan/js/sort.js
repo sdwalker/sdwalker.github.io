@@ -14,12 +14,12 @@ for (i in areas) {
   if (areas.hasOwnProperty(i)) {
     if (areas[i] === "packageFeedsEfl" ||
         areas[i] === "packageFeedsPhone" ||
-        areas[i] === "packageKernelLantiq" ||
-        areas[i] === "packageNetworkUtils") {
+        areas[i] === "packageKernelLantiq") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
+    } else if (areas[i] === "toolchain") {
+      var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else if (areas[i] === "packageFeedsLxde" ||
                areas[i] === "packageFeedsXfce" ||
-               areas[i] === "toolchain" ||
                areas[i] === "tools") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else {
