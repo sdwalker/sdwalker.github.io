@@ -169,14 +169,14 @@
             <td>uscan warn: reading webpage
   http://andrzejekiert.ovh.org/software.html.en failed: 404 Not Found</td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/boot/grub2">grub2</a></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/boot/grub2/patches" title="grub2 has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/boot/grub2/Makefile#L12">2.02~beta2</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/grub/">2.02~beta2</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/grub/">2.02~beta3</a></td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~grub2&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=grub2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -357,8 +357,8 @@
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/boot/uboot-sunxi/patches" title="uboot-sunxi has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
             <td></td>
             <td>boot</td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/boot/uboot-sunxi/Makefile#L11">2015.01</a></td>
-            <td class="upstream"><a href="http://www.denx.de/wiki/U-Boot">2016.03-rc1</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/boot/uboot-sunxi/Makefile#L12">2015.01</a></td>
+            <td class="upstream"><a href="http://www.denx.de/wiki/U-Boot">2016.03-rc3</a></td>
             <td class="maintainer"><a href="mailto:wigyori%7B%20at%20%7Duid0(%20dot%20)hu">Zoltan HERPAI</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~uboot-sunxi&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=uboot-sunxi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -430,7 +430,7 @@
             <td></td>
             <td>devel</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/devel/gdb/Makefile#L11">7.8</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/gdb/">7.10.1</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/gdb/">7.11</a></td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~gdb&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -513,6 +513,7 @@
             <th id="packageFirmwareHeaderMaintainer">Maintainer</th>
             <th id="packageFirmwareHeaderTickets" title="Tickets">T</th>
             <th id="packageFirmwareHeaderPatchwork" title="Patchwork">P</th>
+            <th id="packageFirmwareHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -527,6 +528,59 @@
             <td class="maintainer"><a href="mailto:kaloz%7B%20at%20%7Dopenwrt(%20dot%20)org">Imre Kaloz</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~am33x-cm3&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=am33x-cm3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+          </tr>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/ath10k-firmware">ath10k-firmware</a></td>
+            <td></td>
+            <td><img src="icons/git.png" width="16" height="16" alt="git" title="ath10k-firmware uses the git (distributed) version control system"></td>
+            <td>kernel</td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/ath10k-firmware/Makefile#L11">77f72b5f7dd940386d9e619a17904987759b7186</a></td>
+            <td class="upstream"><a href="https://github.com/kvalo/ath10k-firmware.git">f428f53b36b144971c9c4c3d2ebd5fa8cae86c89</a></td>
+            <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ath10k-firmware&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ath10k-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/ath10k-firmware">ath10k-firmware &rarr; ath10k-firmware-qca988x</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="downstream"></td>
+            <td class="upstream">?</td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ath10k-firmware-qca988x&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ath10k-firmware-qca988x"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+          </tr>
+          <tr class="noWatchFile" title="No watch file">
+            <td>!</td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/ath10k-firmware">ath10k-firmware &rarr; qca99x0-board</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="downstream"></td>
+            <td class="upstream">?</td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~qca99x0-board&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=qca99x0-board"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+          </tr>
+          <tr class="noWatchFile" title="No watch file">
+            <td>!</td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/b43legacy-firmware">b43legacy-firmware</a></td>
+            <td></td>
+            <td></td>
+            <td>firmware</td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/b43legacy-firmware/Makefile#L11">3.130.20.0</a></td>
+            <td class="upstream"><a href="http://downloads.openwrt.org/sources">Upstream</a></td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~b43legacy-firmware&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=b43legacy-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -539,6 +593,7 @@
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ixp4xx-microcode&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ixp4xx-microcode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -546,11 +601,12 @@
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="linux-firmware uses the git (distributed) version control system"></td>
             <td>firmware</td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/linux-firmware/Makefile#L11">f8c22c692bdee57a20b092e647464ff6176df3ed</a></td>
-            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git">91d5dd136153e0a199d7bf30fd03763d83586b73</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/firmware/linux-firmware/Makefile#L11">52442afee9907bc32a058f22bb3295d040677c26</a></td>
+            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git">8d1fd61a3723ab8cb6b7bfeb8be38e16282cc1ed</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~linux-firmware&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=linux-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -563,6 +619,7 @@
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~vsc73x5-ucode&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=vsc73x5-ucode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -749,7 +806,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="brcm2708-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/brcm2708-gpu-fw/Makefile#L11">38aa676b044f8de46aedb4bd972538a7ad6a3ce1</a></td>
-            <td class="upstream">0764e7d78d30658f9bfbf40f8023ab95f952bcad</td>
+            <td class="upstream">6e8b794818e06f50724774df3b1d4c6be0b5708c</td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~brcm2708-gpu-fw&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=brcm2708-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -850,40 +907,66 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211</a></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/files" title="mac80211 has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/patches" title="mac80211 has a patches subdirectory containing 296 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>296</sup></a></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/files" title="mac80211 has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/patches" title="mac80211 has a patches subdirectory containing 169 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>169</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mac80211 uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L13">2015-03-09</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L13">2016-01-10</a></td>
             <td class="upstream"><a href="https://wireless.wiki.kernel.org/">2015-12-16</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~mac80211&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mac80211"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; linux-firmware</a></td>
+          <tr class="variable" title="Variable">
             <td></td>
-            <td><img src="icons/git.png" width="16" height="16" alt="git" title="linux-firmware uses the git (distributed) version control system"></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; b43</a></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L112">f404336ba808cbd57547196e13367079a23b822c</a></td>
-            <td class="upstream">91d5dd136153e0a199d7bf30fd03763d83586b73</td>
             <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~linux-firmware&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=linux-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L309">$(PKG_B43_FWV4_VERSION)</a></td>
+            <td class="upstream">?</td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~b43&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=b43"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; ath10k-firmware</a></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; brcmsmac</a></td>
             <td></td>
-            <td><img src="icons/git.png" width="16" height="16" alt="git" title="ath10k-firmware uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L131">da0f85d924226ee30c46e037120621c9e192b39e</a></td>
-            <td class="upstream">8e0411c2cce07c5e738135957e12db3ea4a3fb10</td>
             <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ath10k-firmware&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ath10k-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L619">$(PKG_BRCMSMAC_FW_VERSION)</a></td>
+            <td class="upstream">6.30.163.46</td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~brcmsmac&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=brcmsmac"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+          </tr>
+          <tr class="noWatchFile" title="No watch file">
+            <td>!</td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; ipw2100</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L912">1.3</a></td>
+            <td class="upstream">?</td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ipw2100&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ipw2100"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
+          </tr>
+          <tr class="noWatchFile" title="No watch file">
+            <td>!</td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; ipw2200</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L546">3.1</a></td>
+            <td class="upstream">?</td>
+            <td></td>
+            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ipw2200&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ipw2200"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
@@ -892,7 +975,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L151">2.13.24.0.lm87</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1047">2.13.24.0.lm87</a></td>
             <td class="upstream">2.13.25.0.lm87</td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~p54usb&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -905,7 +988,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L149">2.13.12.0</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1045">2.13.12.0</a></td>
             <td class="upstream">2.17.2.0</td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~p54pci&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -918,7 +1001,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L153">2.13.0.0.a.13.14</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1049">2.13.0.0.a.13.14</a></td>
             <td class="upstream">2.19.0.0.a.14</td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~p54spi&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -931,76 +1014,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L485">1.4</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1433">1.4</a></td>
             <td class="upstream">1.5</td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~zd1211rw&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=zd1211rw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
-          </tr>
-          <tr class="noWatchFile" title="No watch file">
-            <td>!</td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; net-ipw2100</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L728">1.3</a></td>
-            <td class="upstream">?</td>
-            <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~net-ipw2100&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=net-ipw2100"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
-          </tr>
-          <tr class="noWatchFile" title="No watch file">
-            <td>!</td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; net-ipw2200</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L753">3.1</a></td>
-            <td class="upstream">?</td>
-            <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~net-ipw2200&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=net-ipw2200"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
-          </tr>
-          <tr class="variable" title="Variable">
-            <td></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; b43</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1105">$(PKG_B43_FWV4_VERSION)</a></td>
-            <td class="upstream">?</td>
-            <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~b43&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=b43"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
-          </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; b43legacy</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1113">3.130.20.0</a></td>
-            <td class="upstream">?</td>
-            <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~b43legacy&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=b43legacy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
-          </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211">mac80211 &rarr; brcmsmac</a></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mac80211/Makefile#L1086">5.100.138</a></td>
-            <td class="upstream">6.30.163.46</td>
-            <td></td>
-            <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~brcmsmac&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
-            <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=brcmsmac"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
@@ -1019,11 +1037,11 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mt76">mt76</a></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mt76/patches" title="mt76 has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
+            <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mt76 uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mt76/Makefile#L13">2f31d1e329dc43074a05782624195860c45b099a</a></td>
-            <td class="upstream">073d1d24916d0593e751a82952b4eeca768b6920</td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mt76/Makefile#L13">310d420178c86e253a172413da30ecf479b64251</a></td>
+            <td class="upstream">7059cc27df894a4b845b6deb7c51425ffb4b7c5c</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~mt76&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mt76"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1032,7 +1050,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mwlwifi">mwlwifi</a></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mwlwifi/patches" title="mwlwifi has an empty patches subdirectory"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><img src="icons/exclamation.png" width="16" height="16" alt="empty"></a></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mwlwifi/patches" title="mwlwifi has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mwlwifi uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/kernel/mwlwifi/Makefile#L20">99d3879cc72f2a25d44fb4bee96fd84eca028b04</a></td>
@@ -1377,11 +1395,11 @@
           <tr class="noWatchFile" title="No watch file; form based download">
             <td>!</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/cyassl">cyassl</a></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/cyassl/patches" title="cyassl has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/cyassl/patches" title="cyassl has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/cyassl/Makefile#L11">3.3.0</a></td>
-            <td class="upstream"><a href="http://www.yassl.com/">Upstream</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/cyassl/Makefile#L11">3.8.0</a></td>
+            <td class="upstream"><a href="http://www.wolfssl.com/">Upstream</a></td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~cyassl&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=cyassl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1693,7 +1711,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libubox uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/libubox/Makefile#L10">10429bccd0dc5d204635e110a7a8fae7b80d16cb</a></td>
-            <td class="upstream">0c2fbbca80a242280e5bb8b079184479c9abfa6f</td>
+            <td class="upstream">dfe446e2a981eaa83cb41df3840ca7c649dc7527</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~libubox&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libubox"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1770,14 +1788,14 @@
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ocf-crypto-headers&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ocf-crypto-headers"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/openssl">openssl</a></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/openssl/patches" title="openssl has a patches subdirectory containing 9 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>9</sup></a></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/openssl/Makefile#L11">1.0.2f</a></td>
-            <td class="upstream"><a href="http://www.openssl.org/">1.0.2f</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/openssl/Makefile#L13">1.0.2-g</a></td>
+            <td class="upstream"><a href="http://www.openssl.org/">1.0.2g</a></td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~openssl&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=openssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1849,7 +1867,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="uclient uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/libs/uclient/Makefile#L10">81fdb8fdf1470e1c7bf3124ff20d17feaeb519ee</a></td>
-            <td class="upstream">2e0918c7e0612449024caaaa8d44fb2d7a33f5f3</td>
+            <td class="upstream">f0754619b9ee216b0cb5fc7484f861e876781984</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~uclient&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=uclient"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1974,7 +1992,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="netifd uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/config/netifd/Makefile#L10">245527193e90906451be35c2b8e972b8712ea6ab</a></td>
-            <td class="upstream">3610a24b218974bdf2d2f709a8af9e4a990c47bd</td>
+            <td class="upstream">da687c2689f7ff2af1dccc9a428806dd15c3d554</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~netifd&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=netifd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2112,8 +2130,8 @@
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/ipv6/odhcp6c/files" title="odhcp6c has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="odhcp6c uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/ipv6/odhcp6c/Makefile#L18">024525798c5f6aba3af9b2ef7b3af2f3c14f1db8</a></td>
-            <td class="upstream">ec7f4701b348f5c4c3191ca83ecd8453c431c432</td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/ipv6/odhcp6c/Makefile#L18">dc186d6d2b0dd4ad23ca5fc69c00e81f796ff6d9</a></td>
+            <td class="upstream">7533a6243dc3ac5a747cf6ccbc4d0539dafd3e07</td>
             <td class="maintainer"><a href="mailto:steven%7B%20at%20%7Dmidlink(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~odhcp6c&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=odhcp6c"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2214,7 +2232,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hostapd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/services/hostapd/Makefile#L12">8278138e679174b1ec8af7f169c2810a8888e202</a></td>
-            <td class="upstream"><a href="http://hostap.epitest.fi/">c06c9099f0d0827feae5622097bd8ac946eca5ea</a></td>
+            <td class="upstream"><a href="http://hostap.epitest.fi/">dbd183c717a0f2594a4ace11b4b69a915f060d49</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~hostapd&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=hostapd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2253,7 +2271,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/services/lldpd/Makefile#L11">0.7.15</a></td>
-            <td class="upstream"><a href="https://github.com/vincentbernat/lldpd/wiki">0.9.0</a></td>
+            <td class="upstream"><a href="https://github.com/vincentbernat/lldpd/wiki">0.9.1</a></td>
             <td class="maintainer"><a href="mailto:jow%7B%20at%20%7Dopenwrt(%20dot%20)org">Jo-Philipp Wich</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~lldpd&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=lldpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2305,7 +2323,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="openvpn-easy-rsa uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/services/openvpn-easy-rsa/Makefile#L12">ff5bfd1dd8e548cb24d302742af3894f893ef92f</a></td>
-            <td class="upstream"><a href="http://openvpn.net">3ec4f245dde71fc489affe1d6ab95fa8c6d29060</a></td>
+            <td class="upstream"><a href="http://openvpn.net">f174800136a052071b41b170c5456b098bce2cf4</a></td>
             <td></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~openvpn-easy-rsa&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=openvpn-easy-rsa"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2427,11 +2445,11 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/curl">curl</a></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/curl/patches" title="curl has a patches subdirectory containing 11 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>11</sup></a></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/curl/patches" title="curl has a patches subdirectory containing 13 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>13</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/curl/Makefile#L11">7.40.0</a></td>
-            <td class="upstream"><a href="http://curl.haxx.se/">7.47.0</a></td>
+            <td class="upstream"><a href="http://curl.haxx.se/">7.47.1</a></td>
             <td class="maintainer"><a href="mailto:kaloz%7B%20at%20%7Dopenwrt(%20dot%20)org">Imre Kaloz</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~curl&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=curl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2554,13 +2572,13 @@
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=iputils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/iw">iw</a></td>
-            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/iw/patches" title="iw has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/iw/patches" title="iw has a patches subdirectory containing 7 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>7</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/iw/Makefile#L11">3.17</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/iw/Makefile#L11">4.3</a></td>
             <td class="upstream"><a href="http://wireless.kernel.org/en/users/Documentation/iw">4.3</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~iw&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -2626,7 +2644,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nftables uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/network/utils/nftables/Makefile#L17">3ed296118a065caff5600e60d4f7ef18e137f9a0</a></td>
-            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">065c01a09fb8b3d0f90707541b63d7ee42079fca</a></td>
+            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">2b7b0f271293e996f1601c003e724923728df80f</a></td>
             <td class="maintainer"><a href="mailto:steven%7B%20at%20%7Dmidlink(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~nftables&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=nftables"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2838,7 +2856,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="opkg uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/system/opkg/Makefile#L13">9c97d5ecd795709c8584e972bfdf3aee3a5b846d</a></td>
-            <td class="upstream"><a href="http://wiki.openmoko.org/wiki/Opkg">fca50ff425d3fbb83bd5cb3b7d6f84a87c2709ee</a></td>
+            <td class="upstream"><a href="http://wiki.openmoko.org/wiki/Opkg">eabb2abc74a8161aa45b6c87244e7fa3c162bb03</a></td>
             <td class="maintainer"><a href="mailto:xm%7B%20at%20%7Dsubsignal(%20dot%20)org">Jo-Philipp Wich</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~opkg&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=opkg"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2886,7 +2904,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ubus uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/package/system/ubus/Makefile#L10">f361bfa5fcb2daadf3b160583ce665024f8d108e</a></td>
-            <td class="upstream">6a86e65f7d4836bfe387d213a6dfaea1d5d162dd</td>
+            <td class="upstream">b958a9aa60a683a4e4cc1882cb13fd00c8622be6</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dopenwrt(%20dot%20)org">Felix Fietkau</a></td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ubus&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ubus"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3424,7 +3442,7 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libssh uses the git (distributed) version control system"></td>
             <td>lib</td>
             <td class="downstream"><a href="https://github.com/openwrt-management/packages/tree/for-15.05/libssh/Makefile#L17">59a179950150d0305d6189ce9c126a9a0c5f6ab4</a></td>
-            <td class="upstream"><a href="http://www.libssh.org/">f128ffd88b0a739e42a0e8cead04d7f60fc478e6</a></td>
+            <td class="upstream"><a href="http://www.libssh.org/">4d43fbfb50710055352c4fda812b6dc98143d336</a></td>
             <td class="maintainer"><a href="mailto:luka%7B%20at%20%7Dopenwrt(%20dot%20)org">Luka Perkov</a></td>
             <td><a href="https://github.com/openwrt-management/packages/issues?q=libssh+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libssh"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3437,7 +3455,7 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libyang uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt-management/packages/tree/for-15.05/libyang/Makefile#L20">fcd305267837985c718890931433f35b4ffca567</a></td>
-            <td class="upstream"><a href="https://github.com/CESNET/libyang">dbfacdd888264924c23ef997dd00189fe5e0fbba</a></td>
+            <td class="upstream"><a href="https://github.com/CESNET/libyang">bb51d7ea956213b2148dd6b8bee49f648ff6eb95</a></td>
             <td class="maintainer"><a href="mailto:luka%7B%20at%20%7Dopenwrt(%20dot%20)org">Luka Perkov</a></td>
             <td><a href="https://github.com/openwrt-management/packages/issues?q=libyang+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libyang"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3499,7 +3517,7 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="acl uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/acl/Makefile#L11">62ce6354ef5a8eb5644908748f79c8cd18474d4c</a></td>
-            <td class="upstream"><a href="http://savannah.nongnu.org/projects/acl">876b9da17f37102985f9493ba75ecaaa34429a83</a></td>
+            <td class="upstream"><a href="http://savannah.nongnu.org/projects/acl">26a87d36f80d5e98bccb5878834d9e69dadfe3e9</a></td>
             <td class="maintainer"><a href="mailto:m(%20dot%20)storchak%7B%20at%20%7Dgmail(%20dot%20)com">Maxim Storchak</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=acl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=acl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3527,7 +3545,7 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/aircrack-ng/Makefile#L11">1.2-rc1</a></td>
-            <td class="upstream"><a href="http://www.aircrack-ng.org/">1.2-rc3</a></td>
+            <td class="upstream"><a href="http://www.aircrack-ng.org/">1.2-rc4</a></td>
             <td class="maintainer"><a href="mailto:zerochaos%7B%20at%20%7Dgentoo(%20dot%20)org">Rick Farina</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=aircrack-ng+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=aircrack-ng"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3681,7 +3699,7 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="attr uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/attr/Makefile#L11">c252ef434219891f616d891b46aad6b06efdd185</a></td>
-            <td class="upstream"><a href="http://savannah.nongnu.org/projects/attr">37a27b6fd09ecb37097b85e5db74e4f77b80fe0a</a></td>
+            <td class="upstream"><a href="http://savannah.nongnu.org/projects/attr">315af30d0c1a198dc662a90e6e6ae2456abf2489</a></td>
             <td class="maintainer"><a href="mailto:m(%20dot%20)storchak%7B%20at%20%7Dgmail(%20dot%20)com">Maxim Storchak</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=attr+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=attr"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3709,7 +3727,7 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/avrdude/Makefile#L11">6.1</a></td>
-            <td class="upstream"><a href="http://www.nongnu.org/avrdude/">6.2</a></td>
+            <td class="upstream"><a href="http://www.nongnu.org/avrdude/">6.3</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=avrdude+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=avrdude"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3898,14 +3916,14 @@ dev.freecwmp.org[0: 217.115.15.24]: errno=Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/c-ares">c-ares</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/c-ares/Makefile#L12">1.10.0</a></td>
-            <td class="upstream"><a href="http://c-ares.haxx.se/">1.10.0</a></td>
+            <td class="upstream"><a href="http://c-ares.haxx.se/">1.11.0</a></td>
             <td class="maintainer"><a href="mailto:karlp%7B%20at%20%7Dremake(%20dot%20)is">Karl Palsson</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=c-ares+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=c-ares"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4102,7 +4120,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/cryptsetup/Makefile#L11">1.6.7</a></td>
-            <td class="upstream"><a href="http://code.google.com/p/cryptsetup/">1.7.0</a></td>
+            <td class="upstream"><a href="http://code.google.com/p/cryptsetup/">1.7.1</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=cryptsetup+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=cryptsetup"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4207,20 +4225,19 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/dbus">dbus</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/dbus/files" title="dbus has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/dbus/patches" title="dbus has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/dbus/Makefile#L12">1.9.14</a></td>
-            <td class="upstream"><a href="http://dbus.freedesktop.org/">Upstream</a></td>
+            <td class="upstream"><a href="http://dbus.freedesktop.org/">1.11.0</a></td>
             <td class="maintainer"><a href="mailto:cyrus%7B%20at%20%7Dopenwrt(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dbus+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=dbus"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: reading webpage
-  http://dbus.freedesktop.org/releases/dbus/ failed: 500 Can't connect to dbus.freedesktop.orgreleases:443</td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4243,7 +4260,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/admin/debootstrap/Makefile#L12">1.0.67</a></td>
-            <td class="upstream"><a href="http://wiki.debian.org/Debootstrap">1.0.78</a></td>
+            <td class="upstream"><a href="http://wiki.debian.org/Debootstrap">1.0.79</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=debootstrap+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=debootstrap"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4411,7 +4428,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/e2guardian/Makefile#L11">3.2.0</a></td>
-            <td class="upstream"><a href="http://e2guardian.org/cms/">3.4.0</a></td>
+            <td class="upstream"><a href="http://e2guardian.org/cms/">3.4.0.1</a></td>
             <td class="maintainer"><a href="mailto:luka%7B%20at%20%7Dopenwrt(%20dot%20)org">Luka Perkov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=e2guardian+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=e2guardian"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4510,7 +4527,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="exfat-nofuse uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/kernel/exfat-nofuse/Makefile#L19">63964d3fb69cffe9a38822a657bb3b3279eebadf</a></td>
-            <td class="upstream">42635ed1c682a0d85c12f73d08489d1a3a7a94e3</td>
+            <td class="upstream">7f7183401cef441c55331d1df9795412deb5e0a5</td>
             <td class="maintainer"><a href="mailto:br1%7B%20at%20%7Deinfach(%20dot%20)org">Bruno Randolf</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=exfat-nofuse+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=exfat-nofuse"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4623,7 +4640,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/multimedia/ffmpeg/Makefile#L11">2.6.2</a></td>
-            <td class="upstream"><a href="http://ffmpeg.mplayerhq.hu/">2.8.6</a></td>
+            <td class="upstream"><a href="http://ffmpeg.mplayerhq.hu/">3.0</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ffmpeg+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ffmpeg"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4721,7 +4738,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/freetype/Makefile#L11">2.5.5</a></td>
-            <td class="upstream"><a href="http://www.freetype.org/">2.6.2</a></td>
+            <td class="upstream"><a href="http://www.freetype.org/">2.6.3</a></td>
             <td class="maintainer"><a href="mailto:nico%7B%20at%20%7Dopenwrt(%20dot%20)org">Nicolas Thill</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=freetype+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=freetype"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4805,7 +4822,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/git/Makefile#L11">2.3.5</a></td>
-            <td class="upstream"><a href="http://git-scm.com">2.7.1</a></td>
+            <td class="upstream"><a href="http://git-scm.com">2.7.2</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=git+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=git"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4819,7 +4836,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/glib2/Makefile#L11">2.43.4</a></td>
-            <td class="upstream"><a href="http://www.gtk.org/">2.47.5</a></td>
+            <td class="upstream"><a href="http://www.gtk.org/">2.47.6</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=glib2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=glib2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4847,8 +4864,8 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/gnutls/Makefile#L11">3.4.9</a></td>
-            <td class="upstream"><a href="http://www.gnutls.org/">3.4.9</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/gnutls/Makefile#L11">3.4.10</a></td>
+            <td class="upstream"><a href="http://www.gnutls.org/">3.4.10</a></td>
             <td class="maintainer"><a href="mailto:nmav%7B%20at%20%7Dgnutls(%20dot%20)org">Nikos Mavrogiannopoulos</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gnutls+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=gnutls"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5093,14 +5110,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/admin/htop">htop</a></td>
             <td></td>
             <td></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/admin/htop/Makefile#L11">1.0.3</a></td>
-            <td class="upstream"><a href="http://htop.sourceforge.net/">1.0.3</a></td>
+            <td class="upstream"><a href="http://htop.sourceforge.net/">2.0.0</a></td>
             <td class="maintainer"><a href="mailto:champetier(%20dot%20)etienne%7B%20at%20%7Dgmail(%20dot%20)com">Etienne CHAMPETIER</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=htop+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=htop"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5114,7 +5131,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hub-ctrl uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/hub-ctrl/Makefile#L17">3eef0240fac90067d081551e9f73dfa741d94a9e</a></td>
-            <td class="upstream"><a href="https://github.com/codazoda/hub-ctrl.c">b3741ce909bf648d5e927e3881166b996a0cb095</a></td>
+            <td class="upstream"><a href="https://github.com/codazoda/hub-ctrl.c">1959ad03ed6bec94afe4adcc2cbe2c2d11c9732e</a></td>
             <td class="maintainer"><a href="mailto:probono%7B%20at%20%7Dpuredarwin(%20dot%20)org">Simon Peter</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=hub-ctrl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=hub-ctrl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5297,7 +5314,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/joe/Makefile#L23">3.7</a></td>
-            <td class="upstream"><a href="http://sourceforge.net/projects/joe-editor/">4.1</a></td>
+            <td class="upstream"><a href="http://sourceforge.net/projects/joe-editor/">4.2</a></td>
             <td class="maintainer"><a href="mailto:villy%7B%20at%20%7Dsft(%20dot%20)ru">Vitaly Protsko</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=joe+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=joe"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5367,7 +5384,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/knot/Makefile#L11">1.6.5</a></td>
-            <td class="upstream"><a href="https://www.knot-dns.cz">2.1.0</a></td>
+            <td class="upstream"><a href="https://www.knot-dns.cz">2.1.1</a></td>
             <td class="maintainer"><a href="mailto:daniel(%20dot%20)salzman%7B%20at%20%7Dnic(%20dot%20)cz">Daniel Salzman</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=knot+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=knot"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5388,14 +5405,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/krb5">krb5</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/krb5/files" title="krb5 has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/for-15.05/net/krb5/patches" title="krb5 has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/krb5/Makefile#L11">1.14</a></td>
-            <td class="upstream"><a href="http://web.mit.edu/kerberos/">1.14</a></td>
+            <td class="upstream"><a href="http://web.mit.edu/kerberos/">1.14.1</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=krb5+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=krb5"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5647,7 +5664,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libdmapsharing/Makefile#L13">2.9.30</a></td>
-            <td class="upstream"><a href="http://www.flyn.org/projects/libdmapsharing/">2.9.32</a></td>
+            <td class="upstream"><a href="http://www.flyn.org/projects/libdmapsharing/">2.9.34</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libdmapsharing+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libdmapsharing"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5669,19 +5686,20 @@ svn: E000110: Error running context: Connection timed out</td>
             <td>uscan warn: no matching files for watch line
   http://code.google.com/p/libdnet/downloads/detail[?]name=libdnet-([\d\.]+)\.(?:zip|(?:t(?:gz|bz|xz))|(?:tar\.(?:gz|bz2|xz)))&amp;.*</td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libesmtp">libesmtp</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libesmtp/Makefile#L11">1.0.6</a></td>
-            <td class="upstream"><a href="http://www.stafford.uklinux.net/libesmtp/">1.0.6</a></td>
+            <td class="upstream"><a href="http://www.stafford.uklinux.net/libesmtp/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:github%7B%20at%20%7Dtruniger(%20dot%20)ch">Othmar Truniger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libesmtp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libesmtp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading webpage
+  http://www.stafford.uklinux.net/libesmtp/download.html failed: 500 Can't connect to www.stafford.uklinux.net:80</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -5832,7 +5850,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libhttp-parser uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libhttp-parser/Makefile#L11">2.3.0</a></td>
-            <td class="upstream"><a href="https://github.com/joyent/http-parser">2.6.0</a></td>
+            <td class="upstream"><a href="https://github.com/joyent/http-parser">2.6.1</a></td>
             <td class="maintainer"><a href="mailto:ramzthecoder%7B%20at%20%7Dgmail(%20dot%20)com">Ramanathan Sivagurunathan</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libhttp-parser+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libhttp-parser"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6028,7 +6046,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libmraa uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libmraa/Makefile#L11">0.8.0</a></td>
-            <td class="upstream">0.9.1</td>
+            <td class="upstream">0.9.5</td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libmraa+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libmraa"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6140,7 +6158,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libp11 uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libp11/Makefile#L22">ab6306ee7ede9b2fb9c1fa2c3694c6e7ff044a9e</a></td>
-            <td class="upstream"><a href="https://www.opensc-project.org/opensc/wiki/libp11">352a7003cdba8f102e5913eb6a64fabe20ac6ecf</a></td>
+            <td class="upstream"><a href="https://www.opensc-project.org/opensc/wiki/libp11">0e84a1ed601a5fd952d007328ea12a5925f423d7</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libp11+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libp11"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6238,7 +6256,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libseccomp/Makefile#L11">2.2.1</a></td>
-            <td class="upstream"><a href="https://github.com/seccomp/libseccomp/wiki">2.2.3</a></td>
+            <td class="upstream"><a href="https://github.com/seccomp/libseccomp/wiki">2.3.0</a></td>
             <td class="maintainer"><a href="mailto:nmav%7B%20at%20%7Dgnutls(%20dot%20)org">Nikos Mavrogiannopoulos</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libseccomp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libseccomp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6266,7 +6284,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libsigc++/Makefile#L11">2.4.1</a></td>
-            <td class="upstream"><a href="http://libsigc.sourceforge.net/">2.6.2</a></td>
+            <td class="upstream"><a href="http://libsigc.sourceforge.net/">2.7.1</a></td>
             <td class="maintainer"><a href="mailto:cyrus%7B%20at%20%7Dopenwrt(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libsigc+++is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libsigc++"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6301,14 +6319,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libsoup">libsoup</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libsoup/Makefile#L11">2.53.2</a></td>
-            <td class="upstream"><a href="http://live.gnome.org/LibSoup">2.53.2</a></td>
+            <td class="upstream"><a href="http://live.gnome.org/LibSoup">2.53.90</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libsoup+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libsoup"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6329,14 +6347,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libssh2">libssh2</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libssh2/Makefile#L11">1.6.0</a></td>
-            <td class="upstream"><a href="http://www.libssh2.org/">1.6.0</a></td>
+            <td class="upstream"><a href="http://www.libssh2.org/">1.7.0</a></td>
             <td class="maintainer"><a href="mailto:slachta%7B%20at%20%7Dcesnet(%20dot%20)cz">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libssh2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libssh2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6434,7 +6452,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libupm uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libupm/Makefile#L11">0.4.0</a></td>
-            <td class="upstream">0.5.0</td>
+            <td class="upstream">0.5.1</td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libupm+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libupm"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6511,7 +6529,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td>uscan warn:
   no matching hrefs for pattern
-  http://libuv.org/dist/v([\d\.]+) at /usr/bin/uscan line 4229, <WATCH> line 2.</td>
+  http://libuv.org/dist/v([\d\.]+) at /usr/bin/uscan line 4255, <WATCH> line 2.</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -6520,7 +6538,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libuvc uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libuvc/Makefile#L17">2c6403405872aa865999b95ba15944295adf6c38</a></td>
-            <td class="upstream"><a href="https://int80k.com/libuvc">e71bcbe119798b150fa9eefa2a5745288fd3a2eb</a></td>
+            <td class="upstream"><a href="https://int80k.com/libuvc">b8f083493d5904eb53c8ba0d19611944235e8bd4</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libuvc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libuvc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6590,21 +6608,21 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libwebsockets uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libwebsockets/Makefile#L11">1.3-chrome37-firefox30</a></td>
-            <td class="upstream">1.6.2</td>
+            <td class="upstream">1.7.3</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libwebsockets+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libwebsockets"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libxerces-c">libxerces-c</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libxerces-c uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/libxerces-c/Makefile#L11">3.1.2</a></td>
-            <td class="upstream"><a href="http://xerces.apache.org/">3.1.2</a></td>
+            <td class="upstream"><a href="http://xerces.apache.org/">3.1.3</a></td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libxerces-c+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=libxerces-c"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6688,7 +6706,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lispmob uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/lispmob/Makefile#L11">180aa39d338a00bb532e421de7f8513492cf2e8b</a></td>
-            <td class="upstream"><a href="http://lisp.cisco.com/">4bc69de81cf0ca6ba90a6b6b71315527a1b03725</a></td>
+            <td class="upstream"><a href="http://lisp.cisco.com/">691032519d6793c9183efbaeaa7f800161c561b9</a></td>
             <td class="maintainer"><a href="mailto:lakafv%7B%20at%20%7Dgmail(%20dot%20)com">Vasileios Lakafosis</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lispmob+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=lispmob"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6836,14 +6854,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/lua-copas">lua-copas</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/lua-copas/patches" title="lua-copas has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lua-copas uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/lua-copas/Makefile#L11">2.0.0</a></td>
-            <td class="upstream"><a href="https://github.com/keplerproject/copas">2.0.0</a></td>
+            <td class="upstream"><a href="https://github.com/keplerproject/copas">2.0.1</a></td>
             <td class="maintainer"><a href="mailto:dirk%7B%20at%20%7Dkooiot(%20dot%20)com">Dirk Chang</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lua-copas+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=lua-copas"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6997,7 +7015,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/luaposix/Makefile#L11">v33.2.1</a></td>
-            <td class="upstream"><a href="http://luaforge.net/projects/luaposix/">v33.3.1</a></td>
+            <td class="upstream"><a href="http://luaforge.net/projects/luaposix/">v33.4.0</a></td>
             <td class="maintainer"><a href="mailto:m(%20dot%20)storchak%7B%20at%20%7Dgmail(%20dot%20)com">Maxim Storchak</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=luaposix+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=luaposix"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7046,14 +7064,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/luasec">luasec</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/luasec/patches" title="luasec has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/luasec/Makefile#L11">0.5.1</a></td>
-            <td class="upstream"><a href="https://github.com/brunoos/luasec">0.5.1</a></td>
+            <td class="upstream"><a href="https://github.com/brunoos/luasec">0.6</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=luasec+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=luasec"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7095,7 +7113,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="luasocket uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/luasocket/Makefile#L11">6d5e40c324c84d9c1453ae88e0ad5bdd0a631448</a></td>
-            <td class="upstream"><a href="http://luasocket.luaforge.net/">83880dbed77f9a0a3627bce2e7bfbe1b862e091d</a></td>
+            <td class="upstream"><a href="http://luasocket.luaforge.net/">5b4b9158799293eeaf8439d40a7845b5b0a5e125</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=luasocket+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=luasocket"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7179,7 +7197,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/lvm2/Makefile#L12">2.02.119</a></td>
-            <td class="upstream"><a href="http://sourceware.org/dm/">2.02.141</a></td>
+            <td class="upstream"><a href="http://sourceware.org/dm/">2.02.145</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lvm2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=lvm2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7256,14 +7274,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/mail/mailman">mailman</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/mail/mailman/files" title="mailman has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/for-15.05/mail/mailman/patches" title="mailman has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/mail/mailman/Makefile#L13">2.1.20</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/mailman/">2.1.20</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/mailman/">2.1.21</a></td>
             <td class="maintainer"><a href="mailto:Shulyaka%7B%20at%20%7Dgmail(%20dot%20)com">Denis Shulyaka</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mailman+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mailman"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7333,7 +7351,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="micropython uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/micropython/Makefile#L20">936e25b164d837fc91e4bafd76580e747b235dff</a></td>
-            <td class="upstream"><a href="http://micropython.org">96688de601d9938e644df097143f92816e79b213</a></td>
+            <td class="upstream"><a href="http://micropython.org">d973c1bc124352aea5a2c0b86fc265ca404980d4</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=micropython+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=micropython"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7347,7 +7365,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="micropython-lib uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/micropython-lib/Makefile#L20">bfbbf85a181d84e2494ea6f15be311734666bf67</a></td>
-            <td class="upstream"><a href="https://github.com/micropython/micropython-lib">f77f8cd1d49a2c3cad4f748e32d9c2803d76c8db</a></td>
+            <td class="upstream"><a href="https://github.com/micropython/micropython-lib">dbe34bf34d2c37e434503ec65efe4f809d50d6ab</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=micropython-lib+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=micropython-lib"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7431,7 +7449,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>shells</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/shells/mksh/Makefile#L12">50d</a></td>
-            <td class="upstream"><a href="http://mirbsd.de/mksh">52b</a></td>
+            <td class="upstream"><a href="http://mirbsd.de/mksh">52c</a></td>
             <td class="maintainer"><a href="mailto:tg%7B%20at%20%7Dmirbsd(%20dot%20)org">Thorsten Glaser</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mksh+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mksh"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7459,7 +7477,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mmc-utils uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/mmc-utils/Makefile#L16">50b68547ad895803128519af71c31b9f14bfc791</a></td>
-            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git">44f94b925894577f9ffcf2c418dd013a5e582648</a></td>
+            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/cjb/mmc-utils.git">4af1749d23503c25f692a60f23d295d16ddcfb61</a></td>
             <td class="maintainer"><a href="mailto:mhei%7B%20at%20%7Dheimpold(%20dot%20)de">Michael Heimpold</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mmc-utils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mmc-utils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7487,21 +7505,21 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/admin/monit/Makefile#L11">5.14</a></td>
-            <td class="upstream"><a href="http://mmonit.com/monit/">5.16.1</a></td>
+            <td class="upstream"><a href="http://mmonit.com/monit/">5.17</a></td>
             <td class="maintainer"><a href="mailto:champetier(%20dot%20)etienne%7B%20at%20%7Dgmail(%20dot%20)com">Etienne CHAMPETIER</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=monit+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=monit"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/mosquitto">mosquitto</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/mosquitto/files" title="mosquitto has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/mosquitto/Makefile#L12">1.4.7</a></td>
-            <td class="upstream"><a href="http://www.mosquitto.org/">1.4.7</a></td>
+            <td class="upstream"><a href="http://www.mosquitto.org/">1.4.8</a></td>
             <td class="maintainer"><a href="mailto:karlp%7B%20at%20%7Dremake(%20dot%20)is">Karl Palsson</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mosquitto+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mosquitto"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7557,7 +7575,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/sound/mpd/Makefile#L11">0.18.23</a></td>
-            <td class="upstream"><a href="http://www.musicpd.org/">0.19.12</a></td>
+            <td class="upstream"><a href="http://www.musicpd.org/">0.19.13</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7697,7 +7715,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/nano/Makefile#L11">2.4.1</a></td>
-            <td class="upstream"><a href="http://www.nano-editor.org/">2.5.1</a></td>
+            <td class="upstream"><a href="http://www.nano-editor.org/">2.5.3</a></td>
             <td class="maintainer"><a href="mailto:JBennett%7B%20at%20%7Dincomsystems(%20dot%20)biz">Jonathan Bennett</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nano+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=nano"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7823,7 +7841,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lua-nginx uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/nginx/Makefile#L224">d3ab0edd45bffe1b9a36abdf5bff544de436ccee</a></td>
-            <td class="upstream">43ec78432d9375bf63b37a6ca08960766c3811d0</td>
+            <td class="upstream">?</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lua-nginx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=lua-nginx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7837,7 +7855,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nginx-upstream-check uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/nginx/Makefile#L238">d40b9f956d9d978005bb15616d2f283d4e3d2031</a></td>
-            <td class="upstream">10782eaff51872a8f44e65eed89bbe286004bcb1</td>
+            <td class="upstream">?</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nginx-upstream-check+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=nginx-upstream-check"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7851,21 +7869,21 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nginx-naxsi uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/nginx/Makefile#L286">34dcb45fe4fdcb144c5258d83672f8e1e1c8db2e</a></td>
-            <td class="upstream">e01897ae81b2da4591980f69d8eff81e9f2d4dc7</td>
+            <td class="upstream">?</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nginx-naxsi+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=nginx-naxsi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/nginx">nginx &rarr; nginx-syslog</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nginx-syslog uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/nginx/Makefile#L305">7abf48e52552c40a21463e1a8c608e0e575261cd</a></td>
-            <td class="upstream">7abf48e52552c40a21463e1a8c608e0e575261cd</td>
+            <td class="upstream">?</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nginx-syslog+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=nginx-syslog"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7893,21 +7911,21 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/node/Makefile#L11">v0.12.7</a></td>
-            <td class="upstream"><a href="http://nodejs.org/">5.5.0</a></td>
+            <td class="upstream"><a href="http://nodejs.org/">5.7.1</a></td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=node"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/node-arduino-firmata">node-arduino-firmata</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/node-arduino-firmata/files" title="node-arduino-firmata has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/node-arduino-firmata/patches" title="node-arduino-firmata has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="node-arduino-firmata uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/node-arduino-firmata/Makefile#L12">0.3.3</a></td>
-            <td class="upstream"><a href="https://www.npmjs.org/package/serialport">0.3.3</a></td>
+            <td class="upstream"><a href="https://www.npmjs.org/package/serialport">0.3.4</a></td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-arduino-firmata+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=node-arduino-firmata"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7935,7 +7953,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="node-hid uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/node-hid/Makefile#L18">c56c8aa5d113c6f2574d1f7e64d41745702965bb</a></td>
-            <td class="upstream"><a href="https://github.com/node-hid/node-hid">65c96b8e59b494b4d8cea4868f2c30d0b4bfea96</a></td>
+            <td class="upstream"><a href="https://github.com/node-hid/node-hid">9e25766356639836dff6d7661787731d0a9b4354</a></td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-hid+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=node-hid"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8070,14 +8088,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/ocserv">ocserv</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/ocserv/files" title="ocserv has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/ocserv/Makefile#L11">0.10.11</a></td>
-            <td class="upstream"><a href="http://www.infradead.org/ocserv/">0.10.11</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/ocserv/Makefile#L11">0.10.12</a></td>
+            <td class="upstream"><a href="http://www.infradead.org/ocserv/">0.11.0</a></td>
             <td class="maintainer"><a href="mailto:n(%20dot%20)mavrogiannopoulos%7B%20at%20%7Dgmail(%20dot%20)com">Nikos Mavrogiannopoulos</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ocserv+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ocserv"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8105,7 +8123,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ola uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/ola/Makefile#L12">0.9.3</a></td>
-            <td class="upstream"><a href="https://www.openlighting.org/">0.10.0</a></td>
+            <td class="upstream"><a href="https://www.openlighting.org/">0.10.1</a></td>
             <td class="maintainer"><a href="mailto:dontmind%7B%20at%20%7Dfreeshell(%20dot%20)org">Christian Beier</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ola+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ola"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8203,7 +8221,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="open-plc-utils uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/open-plc-utils/Makefile#L17">885a1b7e2e663b5ab8797db6d40a0318131fdf18</a></td>
-            <td class="upstream"><a href="https://github.com/qca/open-plc-utils/blob/master/README">05ef40c0a2949cfaf1c3230e10679fbcf912d174</a></td>
+            <td class="upstream"><a href="https://github.com/qca/open-plc-utils/blob/master/README">c8e7a1b6afc82fffd22a781e78b5be2fd611c070</a></td>
             <td class="maintainer"><a href="mailto:florian%7B%20at%20%7Dopenwrt(%20dot%20)org">Florian Fainelli</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=open-plc-utils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=open-plc-utils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8217,21 +8235,21 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="opensc uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/opensc/Makefile#L22">8aadbbd678730dbafb819382da553439887499fd</a></td>
-            <td class="upstream"><a href="https://github.com/OpenSC/OpenSC/wiki">e2c21d7c25f07af9d249bfe9018b9ce2a7d4a8e0</a></td>
+            <td class="upstream"><a href="https://github.com/OpenSC/OpenSC/wiki">9985144d4547a1b3054dc7d41fdc79b913521202</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=opensc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=opensc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/openssh">openssh</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/openssh/files" title="openssh has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a><a href="https://github.com/openwrt/packages/tree/for-15.05/net/openssh/patches" title="openssh has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/openssh/Makefile#L11">7.1p2</a></td>
-            <td class="upstream"><a href="http://www.openssh.com/">7.1p2</a></td>
+            <td class="upstream"><a href="http://www.openssh.com/">7.2p1</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=openssh+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=openssh"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8259,7 +8277,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="openvswitch uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/openvswitch/Makefile#L15">2.3.90</a></td>
-            <td class="upstream"><a href="http://openvswitch.org/">2.4.0</a></td>
+            <td class="upstream"><a href="http://openvswitch.org/">2.5.0</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=openvswitch+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=openvswitch"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8595,7 +8613,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/php5/Makefile#L11">5.6.17</a></td>
-            <td class="upstream"><a href="http://www.php.net/">7.0.3</a></td>
+            <td class="upstream"><a href="http://www.php.net/">7.0.4</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a> / <a href="mailto:mhei%7B%20at%20%7Dheimpold(%20dot%20)de">Michael Heimpold</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=php5+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=php5"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8695,7 +8713,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/mail/postfix/Makefile#L13">3.0.0</a></td>
-            <td class="upstream"><a href="http://www.postfix.org/">3.0.3</a></td>
+            <td class="upstream"><a href="http://www.postfix.org/">3.1.0</a></td>
             <td class="maintainer"><a href="mailto:Shulyaka%7B%20at%20%7Dgmail(%20dot%20)com">Denis Shulyaka</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=postfix+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=postfix"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8709,7 +8727,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/postgresql/Makefile#L11">9.4.4</a></td>
-            <td class="upstream"><a href="http://www.postgresql.org/">9.5.0</a></td>
+            <td class="upstream"><a href="http://www.postgresql.org/">9.5.1</a></td>
             <td class="maintainer"><a href="mailto:jow%7B%20at%20%7Dopenwrt(%20dot%20)org">Jo-Philipp Wich</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=postgresql+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=postgresql"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8772,13 +8790,13 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/prosody">prosody</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/prosody/files" title="prosody has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/prosody/Makefile#L11">0.9.9</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/prosody/Makefile#L11">0.9.10</a></td>
             <td class="upstream"><a href="http://prosody.im/">0.9.10</a></td>
             <td class="maintainer"><a href="mailto:heil%7B%20at%20%7Dterminal-consulting(%20dot%20)de">Thomas Heil</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=prosody+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -8948,7 +8966,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/python-pip/Makefile#L11">1.5.6</a></td>
-            <td class="upstream"><a href="https://pip.pypa.io">8.0.2</a></td>
+            <td class="upstream"><a href="https://pip.pypa.io">8.1.0</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-pip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=python-pip"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8976,7 +8994,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/python-setuptools/Makefile#L11">7.0</a></td>
-            <td class="upstream"><a href="https://bitbucket.org/pypa/setuptools">20.0</a></td>
+            <td class="upstream"><a href="https://bitbucket.org/pypa/setuptools">20.2.2</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-setuptools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=python-setuptools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9243,7 +9261,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="seafile-seahub uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/seafile-seahub/Makefile#L18">3fb1288f920de03a4e2e6a06b60671ce98971742</a></td>
-            <td class="upstream"><a href="http://seafile.com/">a7eecaeff4ae62c845765bf295c3acff6002c9dd</a></td>
+            <td class="upstream"><a href="http://seafile.com/">e124bc6eb62d405b92e9270dcf8e38a772e27ccc</a></td>
             <td class="maintainer"><a href="mailto:mail(%20dot%20)gery%7B%20at%20%7Dgmail(%20dot%20)com">Gergely Kiss</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=seafile-seahub+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=seafile-seahub"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9257,7 +9275,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/seafile-seahub/Makefile#L45">1.5.8</a></td>
-            <td class="upstream">1.9.2</td>
+            <td class="upstream">1.9.4</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=django+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=django"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9362,19 +9380,20 @@ svn: E000110: Error running context: Connection timed out</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/seafile-seahub">seafile-seahub &rarr; python-dateutil</a></td>
             <td></td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/seafile-seahub/Makefile#L102">1.5</a></td>
-            <td class="upstream">2.4.2</td>
+            <td class="upstream">?</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-dateutil+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=python-dateutil"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: no matching files for watch line
+  https://pypi.python.org/pypi/python-dateutil/ https://pypi.python.org/packages/source/p/python-dateutil/python-dateutil-([\d\.]+)\.(?:zip|(?:t(?:gz|bz|xz))|(?:tar\.(?:gz|bz2|xz)))#md5=.*</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -9383,7 +9402,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="seafile-server uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/seafile-server/Makefile#L18">c0166019c712e2e1d5e532fd5f7401b1b72db6d8</a></td>
-            <td class="upstream"><a href="http://seafile.com/">9e1b5a3791a86460a0dc8f7ba0092ebb54dc8545</a></td>
+            <td class="upstream"><a href="http://seafile.com/">a367d032532a124262d2765c85c39641e504101d</a></td>
             <td class="maintainer"><a href="mailto:mail(%20dot%20)gery%7B%20at%20%7Dgmail(%20dot%20)com">Gergely Kiss</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=seafile-server+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=seafile-server"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9481,7 +9500,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="shairport-sync uses the git (distributed) version control system"></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/sound/shairport-sync/Makefile#L12">2.1.15</a></td>
-            <td class="upstream">2.8.0</td>
+            <td class="upstream">2.9.2</td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=shairport-sync+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=shairport-sync"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9524,7 +9543,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/lang/simplejson/Makefile#L11">3.6.5</a></td>
-            <td class="upstream"><a href="http://simplejson.readthedocs.org/">3.8.1</a></td>
+            <td class="upstream"><a href="http://simplejson.readthedocs.org/">3.8.2</a></td>
             <td class="maintainer"><a href="mailto:mail(%20dot%20)gery%7B%20at%20%7Dgmail(%20dot%20)com">Gergely Kiss</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=simplejson+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=simplejson"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9538,7 +9557,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="sispmctl uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/sispmctl/Makefile#L15">5ff4a05a5bcb6a64a9d6f77fed47014512f66b11</a></td>
-            <td class="upstream"><a href="http://sispmctl.sourceforge.net/">7e47371fe0115e6a5e64cae4ae09661d2c012e82</a></td>
+            <td class="upstream"><a href="http://sispmctl.sourceforge.net/">bca2505f08d19b43e906568e64c09b5dc02dc7e5</a></td>
             <td class="maintainer"><a href="mailto:richard(%20dot%20)kunze%7B%20at%20%7Dweb(%20dot%20)de">Richard Kunze</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sispmctl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=sispmctl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9720,7 +9739,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="sqm-scripts uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/sqm-scripts/Makefile#L11">f2be2cc07c9902c3031f799ed4e133964e8c608f</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/sqm-scripts/Makefile#L11">56677e61a0d410d744e0382c35980dd44aaa072b</a></td>
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sqm-scripts+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -9735,7 +9754,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/squid/Makefile#L11">3.5.12</a></td>
-            <td class="upstream"><a href="http://www.squid-cache.org/">3.5.13</a></td>
+            <td class="upstream"><a href="http://www.squid-cache.org/">3.5.15</a></td>
             <td class="maintainer"><a href="mailto:luka%7B%20at%20%7Dopenwrt(%20dot%20)org">Luka Perkov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=squid+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=squid"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9863,7 +9882,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/stunnel/Makefile#L11">5.14</a></td>
-            <td class="upstream"><a href="http://www.stunnel.org/">5.30</a></td>
+            <td class="upstream"><a href="http://www.stunnel.org/">5.31</a></td>
             <td class="maintainer"><a href="mailto:haas%7B%20at%20%7Dcomputerlinguist(%20dot%20)org">Michael Haas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=stunnel+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=stunnel"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9947,7 +9966,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/taskwarrior/Makefile#L11">2.4.1</a></td>
-            <td class="upstream"><a href="http://taskwarrior.org/">2.5.0</a></td>
+            <td class="upstream"><a href="http://taskwarrior.org/">2.5.1</a></td>
             <td class="maintainer"><a href="mailto:luka%7B%20at%20%7Dopenwrt(%20dot%20)org">Luka Perkov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=taskwarrior+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=taskwarrior"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10130,21 +10149,21 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="tracertools uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/tracertools/Makefile#L19">7dba3342fedfd04eb7b0d9941971726fde948ec0</a></td>
-            <td class="upstream">0428aa8585c915e64ce7cdb7c6f88cf2f5987b5f</td>
+            <td class="upstream">dd3d9beace932bcec518805b6c23084c9abf0539</td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tracertools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=tracertools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/transmission">transmission</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/for-15.05/net/transmission/files" title="transmission has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/for-15.05/net/transmission/patches" title="transmission has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/transmission/Makefile#L11">2.84</a></td>
-            <td class="upstream"><a href="http://www.transmissionbt.com">2.84</a></td>
+            <td class="upstream"><a href="http://www.transmissionbt.com">2.92</a></td>
             <td class="maintainer"><a href="mailto:cezary%7B%20at%20%7Deko(%20dot%20)one(%20dot%20)pl">Cezary Jackiewicz</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=transmission+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=transmission"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10228,7 +10247,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/unbound/Makefile#L11">1.5.3</a></td>
-            <td class="upstream"><a href="http://www.unbound.net/">1.5.7</a></td>
+            <td class="upstream"><a href="http://www.unbound.net/">1.5.8</a></td>
             <td class="maintainer"><a href="mailto:public%7B%20at%20%7Dhansmi(%20dot%20)ch">Michael Hanselmann</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=unbound+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=unbound"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10256,7 +10275,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/utils/unrar/Makefile#L11">5.2.7</a></td>
-            <td class="upstream"><a href="http://www.rarlab.com/">5.3.10</a></td>
+            <td class="upstream"><a href="http://www.rarlab.com/">5.3.11</a></td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=unrar+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=unrar"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10284,7 +10303,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/sound/upmpdcli/Makefile#L11">0.9.0</a></td>
-            <td class="upstream"><a href="http://www.lesbonscomptes.com/upmpdcli">1.1.0</a></td>
+            <td class="upstream"><a href="http://www.lesbonscomptes.com/upmpdcli">1.1.2</a></td>
             <td class="maintainer"><a href="mailto:bordjukov%7B%20at%20%7Dgmail(%20dot%20)com">Petko Bordjukov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=upmpdcli+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=upmpdcli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10551,7 +10570,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><img src="icons/svn.png" width="16" height="16" alt="subversion" title="xmlrpc-c uses the subversion (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/libs/xmlrpc-c/Makefile#L11">2640</a></td>
-            <td class="upstream"><a href="http://xmlrpc-c.sourceforge.net/">2803</a></td>
+            <td class="upstream"><a href="http://xmlrpc-c.sourceforge.net/">2832</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=xmlrpc-c+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=xmlrpc-c"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10621,7 +10640,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/admin/zabbix/Makefile#L11">2.4.6</a></td>
-            <td class="upstream"><a href="http://www.zabbix.com/">2.5.0</a></td>
+            <td class="upstream"><a href="http://www.zabbix.com/">3.0.1</a></td>
             <td class="maintainer"><a href="mailto:champetier(%20dot%20)etienne%7B%20at%20%7Dgmail(%20dot%20)com">Etienne CHAMPETIER</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=zabbix+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=zabbix"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10677,7 +10696,7 @@ svn: E000110: Error running context: Connection timed out</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/for-15.05/net/znc/Makefile#L11">1.4</a></td>
-            <td class="upstream"><a href="http://en.znc.in/">1.6.2</a></td>
+            <td class="upstream"><a href="http://en.znc.in/">1.6.3</a></td>
             <td class="maintainer"><a href="mailto:jogo%7B%20at%20%7Dopenwrt(%20dot%20)org">Jonas Gorski</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=znc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=znc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10774,14 +10793,14 @@ svn: E000110: Error running context: Connection timed out</td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=alfred"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/babeld">babeld</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/babeld/files" title="babeld has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/babeld/Makefile#L11">1.6.1</a></td>
-            <td class="upstream"><a href="http://www.pps.univ-paris-diderot.fr/~jch/software/babel/">1.7.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/babeld/Makefile#L11">1.7.1</a></td>
+            <td class="upstream"><a href="http://www.pps.univ-paris-diderot.fr/~jch/software/babel/">1.7.1</a></td>
             <td class="maintainer"><a href="mailto:gabriel%7B%20at%20%7Dkerneis(%20dot%20)info">Gabriel Kerneis</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=babeld+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=babeld"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10886,7 +10905,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bmx6 uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/bmx6/Makefile#L34">2a87b770d3f9c254e3927dc159e2f425f2e0e83a</a></td>
-            <td class="upstream"><a href="http://bmx6.net/">615d070f65571efe75bf2e98ffb0e8e01c207bce</a></td>
+            <td class="upstream"><a href="http://bmx6.net/">210a296cd6938598da147ea842c09dcb56ac76b5</a></td>
             <td class="maintainer"><a href="mailto:neumann%7B%20at%20%7Dcgws(%20dot%20)de">Axel Neumann</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=bmx6+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=bmx6"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10898,21 +10917,21 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/bmx7/files" title="bmx7 has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/bmx7/patches" title="bmx7 has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bmx7 uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/bmx7/Makefile#L35">d0841d4bf42ae406cd5319a857dc294badb1ac8d</a></td>
-            <td class="upstream"><a href="http://bmx6.net/">615d070f65571efe75bf2e98ffb0e8e01c207bce</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/bmx7/Makefile#L35">60143a195478a98e73089566bbfde78cf193ed67</a></td>
+            <td class="upstream"><a href="http://bmx6.net/">210a296cd6938598da147ea842c09dcb56ac76b5</a></td>
             <td class="maintainer"><a href="mailto:neumann%7B%20at%20%7Dcgws(%20dot%20)de">Axel Neumann</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=bmx7+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=bmx7"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/cjdns">cjdns</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/cjdns/files" title="cjdns has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="cjdns uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/cjdns/Makefile#L25">40e87d9419c19063e772e39c7c59a8a8771c5ee8</a></td>
-            <td class="upstream"><a href="https://github.com/hyperboria/cjdns">40e87d9419c19063e772e39c7c59a8a8771c5ee8</a></td>
+            <td class="upstream"><a href="https://github.com/hyperboria/cjdns">6939d5e069dabdd2b21221cbdecff0345f06e2e8</a></td>
             <td class="maintainer"><a href="mailto:larsg%7B%20at%20%7Dsystemli(%20dot%20)org">Lars Gierth</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=cjdns+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=cjdns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10990,7 +11009,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/miniupnpd/Makefile#L11">1.9.20150609</a></td>
-            <td class="upstream"><a href="http://miniupnp.free.fr/">1.9.20160113</a></td>
+            <td class="upstream"><a href="http://miniupnp.free.fr/">1.9.20160222</a></td>
             <td class="maintainer"><a href="mailto:fingon%7B%20at%20%7Diki(%20dot%20)fi">Markus Stenberg</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=miniupnpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=miniupnpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11075,27 +11094,27 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=olsrd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-proxy">oonf-dlep-proxy</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-proxy/files" title="oonf-dlep-proxy has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="oonf-dlep-proxy uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-proxy/Makefile#L4">0.9.2</a></td>
-            <td class="upstream"><a href="http://www.olsr.org/">0.10.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-proxy/Makefile#L4">0.11.0</a></td>
+            <td class="upstream"><a href="http://www.olsr.org/">0.11.0</a></td>
             <td class="maintainer"><a href="mailto:hrogge%7B%20at%20%7Dgmail(%20dot%20)com">Henning Rogge</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=oonf-dlep-proxy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=oonf-dlep-proxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-radio">oonf-dlep-radio</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-radio/files" title="oonf-dlep-radio has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="oonf-dlep-radio uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-radio/Makefile#L4">0.9.2</a></td>
-            <td class="upstream"><a href="http://www.olsr.org/">0.10.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-dlep-radio/Makefile#L4">0.11.0</a></td>
+            <td class="upstream"><a href="http://www.olsr.org/">0.11.0</a></td>
             <td class="maintainer"><a href="mailto:hrogge%7B%20at%20%7Dgmail(%20dot%20)com">Henning Rogge</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=oonf-dlep-radio+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=oonf-dlep-radio"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11114,14 +11133,14 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=oonf-init-scripts"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-olsrd2">oonf-olsrd2</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-olsrd2/files" title="oonf-olsrd2 has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="oonf-olsrd2 uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-olsrd2/Makefile#L4">0.9.2</a></td>
-            <td class="upstream"><a href="http://www.olsr.org/">0.10.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/oonf-olsrd2/Makefile#L4">0.11.0</a></td>
+            <td class="upstream"><a href="http://www.olsr.org/">0.11.0</a></td>
             <td class="maintainer"><a href="mailto:hrogge%7B%20at%20%7Dgmail(%20dot%20)com">Henning Rogge</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=oonf-olsrd2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=oonf-olsrd2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11140,14 +11159,14 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=quagga"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/smcroute">smcroute</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/smcroute/files" title="smcroute has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt-routing/packages/tree/for-15.05/smcroute/Makefile#L10">2.0.0</a></td>
-            <td class="upstream"><a href="http://troglobit.com/smcroute.html">2.0.0</a></td>
+            <td class="upstream"><a href="http://troglobit.com/smcroute.html">2.1.0</a></td>
             <td class="maintainer"><a href="mailto:leonardo%7B%20at%20%7Dschenkel(%20dot%20)net">Leonardo Brondani Schenkel</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=smcroute+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=smcroute"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11182,7 +11201,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/tree/for-15.05/net/asterisk-11.x/Makefile#L12">11.20.0</a></td>
-            <td class="upstream"><a href="http://www.asterisk.org/">11.21.1</a></td>
+            <td class="upstream"><a href="http://www.asterisk.org/">11.21.2</a></td>
             <td class="maintainer"><a href="mailto:slachta%7B%20at%20%7Dcesnet(%20dot%20)cz">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=asterisk-11.x+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=asterisk-11.x"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11273,7 +11292,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><img src="icons/svn.png" width="16" height="16" alt="subversion" title="chan-sccp-b uses the subversion (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/tree/for-15.05/net/chan-sccp-b/Makefile#L12">6139</a></td>
-            <td class="upstream"><a href="http://chan-sccp-b.sourceforge.net/">6497</a></td>
+            <td class="upstream"><a href="http://chan-sccp-b.sourceforge.net/">6728</a></td>
             <td class="maintainer"><a href="mailto:slachta%7B%20at%20%7Dcesnet(%20dot%20)cz">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=chan-sccp-b+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=chan-sccp-b"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11286,7 +11305,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/tree/for-15.05/libs/dahdi-linux/Makefile#L12">2.10.2</a></td>
-            <td class="upstream"><a href="http://www.asterisk.org/">2.11.0</a></td>
+            <td class="upstream"><a href="http://www.asterisk.org/">2.11.1</a></td>
             <td class="maintainer"><a href="mailto:openwrt%7B%20at%20%7Dvittgam(%20dot%20)net">Vittorio Gambaletta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=dahdi-linux+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=dahdi-linux"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11299,7 +11318,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/tree/for-15.05/libs/dahdi-tools/Makefile#L11">2.10.2</a></td>
-            <td class="upstream">2.11.0</td>
+            <td class="upstream">2.11.1</td>
             <td class="maintainer"><a href="mailto:openwrt%7B%20at%20%7Dvittgam(%20dot%20)net">Vittorio Gambaletta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=dahdi-tools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=dahdi-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11312,7 +11331,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="freeswitch uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/tree/for-15.05/net/freeswitch/Makefile#L22">bff9aab850a911e27b316b016c62f91f657719cd</a></td>
-            <td class="upstream"><a href="http://www.freeswitch.org/">f04a935ff971d56307e51039780c215099cddefc</a></td>
+            <td class="upstream"><a href="http://www.freeswitch.org/">e0b303e2cb417e29e9be3a8fbce865a9296277ed</a></td>
             <td class="maintainer"><a href="mailto:openwrt(%20dot%20)mazilo%7B%20at%20%7Drecursor(%20dot%20)net">Mazi Lo</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=freeswitch+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=freeswitch"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11503,7 +11522,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/tree/for-15.05/net/kamailio-4.x/Makefile#L11">4.3.0</a></td>
-            <td class="upstream"><a href="http://www.kamailio.org/">4.3.4</a></td>
+            <td class="upstream"><a href="http://www.kamailio.org/">4.3.5</a></td>
             <td class="maintainer"><a href="mailto:slachta%7B%20at%20%7Dcesnet(%20dot%20)cz">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=kamailio-4.x+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=kamailio-4.x"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11755,7 +11774,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/toolchain/glibc">glibc</a></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/toolchain/glibc/patches" title="glibc has a patches subdirectory containing 12 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>12</sup></a></td>
-            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/toolchain/glibc/common.mk#L10">$(CONFIG_GLIBC_VERSION)</a></td>
+            <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/toolchain/glibc/common.mk#L18">$(CONFIG_GLIBC_VERSION)</a></td>
             <td class="upstream">?</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~glibc&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=glibc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12095,7 +12114,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/mkimage/patches" title="mkimage has a patches subdirectory containing 10 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>10</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/mkimage/Makefile#L10">2014.10</a></td>
-            <td class="upstream">2016.03-rc1</td>
+            <td class="upstream">2016.03-rc3</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~mkimage&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mkimage"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -12106,7 +12125,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/mklibs/patches" title="mklibs has a patches subdirectory containing 11 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>11</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/mklibs/Makefile#L10">0.1.35</a></td>
-            <td class="upstream">0.1.40</td>
+            <td class="upstream">0.1.41</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~mklibs&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mklibs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -12139,7 +12158,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/mpfr/patches" title="mpfr has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/mpfr/Makefile#L10">3.1.2</a></td>
-            <td class="upstream">3.1.3</td>
+            <td class="upstream">3.1.4</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~mpfr&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=mpfr"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -12188,13 +12207,13 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=patch"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/patchelf">patchelf</a></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/patchelf/patches" title="patchelf has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/patchelf/Makefile#L10">0.8</a></td>
-            <td class="upstream">0.8</td>
+            <td class="upstream">0.9</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~patchelf&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=patchelf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -12210,24 +12229,24 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=patch-image"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/pkg-config">pkg-config</a></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/pkg-config/files" title="pkg-config has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/pkg-config/Makefile#L10">0.29</a></td>
-            <td class="upstream">0.29</td>
+            <td class="upstream">0.29.1</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~pkg-config&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=pkg-config"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/ppl">ppl</a></td>
             <td><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/ppl/patches" title="ppl has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://dev.openwrt.org/browser/branches/chaos_calmer/tools/ppl/Makefile#L10">1.1</a></td>
-            <td class="upstream">1.1</td>
+            <td class="upstream">1.2</td>
             <td><a href="https://dev.openwrt.org/query?status=assigned&amp;status=new&amp;status=reopened&amp;summary=~ppl&amp;order=priority"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="http://patchwork.ozlabs.org/project/openwrt/list/?q=ppl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -12379,7 +12398,7 @@ svn: E130005: XML Parsing failed: Unexpected root element 'html'</td>
       </table>
     </details>
     <footer>
-      Last update: Sun, 07 Feb 2016 19:00:06 UTC
+      Last update: Sun, 06 Mar 2016 23:59:56 UTC
       <br>
       Built using <a href="http://manpages.debian.net/cgi-bin/man.cgi?query=uscan">uscan</a> and <a href="http://cvechecker.sourceforge.net/">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="http://bazaar.canonical.com/en/">Bazaar</a>, <a href="https://savannah.nongnu.org/projects/cvs">CVS</a>, <a href="http://darcs.net/">Darcs</a>, <a href="http://git-scm.com/">Git</a>, <a href="http://mercurial.selenic.com/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
