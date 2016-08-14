@@ -176,7 +176,7 @@
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/boot/kexec-tools/Makefile#l11">2.0.9</a></td>
-            <td class="upstream"><a href="http://kernel.org/pub/linux/kernel/people/horms/kexec-tools/">2.0.12</a></td>
+            <td class="upstream"><a href="http://kernel.org/pub/linux/kernel/people/horms/kexec-tools/">2.0.13</a></td>
             <td class="maintainer"><a href="mailto:florian%7B%20at%20%7Dopenwrt(%20dot%20)org">Florian Fainelli</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=kexec-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
@@ -390,6 +390,7 @@
             <th id="packageDevelHeaderUptream">Upstream</th>
             <th id="packageDevelHeaderMaintainer">Maintainer</th>
             <th id="packageDevelHeaderPatchwork" title="Patchwork">P</th>
+            <th id="packageDevelHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -403,6 +404,7 @@
             <td class="upstream">2.27</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=binutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -414,17 +416,20 @@
             <td class="upstream"><a href="http://www.gnu.org/software/gdb/">7.11.1</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/devel/gdb-arc">gdb-arc</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/devel/gdb-arc/patches" title="gdb-arc has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>devel</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/devel/gdb-arc/Makefile#l11">arc-2016.03-gdb</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/gdb/">arc-2016.03-gdb</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/gdb/">Upstream</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gdb-arc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td>uscan warn: no matching files for watch line
+  https://github.com/foss-for-synopsys-dwc-arc-processors/binutils-gdb/releases /foss-for-synopsys-dwc-arc-processors/binutils-gdb/archive/(arc-[\d\.]+-gdb)\.(?:zip|(?:t(?:gz|bz|xz))|(?:tar\.(?:gz|bz2|xz)))</td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -436,6 +441,7 @@
             <td class="upstream"><a href="http://www.kernel.org">Upstream</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=perf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -447,6 +453,7 @@
             <td class="upstream"><a href="http://strace.sourceforge.net/">4.13</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=strace"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -458,6 +465,7 @@
             <td class="upstream">v2.6</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=trace-cmd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -469,6 +477,7 @@
             <td class="upstream"><a href="http://www.valgrind.org">3.11.0</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=valgrind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -716,7 +725,6 @@
             <th id="packageKernelHeaderUptream">Upstream</th>
             <th id="packageKernelHeaderMaintainer">Maintainer</th>
             <th id="packageKernelHeaderPatchwork" title="Patchwork">P</th>
-            <th id="packageKernelHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -730,7 +738,6 @@
             <td class="upstream"><a href="http://acx100.erley.org/fw/acx100_1.9.8.b/">b6fc31491020cb01d2cd1acc170cfa03ced7e726</a></td>
             <td class="maintainer"><a href="mailto:florian%7B%20at%20%7Dopenwrt(%20dot%20)org">Florian Fainelli</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=acx-mac80211"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -742,7 +749,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx100"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -754,7 +760,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx100r0d"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -766,7 +771,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx100r11"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -778,7 +782,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx100r15"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -790,7 +793,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx111c16"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -802,7 +804,6 @@
             <td class="upstream">1.2.1_34</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx111c16_1"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -814,7 +815,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx111c17"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -826,7 +826,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx111c19"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; unversioned upstream">
             <td>!</td>
@@ -838,7 +837,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiacx111usbc1b"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -850,7 +848,6 @@
             <td class="upstream">?</td>
             <td class="maintainer"><a href="mailto:florian%7B%20at%20%7Dopenwrt(%20dot%20)org">Florian Fainelli</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ar7-atm"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -858,11 +855,10 @@
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ath10k-ct uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/ath10k-ct/Makefile#l13">a142524abc8eef3ba30b12f9b5ac74385c8ddc39</a></td>
-            <td class="upstream">36545aa1267a4d871a9ebfd05c61aa2ab398a558</td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/ath10k-ct/Makefile#l13">36545aa1267a4d871a9ebfd05c61aa2ab398a558</a></td>
+            <td class="upstream">2d176a3e195fc72999ec77ed5be9146c2df5dd7e</td>
             <td class="maintainer"><a href="mailto:greearb%7B%20at%20%7Dcandelatech(%20dot%20)com">Ben Greear</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ath10k-ct"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -874,7 +870,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=avila-wdt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -883,10 +878,9 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="brcm2708-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/brcm2708-gpu-fw/Makefile#l13">6364331ee24c03108b4a572cb218164480b9275b</a></td>
-            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">1205048f037098b1532bb947d1f4b823bcdebdf7</a></td>
+            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">2cf8fd5ba0b195e16627df6a5b45f47c0edc3a54</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=brcm2708-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -898,7 +892,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=LICENCE_broadcom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -910,7 +903,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=bootcode_bin"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -922,7 +914,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=fixup_dat"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -934,7 +925,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=fixup_cd_dat"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -946,7 +936,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=start_elf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -958,7 +947,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=start_cd_elf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -970,7 +958,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=broadcom-wl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -982,7 +969,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=button-hotplug"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -994,8 +980,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ep80579-drivers"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  ftp://ftp.adiengineering.com/Archive/OcracokeIsland/Drivers/Linux/ failed: 401 Authentication failed.</td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1007,7 +991,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gpio-button-hotplug"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1019,7 +1002,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=i2c-gpio-custom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1031,7 +1013,6 @@
             <td class="upstream"><a href="https://github.com/dtaht/sch_cake">747954dd0bde66bb28d2b6c2c109597c9abbe5c5</a></td>
             <td class="maintainer"><a href="mailto:kevin%7B%20at%20%7Ddarbyshire-bryant(%20dot%20)me(%20dot%20)uk">Kevin Darbyshire-Bryant</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=kmod-sched-cake"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -1043,7 +1024,6 @@
             <td class="upstream"><a href="http://www.kernel.org/">Upstream</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=linux"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1055,7 +1035,6 @@
             <td class="upstream"><a href="https://wireless.wiki.kernel.org/">2015-12-16</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mac80211"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -1067,7 +1046,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=b43"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1079,7 +1057,6 @@
             <td class="upstream">6.30.163.46</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=brcmsmac"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -1091,7 +1068,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ipw2100"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -1103,7 +1079,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ipw2200"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1115,7 +1090,6 @@
             <td class="upstream">1.5</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=zd1211rw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1127,7 +1101,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mmc_over_gpio"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1139,7 +1112,6 @@
             <td class="upstream">ced81a345828abd2e2e9ea57bf27eb69b7b07808</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mt76"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1147,11 +1119,10 @@
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mwlwifi uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/mwlwifi/Makefile#l20">b7aff3c2839b048407d716d1cb9326122ee401f8</a></td>
-            <td class="upstream">b7aff3c2839b048407d716d1cb9326122ee401f8</td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/mwlwifi/Makefile#l20">d48847cc83954930fdcd98818bbf33e75707b8e1</a></td>
+            <td class="upstream">d48847cc83954930fdcd98818bbf33e75707b8e1</td>
             <td class="maintainer"><a href="mailto:kaloz%7B%20at%20%7Dopenwrt(%20dot%20)org">Imre Kaloz</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mwlwifi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1163,7 +1134,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=om-watchdog"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1175,7 +1145,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=rotary-gpio-custom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1187,7 +1156,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=rtc-rv5c386a"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1199,7 +1167,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=spi-gpio-custom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1211,7 +1178,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=trelay"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1223,7 +1189,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=w1-gpio-custom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1235,7 +1200,6 @@
             <td class="upstream">N/A</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=wrt55agv2-spidevs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
         </tbody>
       </table>
@@ -1253,7 +1217,6 @@
             <th id="packageKernelLantiqHeaderUptream">Upstream</th>
             <th id="packageKernelLantiqHeaderMaintainer">Maintainer</th>
             <th id="packageKernelLantiqHeaderPatchwork" title="Patchwork">P</th>
-            <th id="packageKernelLantiqHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -1266,8 +1229,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-adsl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -1278,8 +1239,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-adsl-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1290,7 +1249,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-adsl-mei"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1301,7 +1259,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-atm"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1312,7 +1269,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-deu"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1323,7 +1279,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-hcd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1334,7 +1289,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">1.15.14</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-ifxos"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1345,7 +1299,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-ptm"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -1356,8 +1309,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-tapi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -1368,8 +1319,6 @@
             <td class="upstream">?</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-vdsl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -1380,8 +1329,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-vdsl-mei"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -1392,8 +1339,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-vmmc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -1404,7 +1349,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -1415,7 +1359,6 @@
             <td class="upstream">?</td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=coef"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
         </tbody>
       </table>
@@ -1930,13 +1873,13 @@
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=uclibc++"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/libs/uclient">uclient</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="uclient uses the git (distributed) version control system"></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/libs/uclient/Makefile#l10">4fdad31fd199ef97b078f6355463d64ce598e85e</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/libs/uclient/Makefile#l10">ccb314db2e99463de15eed9d7626360d82aec4d2</a></td>
             <td class="upstream">ccb314db2e99463de15eed9d7626360d82aec4d2</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=uclient"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1983,21 +1926,19 @@
             <th id="packageNetworkConfigHeaderUptream">Upstream</th>
             <th id="packageNetworkConfigHeaderMaintainer">Maintainer</th>
             <th id="packageNetworkConfigHeaderPatchwork" title="Patchwork">P</th>
-            <th id="packageNetworkConfigHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/firewall">firewall</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/firewall/files" title="firewall has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="firewall uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/config/firewall/Makefile#l18">47b23946cb2d51c486cd01596744955f850e2060</a></td>
-            <td class="upstream">47b23946cb2d51c486cd01596744955f850e2060</td>
+            <td class="upstream">6818f758fe8b0de9eae45adf4bae91a312cc8f0c</td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=firewall"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2009,7 +1950,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer" title="Possibly lacks commit access"><a href="mailto:dedeckeh%7B%20at%20%7Dgmail(%20dot%20)com">Hans Dedecker</a><img src="icons/exclamation.png" width="16" height="16" alt="lacks access"></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gre"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2021,7 +1961,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer" title="Possibly lacks commit access"><a href="mailto:dedeckeh%7B%20at%20%7Dgmail(%20dot%20)com">Hans Dedecker</a><img src="icons/exclamation.png" width="16" height="16" alt="lacks access"></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ipip"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -2033,8 +1972,6 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-adsl-app"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -2046,20 +1983,17 @@
             <td class="upstream"><a href="http://www.lantiq.com/">Upstream</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-vdsl-app"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  http://dev.phrozen.org/ltq-mirror/ failed: 500 Can't connect to dev.phrozen.org:80</td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/netifd">netifd</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/netifd/files" title="netifd has a files subdirectory containing 10 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>10</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="netifd uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/config/netifd/Makefile#l10">656c387974879105c2aaec6b62478d0195067f2d</a></td>
-            <td class="upstream">656c387974879105c2aaec6b62478d0195067f2d</td>
+            <td class="upstream">c8a5f1ae361ab61192be6085c29d977eb73a05f5</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=netifd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2071,7 +2005,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=qos-scripts"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2083,7 +2016,6 @@
             <td class="upstream"><a href="http://sourceforge.net/projects/openadsl">1.04</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=soloscli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2095,7 +2027,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=swconfig"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2107,7 +2038,6 @@
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:avalentin%7B%20at%20%7Dmarcant(%20dot%20)net">Andre Valentin</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=vti"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td></td>
           </tr>
         </tbody>
       </table>
@@ -2257,13 +2187,13 @@
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=dnsmasq"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dropbear">dropbear</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dropbear/files" title="dropbear has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dropbear/patches" title="dropbear has a patches subdirectory containing 9 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>9</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/dropbear/Makefile#l11">2016.73</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/dropbear/Makefile#l11">2016.74</a></td>
             <td class="upstream"><a href="http://matt.ucc.asn.au/dropbear/">2016.74</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=dropbear"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2286,7 +2216,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hostapd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/hostapd/Makefile#l12">31d3692fe5d56c05753ed4a70c7943979e1d29e7</a></td>
-            <td class="upstream"><a href="http://hostap.epitest.fi/">cfe0a0194b9d666593a1495980a1591c9c948da8</a></td>
+            <td class="upstream"><a href="http://hostap.epitest.fi/">50348c5c323f636e31522ba5d26899650aa4adaf</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=hostapd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
@@ -2558,7 +2488,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/utils/iproute2/Makefile#l11">4.4.0</a></td>
-            <td class="upstream"><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2">4.6.0</a></td>
+            <td class="upstream"><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2">4.7.0</a></td>
             <td class="maintainer" title="Possibly lacks commit access"><a href="mailto:russell%7B%20at%20%7Dpersonaltelco(%20dot%20)net">Russell Senior</a><img src="icons/exclamation.png" width="16" height="16" alt="lacks access"></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=iproute2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -2666,7 +2596,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nftables uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/utils/nftables/Makefile#l17">3ed296118a065caff5600e60d4f7ef18e137f9a0</a></td>
-            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">5fa8528fa9631ff5b0d72d9e9bdc76220f992e8f</a></td>
+            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">54c0482494d26b273cd7ea3dcf624fc2c31f7dab</a></td>
             <td class="maintainer"><a href="mailto:steven%7B%20at%20%7Dmidlink(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=nftables"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -2873,7 +2803,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="opkg uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/system/opkg/Makefile#l14">9c97d5ecd795709c8584e972bfdf3aee3a5b846d</a></td>
-            <td class="upstream"><a href="http://wiki.openmoko.org/wiki/Opkg">e5838be6bb3d0e4f3bdb083f1f8d9704fa61fd8c</a></td>
+            <td class="upstream"><a href="http://wiki.openmoko.org/wiki/Opkg">c75bc7bb0b79f4a769e361a956ea15e01fd10c53</a></td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=opkg"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
@@ -3277,14 +3207,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/util-linux">util-linux</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/util-linux/patches" title="util-linux has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/util-linux/Makefile#l11">2.28</a></td>
-            <td class="upstream"><a href="http://www.kernel.org/pub/linux/utils/util-linux/">2.28</a></td>
+            <td class="upstream"><a href="http://www.kernel.org/pub/linux/utils/util-linux/">2.28.1</a></td>
             <td></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=util-linux"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -3339,7 +3269,7 @@
           <tr class="variable" title="Variable">
             <td></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc">gcc</a></td>
-            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/files" title="gcc has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/patches" title="gcc has a patches subdirectory containing 76 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>76</sup></a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/files" title="gcc has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/patches" title="gcc has a patches subdirectory containing 78 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>78</sup></a></td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=toolchain/gcc/common.mk#l24">$(CONFIG_GCC_VERSION)</a></td>
             <td class="upstream">?</td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gcc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3717,16 +3647,16 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/make-ext4fs">make-ext4fs</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="make-ext4fs uses the git (distributed) version control system"></td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/make-ext4fs/Makefile#l16">3af931b0b6545757aaeadb13f9bb9da0296fc172</a></td>
-            <td class="upstream">?</td>
+            <td class="upstream">3af931b0b6545757aaeadb13f9bb9da0296fc172</td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=make-ext4fs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>fatal: unable to access 'http://git.openwrt.org/project/make_ext4fs.git/': Failed to connect to git.openwrt.org port 80: Connection timed out</td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4052,7 +3982,7 @@ svn: E000110: Error running context: Connection timed out</td>
       </table>
     </details>
     <footer>
-      Last update: Sun, 07 Aug 2016 21:34:34 UTC
+      Last update: Sun, 14 Aug 2016 18:22:49 UTC
       <br>
       Built using <a href="http://manpages.debian.net/cgi-bin/man.cgi?query=uscan">uscan</a> and <a href="http://cvechecker.sourceforge.net/">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="http://bazaar.canonical.com/en/">Bazaar</a>, <a href="https://savannah.nongnu.org/projects/cvs">CVS</a>, <a href="http://darcs.net/">Darcs</a>, <a href="http://git-scm.com/">Git</a>, <a href="http://mercurial.selenic.com/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
