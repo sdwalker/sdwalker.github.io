@@ -506,13 +506,13 @@
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=perf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/devel/strace">strace</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/devel/strace/patches" title="strace has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/devel/strace/Makefile#l13">4.16</a></td>
-            <td class="upstream"><a href="http://strace.sourceforge.net/">4.16</a></td>
+            <td class="upstream"><a href="http://strace.sourceforge.net/">4.17</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=strace"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=strace"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1035,7 +1035,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="brcm2708-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/brcm2708-gpu-fw/Makefile#l13">78c4983379de0537f49a97fb37ceaaf42632b28c</a></td>
-            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">89ec3757faaf564d519b44163fc2fd814eea407b</a></td>
+            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">32c28990b18908ce899c289bcd12c6e9daeb1588</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=brcm2708-gpu-fw"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=brcm2708-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1227,7 +1227,7 @@
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/mac80211/Makefile#l13">2017-01-31</a></td>
-            <td class="upstream"><a href="https://wireless.wiki.kernel.org/">2017-05-19</a></td>
+            <td class="upstream"><a href="https://wireless.wiki.kernel.org/">2017-05-26</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=mac80211"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mac80211"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1286,7 +1286,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/mac80211/Makefile#l1446">1.4</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/mac80211/Makefile#l1462">1.4</a></td>
             <td class="upstream">1.5</td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=zd1211rw"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -1311,7 +1311,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mwlwifi uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/kernel/mwlwifi/Makefile#l19">ccdfdac28f7666474745b1f46f0769f3a2879b5f</a></td>
-            <td class="upstream">6d1595e9db5dec8e61332f6be431b3bf972d6d08</td>
+            <td class="upstream">2d4b9bcd6c82043284fc83a3b4c92d93db39a9c1</td>
             <td class="maintainer"><a href="mailto:kaloz%7B%20at%20%7Dopenwrt(%20dot%20)org">Imre Kaloz</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=mwlwifi"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mwlwifi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1581,8 +1581,6 @@
             <th id="packageLibsHeaderMaintainer">Maintainer</th>
             <th id="packageLibsHeaderTickets" title="Tickets">T</th>
             <th id="packageLibsHeaderPatchwork" title="Patchwork">P</th>
-            <th id="packageLibsHeaderCVE"><abbr title="Common Vulnerabilities and Exposures">CVE</abbr></th>
-            <th id="packageLibsHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -1597,8 +1595,6 @@
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=argp-standalone"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=argp-standalone"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file; form based download">
             <td>!</td>
@@ -1611,8 +1607,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=cyassl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=cyassl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1625,8 +1619,6 @@
             <td class="maintainer"><a href="mailto:luizluca%7B%20at%20%7Dgmail(%20dot%20)com">Luiz Angelo Daros de Luca</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=elfutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=elfutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1639,8 +1631,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=gettext"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gettext"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1653,8 +1643,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=gettext-full"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gettext-full"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1667,8 +1655,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=gmp"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gmp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1681,8 +1667,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libbsd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libbsd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1695,8 +1679,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libconfig"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libconfig"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1709,8 +1691,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libevent2"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libevent2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -1723,8 +1703,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libiconv"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libiconv"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1737,8 +1715,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libiconv-full"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libiconv-full"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -1751,8 +1727,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libjson-c"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libjson-c"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1765,8 +1739,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libmnl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libmnl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1779,8 +1751,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnetfilter-conntrack"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnetfilter-conntrack"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1793,8 +1763,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnetfilter-cthelper"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnetfilter-cthelper"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1807,8 +1775,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnetfilter-cttimeout"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnetfilter-cttimeout"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1821,8 +1787,6 @@
             <td class="maintainer"><a href="mailto:yszhou4tech%7B%20at%20%7Dgmail(%20dot%20)com">Yousong Zhou</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnetfilter-log"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnetfilter-log"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1835,8 +1799,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnetfilter-queue"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnetfilter-queue"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1849,8 +1811,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnfnetlink"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnfnetlink"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1863,8 +1823,6 @@
             <td class="maintainer"><a href="mailto:steven%7B%20at%20%7Dmidlink(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnftnl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnftnl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1877,8 +1835,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -1891,8 +1847,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libnl-tiny"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libnl-tiny"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1905,8 +1859,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libpcap"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libpcap"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1919,8 +1871,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libreadline"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libreadline"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1933,8 +1883,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libroxml"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libroxml"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -1947,8 +1895,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=librpc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=librpc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1961,8 +1907,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libtool"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libtool"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -1975,22 +1919,18 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libubox"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libubox"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/libs/libunwind">libunwind</a></td>
-            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/libs/libunwind/patches" title="libunwind has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/libs/libunwind/patches" title="libunwind has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/libs/libunwind/Makefile#l11">1.1</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/libs/libunwind/Makefile#l12">1.2</a></td>
             <td class="upstream"><a href="http://www.nongnu.org/libunwind/">1.2</a></td>
             <td class="maintainer"><a href="mailto:yszhou4tech%7B%20at%20%7Dgmail(%20dot%20)com">Yousong Zhou</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libunwind"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libunwind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="low" href="https://nvd.nist.gov/vuln/detail/CVE-2015-3239" title="CVE-2015-3239 has a CVSS base score of 3.3">CVE-2015-3239</a> </td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2003,8 +1943,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libusb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libusb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -2017,23 +1955,18 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libusb-compat"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libusb-compat"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/libs/lzo">lzo</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/libs/lzo/Makefile#l11">2.10</a></td>
-            <td class="upstream"><a href="http://www.oberhumer.com/opensource/lzo/">Upstream</a></td>
+            <td class="upstream"><a href="http://www.oberhumer.com/opensource/lzo/">2.10</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=lzo"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=lzo"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td>uscan warn: reading webpage
-  http://www.oberhumer.com/opensource/lzo/download/ failed: 500 Can't connect to www.oberhumer.com:80</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2046,8 +1979,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=mbedtls"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mbedtls"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2060,8 +1991,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=ncurses"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ncurses"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2074,8 +2003,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=nettle"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=nettle"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -2084,12 +2011,10 @@
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/libs/openssl/Makefile#l11">1.0.2k</a></td>
-            <td class="upstream"><a href="http://www.openssl.org/">1.1.0e</a></td>
+            <td class="upstream"><a href="http://www.openssl.org/">1.1.0f</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=openssl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=openssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2102,8 +2027,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=popt"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=popt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2116,8 +2039,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=sysfsutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=sysfsutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2130,8 +2051,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=toolchain"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=toolchain"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2144,8 +2063,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=uclibc++"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=uclibc++"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2158,8 +2075,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=uclient"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=uclient"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -2172,8 +2087,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=ustream-ssl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ustream-ssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2186,8 +2099,6 @@
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=zlib"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=zlib"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
-            <td></td>
           </tr>
         </tbody>
       </table>
@@ -2210,14 +2121,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/firewall">firewall</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/firewall/files" title="firewall has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="firewall uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/config/firewall/Makefile#l17">1949e0cc6feb17d7c32312040da6fc75ea771035</a></td>
-            <td class="upstream">4cb06c72131e37fa9058707e11497cfd905b1a89</td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/config/firewall/Makefile#l17">a4d98aea373e04f3fdc3c492c1688ba52ce490a9</a></td>
+            <td class="upstream">a4d98aea373e04f3fdc3c492c1688ba52ce490a9</td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=firewall"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=firewall"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2270,14 +2181,14 @@
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=ltq-vdsl-app"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ltq-vdsl-app"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/netifd">netifd</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/config/netifd/files" title="netifd has a files subdirectory containing 10 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>10</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="netifd uses the git (distributed) version control system"></td>
             <td>base</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/config/netifd/Makefile#l9">11cb9cfbb088740ee7ee5e6c6b661958c0f962cb</a></td>
-            <td class="upstream">a063705a03a6c5a41b5f7aed251bfb3ba5c844c3</td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/config/netifd/Makefile#l9">08f1875201a60dc20c65d2af26b41af987662f10</a></td>
+            <td class="upstream">08f1875201a60dc20c65d2af26b41af987662f10</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=netifd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=netifd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2489,25 +2400,25 @@
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=authsae"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=authsae"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dnsmasq">dnsmasq</a></td>
-            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dnsmasq/files" title="dnsmasq has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dnsmasq/patches" title="dnsmasq has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dnsmasq/files" title="dnsmasq has a files subdirectory containing 6 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>6</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dnsmasq/patches" title="dnsmasq has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/dnsmasq/Makefile#l11">2.77rc3</a></td>
-            <td class="upstream"><a href="http://www.thekelleys.org.uk/dnsmasq/">2.77rc4</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/dnsmasq/Makefile#l11">2.77rc5</a></td>
+            <td class="upstream"><a href="http://www.thekelleys.org.uk/dnsmasq/">2.77rc5</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=dnsmasq"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=dnsmasq"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dropbear">dropbear</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dropbear/files" title="dropbear has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/dropbear/patches" title="dropbear has a patches subdirectory containing 8 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>8</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/dropbear/Makefile#l11">2016.74</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/dropbear/Makefile#l11">2017.75</a></td>
             <td class="upstream"><a href="http://matt.ucc.asn.au/dropbear/">2017.75</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=dropbear"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -2532,7 +2443,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hostapd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/hostapd/Makefile#l15">ad02e79d12fd70ed6bd5fbaf64001a2851e5bb7b</a></td>
-            <td class="upstream"><a href="http://hostap.epitest.fi/">290834df69556b903b49f2a45671cc62b44f13bb</a></td>
+            <td class="upstream"><a href="http://hostap.epitest.fi/">2d18ab40826ecaec26bfd82d42dcb08f2715e362</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=hostapd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=hostapd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2561,13 +2472,13 @@
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=ipset-dns"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ipset-dns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/lldpd">lldpd</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/lldpd/files" title="lldpd has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/lldpd/Makefile#l11">0.9.6</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/lldpd/Makefile#l11">0.9.7</a></td>
             <td class="upstream"><a href="https://github.com/vincentbernat/lldpd/wiki">0.9.7</a></td>
             <td class="maintainer"><a href="mailto:stijn%7B%20at%20%7Dlinux-ipv6(%20dot%20)be">Stijn Tintel</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=lldpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -2648,7 +2559,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/samba36">samba36</a></td>
-            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/samba36/files" title="samba36 has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/samba36/patches" title="samba36 has a patches subdirectory containing 30 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>30</sup></a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/samba36/files" title="samba36 has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/samba36/patches" title="samba36 has a patches subdirectory containing 31 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>31</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/samba36/Makefile#l11">3.6.25</a></td>
@@ -2669,14 +2580,14 @@
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=uhttpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=uhttpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/umdns">umdns</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/services/umdns/files" title="umdns has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="umdns uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/umdns/Makefile#l16">480d7bc74eba20c03875aa06c1c25dbdb98e0b12</a></td>
-            <td class="upstream">49fdb9f7a5454f7e11e8bcd621bff17cbf9da5ca</td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/umdns/Makefile#l16">0e8b948ff8dd1cb1763180c99b522390529c7841</a></td>
+            <td class="upstream">0e8b948ff8dd1cb1763180c99b522390529c7841</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=umdns"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=umdns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2702,6 +2613,18 @@
           </tr>
         </thead>
         <tbody>
+          <tr class="notApplicable" title="Not applicable">
+            <td></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/utils/adb-enablemodem">adb-enablemodem</a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/utils/adb-enablemodem/files" title="adb-enablemodem has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
+            <td></td>
+            <td>net</td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/utils/adb-enablemodem/Makefile#l4">2017-03-05</a></td>
+            <td class="upstream">N/A</td>
+            <td></td>
+            <td><a href="https://bugs.lede-project.org/index.php?project=2&string=adb-enablemodem"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=adb-enablemodem"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+          </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/network/utils/arptables">arptables</a></td>
@@ -2925,7 +2848,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nftables uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/network/utils/nftables/Makefile#l15">3ed296118a065caff5600e60d4f7ef18e137f9a0</a></td>
-            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">1e6ae0e42bdc161d178277c336886e18c259caf5</a></td>
+            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">bb6a7f201a817652dd2c795539236c9319a23ad7</a></td>
             <td class="maintainer"><a href="mailto:steven%7B%20at%20%7Dmidlink(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=nftables"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=nftables"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3083,13 +3006,13 @@
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=ca-certificates"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ca-certificates"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/system/fstools">fstools</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/system/fstools/files" title="fstools has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="fstools uses the git (distributed) version control system"></td>
             <td>base</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/system/fstools/Makefile#l16">20c16fc5fec00fdae547f083a822a7f1bd67d143</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/system/fstools/Makefile#l16">c43ae11e71abf607a1998800f8ced489ec5d1e88</a></td>
             <td class="upstream">c43ae11e71abf607a1998800f8ced489ec5d1e88</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=fstools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -3257,7 +3180,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adb uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/adb/Makefile#l10">6fe92d1a3fb17545d82d020a3c995f32e6b71f9d</a></td>
-            <td class="upstream"><a href="http://tools.android.com/">62db5fcee052980759ecb977cab4c63491e01e56</a></td>
+            <td class="upstream"><a href="http://tools.android.com/">844940d751be6cf6078c9e816fc09356034c1b26</a></td>
             <td class="maintainer"><a href="mailto:hyniu%7B%20at%20%7Do2(%20dot%20)pl">Henryk Heisig</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=adb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=adb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3398,7 +3321,7 @@
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/fuse/Makefile#l12">2.9.7</a></td>
-            <td class="upstream"><a href="http://fuse.sourceforge.net/">3.0.1</a></td>
+            <td class="upstream"><a href="http://fuse.sourceforge.net/">3.0.2</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=fuse"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=fuse"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3565,21 +3488,21 @@
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/usbmode/files" title="usbmode has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="usbmode uses the git (distributed) version control system"></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/usbmode/Makefile#l9">22f041e18df06f19d2df0d5ccc824424ffe003f9</a></td>
-            <td class="upstream"><a href="http://www.draisberghof.de/usb_modeswitch">22f041e18df06f19d2df0d5ccc824424ffe003f9</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/usbmode/Makefile#l9">453da8e540b1c53d357b897d6c70372cd4633390</a></td>
+            <td class="upstream"><a href="http://www.draisberghof.de/usb_modeswitch">453da8e540b1c53d357b897d6c70372cd4633390</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=usbmode"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=usbmode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/usbmode">usbmode &rarr; data</a></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/usbmode/Makefile#l18">20150115</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/usbmode/Makefile#l18">20170205</a></td>
             <td class="upstream">20170205</td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=data"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -3647,10 +3570,10 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/xfsprogs">xfsprogs</a></td>
-            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/xfsprogs/patches" title="xfsprogs has a patches subdirectory containing 8 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>8</sup></a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=package/utils/xfsprogs/patches" title="xfsprogs has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/xfsprogs/Makefile#l12">3.1.7</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=package/utils/xfsprogs/Makefile#l12">4.11.0</a></td>
             <td class="upstream"><a href="http://oss.sgi.com/projects/xfs">4.7.0</a></td>
             <td></td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=xfsprogs"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -3697,7 +3620,7 @@
           <tr class="variable" title="Variable">
             <td></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc">gcc</a></td>
-            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/files" title="gcc has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/patches" title="gcc has a patches subdirectory containing 84 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>84</sup></a></td>
+            <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/files" title="gcc has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://git.lede-project.org/?p=source.git;a=tree;f=toolchain/gcc/patches" title="gcc has a patches subdirectory containing 103 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>103</sup></a></td>
             <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=toolchain/gcc/common.mk#l24">$(CONFIG_GCC_VERSION)</a></td>
             <td class="upstream">?</td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=gcc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -3868,12 +3791,12 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/cmake">cmake</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/cmake/patches" title="cmake has a patches subdirectory containing 6 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>6</sup></a></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/cmake/Makefile#l10">3.7.2</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/cmake/Makefile#l10">3.8.1</a></td>
             <td class="upstream">3.8.1</td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=cmake"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=cmake"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3964,12 +3887,12 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/flex">flex</a></td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/flex/patches" title="flex has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/flex/Makefile#l10">2.6.1</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/flex/Makefile#l10">2.6.4</a></td>
             <td class="upstream">2.6.4</td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=flex"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=flex"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4024,12 +3947,12 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/isl">isl</a></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/isl/Makefile#l10">0.17.1</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/isl/Makefile#l10">0.18</a></td>
             <td class="upstream">0.18</td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=isl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=isl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4060,12 +3983,12 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.lede-project.org/?p=source.git;a=tree;f=tools/libressl">libressl</a></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/libressl/Makefile#l11">2.5.1</a></td>
+            <td class="downstream"><a href="https://git.lede-project.org/?p=source.git;a=blob;f=tools/libressl/Makefile#l11">2.5.4</a></td>
             <td class="upstream">2.5.4</td>
             <td><a href="https://bugs.lede-project.org/index.php?project=2&string=libressl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libressl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4449,7 +4372,7 @@ svn: E000110: Error running context: Connection timed out</td>
       </table>
     </details>
     <footer>
-      Last update: Sun, 21 May 2017 19:49:19 UTC
+      Last update: Sun, 28 May 2017 19:05:34 UTC
       <br>
       Built using <a href="http://manpages.debian.net/cgi-bin/man.cgi?query=uscan">uscan</a> and <a href="http://cvechecker.sourceforge.net/">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="http://bazaar.canonical.com/en/">Bazaar</a>, <a href="https://savannah.nongnu.org/projects/cvs">CVS</a>, <a href="http://darcs.net/">Darcs</a>, <a href="http://git-scm.com/">Git</a>, <a href="http://mercurial.selenic.com/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
