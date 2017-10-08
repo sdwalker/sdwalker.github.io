@@ -4,12 +4,12 @@ var areas = ["packageBoot", "packageDevel", "packageFirmware", "packageKernel",
              "packageKernelLantiq", "packageLibs", "packageNetworkConfig",
              "packageNetworkIpv6", "packageNetworkServices",
              "packageNetworkUtils", "packageSystem", "packageUtils",
-             "toolchain", "tools"];
+             "packageFeedsPackages", "packageFeedsRouting",
+             "packageFeedsTelephony", "toolchain", "tools"];
 
 for (i in areas) {
   if (areas.hasOwnProperty(i)) {
-    if (areas[i] === "packageDevel" ||
-        areas[i] === "packageKernelLantiq") {
+    if (areas[i] === "packageKernelLantiq") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else if (areas[i] === "toolchain") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "", "", "s", "s"];
