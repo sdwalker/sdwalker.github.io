@@ -1,15 +1,19 @@
 "use strict";
 var i;
-var areas = ["packageBoot", "packageDevel", "packageFirmware", "packageKernel",
+var areas = ["packageBoot", "packageDevel", "packageFirmware",
+             "packageFirmwareLayerscape", "packageKernel",
              "packageKernelLantiq", "packageLibs", "packageNetworkConfig",
              "packageNetworkIpv6", "packageNetworkServices",
-             "packageNetworkUtils", "packageSystem", "packageUtils",
-             "packageFeedsPackages", "packageFeedsRouting",
-             "packageFeedsTelephony", "toolchain", "tools"];
+             "packageNetworkUtils", "packageNetworkUtilsLayerscape",
+             "packageSystem", "packageUtils", "packageFeedsPackages",
+             "packageFeedsRouting", "packageFeedsTelephony", "toolchain",
+             "tools"];
 
 for (i in areas) {
   if (areas.hasOwnProperty(i)) {
-    if (areas[i] === "packageKernelLantiq") {
+    if (areas[i] === "packageDevel" ||
+        areas[i] === "packageNetworkUtilsLayerscape" ||
+        areas[i] === "packageKernelLantiq") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else if (areas[i] === "toolchain") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "", "", "s", "s"];
