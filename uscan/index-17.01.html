@@ -106,12 +106,14 @@
           <a href="#toolchain">toolchain</a>
           <!--[if IE 9]>-->
           <a id="toolchainStatusChartLink" href="#toolchainStatusChart"><img src="icons/chart_pie_link.png" width="16" height="16" alt="chart"></a>
-          <a id="toolchainMaintainerChartLink" href="#toolchainMaintainerChart"><img src="icons/chart_pie_link.png" width="16" height="16" alt="chart"></a><img src="icons/exclamation.png" title="toolchain has no maintainers" width="16" height="16" alt="unmaintained">
+          <a id="toolchainMaintainerChartLink" href="#toolchainMaintainerChart"><img src="icons/chart_pie_link.png" width="16" height="16" alt="chart"></a>
+          <img src="icons/exclamation.png" title="toolchain has no maintainers" width="16" height="16" alt="unmaintained">
           <!--<![endif]-->
           <a href="#tools">tools</a>
           <!--[if IE 9]>-->
           <a id="toolsStatusChartLink" href="#toolsStatusChart"><img src="icons/chart_pie_link.png" width="16" height="16" alt="chart"></a>
-          <a id="toolsMaintainerChartLink" href="#toolsMaintainerChart"><img src="icons/chart_pie_link.png" width="16" height="16" alt="chart"></a><img src="icons/exclamation.png" title="tools has no maintainers" width="16" height="16" alt="unmaintained">
+          <a id="toolsMaintainerChartLink" href="#toolsMaintainerChart"><img src="icons/chart_pie_link.png" width="16" height="16" alt="chart"></a>
+          <img src="icons/exclamation.png" title="tools has no maintainers" width="16" height="16" alt="unmaintained">
           <!--<![endif]-->
         </h3>
       </nav>
@@ -513,7 +515,7 @@
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=tree;f=package/devel/gdb/patches" title="gdb has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td>devel</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/devel/gdb/Makefile#l11">7.11.1</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/gdb/">8.0.1</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/gdb/">8.1</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -562,7 +564,7 @@
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=tree;f=package/devel/trace-cmd/patches" title="trace-cmd has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td>devel</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/devel/trace-cmd/Makefile#l4">v2.6.1</a></td>
-            <td class="upstream">v2.6.2</td>
+            <td class="upstream">v2.7</td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=trace-cmd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=trace-cmd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -788,7 +790,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="linux-firmware uses the git (distributed) version control system"></td>
             <td>firmware</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/firmware/linux-firmware/Makefile#l16">42ad5367dd38371b2a1bb263b6efa85f9b92fc93</a></td>
-            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git">2a713be25a44bd6cec90d8affc54b246a2ca9c7b</a></td>
+            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git">2aa2ac2e9c09f09b0cfb6fc320c1e2d281530fa0</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=linux-firmware"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=linux-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1073,7 +1075,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="brcm2708-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/kernel/brcm2708-gpu-fw/Makefile#l13">78c4983379de0537f49a97fb37ceaaf42632b28c</a></td>
-            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">80e1fbeb78f9df06701d28c0ed3a3060a3f557ef</a></td>
+            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">5d1eb304cb6706246e6d44c01c48657e07a53383</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=brcm2708-gpu-fw"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=brcm2708-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1265,7 +1267,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mac80211 uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/kernel/mac80211/Makefile#l13">2017-01-31</a></td>
-            <td class="upstream"><a href="https://wireless.wiki.kernel.org/">2018-01-22</a></td>
+            <td class="upstream"><a href="https://wireless.wiki.kernel.org/">2018-01-29</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mac80211"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mac80211"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1349,7 +1351,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mwlwifi uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/kernel/mwlwifi/Makefile#l19">36bc32767ed89e07c5c83036861d2fa4eb1f8629</a></td>
-            <td class="upstream">2b99e150f954944d17607004416e1f2321a73510</td>
+            <td class="upstream">adae20af0ddac061807fbaadec6c3b8129290480</td>
             <td class="maintainer"><a href="mailto:kaloz%7B%20at%20%7Dopenwrt(%20dot%20)org">Imre Kaloz</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mwlwifi"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mwlwifi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2469,7 +2471,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hostapd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/network/services/hostapd/Makefile#l15">ad02e79d12fd70ed6bd5fbaf64001a2851e5bb7b</a></td>
-            <td class="upstream"><a href="http://hostap.epitest.fi/">b4cd8b7e1a6a67e6f4332dba4e20ee008a529de0</a></td>
+            <td class="upstream"><a href="http://hostap.epitest.fi/">0dc3c5f2ee2731bc620e956a173f767c55fde137</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=hostapd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=hostapd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2553,7 +2555,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="openvpn-easy-rsa uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/network/services/openvpn-easy-rsa/Makefile#l17">ff5bfd1dd8e548cb24d302742af3894f893ef92f</a></td>
-            <td class="upstream"><a href="http://openvpn.net">303f89a1d0c266ee851c7704238e6c63f618d262</a></td>
+            <td class="upstream"><a href="http://openvpn.net">bdfbd51d7b1b89c3dbfa46670ee2e3979e2cb905</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=openvpn-easy-rsa"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=openvpn-easy-rsa"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2625,7 +2627,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/network/services/wireguard/Makefile#l14">0.0.20171221</a></td>
-            <td class="upstream"><a href="https://www.wireguard.com">0.0.20180118</a></td>
+            <td class="upstream"><a href="https://www.wireguard.com">0.0.20180202</a></td>
             <td class="maintainer"><a href="mailto:openwrt%7B%20at%20%7Dbitsofnetworks(%20dot%20)org">Baptiste Jonglez</a>, <a href="mailto:mail%7B%20at%20%7Ddanrl(%20dot%20)com">Dan Luedtke</a>, <a href="mailto:Jason%7B%20at%20%7Dzx2c4(%20dot%20)com">Jason A. Donenfeld</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=wireguard"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=wireguard"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2776,7 +2778,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/network/utils/iproute2/Makefile#l11">4.4.0</a></td>
-            <td class="upstream"><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2">4.14.1</a></td>
+            <td class="upstream"><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2">4.15.0</a></td>
             <td class="maintainer"><a href="mailto:russell%7B%20at%20%7Dpersonaltelco(%20dot%20)net">Russell Senior</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=iproute2"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=iproute2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2802,7 +2804,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/network/utils/iptables/Makefile#l12">1.4.21</a></td>
-            <td class="upstream"><a href="http://netfilter.org/">1.6.1</a></td>
+            <td class="upstream"><a href="http://netfilter.org/">1.6.2</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=iptables"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=iptables"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2893,7 +2895,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="nftables uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/network/utils/nftables/Makefile#l15">3ed296118a065caff5600e60d4f7ef18e137f9a0</a></td>
-            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">ff43c01bda0c9d469a00dfb251a5002a9947c1f0</a></td>
+            <td class="upstream"><a href="http://netfilter.org/projects/nftables/">702cf0a7958d6456089b39bffef279d390db2e7a</a></td>
             <td class="maintainer"><a href="mailto:steven%7B%20at%20%7Dmidlink(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=nftables"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=nftables"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3069,7 +3071,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="fstools uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/system/fstools/Makefile#l16">37762ff488752c1686b359816aec75831b49c55f</a></td>
-            <td class="upstream">18090d97b61cc091ed3f49c3ec8ba42c761f1d15</td>
+            <td class="upstream">50107109fef136e180b18701524cb8f7b6ea3b5b</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=fstools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=fstools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3248,7 +3250,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adb uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/utils/adb/Makefile#l10">6fe92d1a3fb17545d82d020a3c995f32e6b71f9d</a></td>
-            <td class="upstream"><a href="http://tools.android.com/">8abe4e2638587957f621450b4e4c3ff7af310b08</a></td>
+            <td class="upstream"><a href="http://tools.android.com/">7f5615e8d421fbd04c7d8a6d05efe1a61e558961</a></td>
             <td class="maintainer"><a href="mailto:hyniu%7B%20at%20%7Do2(%20dot%20)pl">Henryk Heisig</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=adb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=adb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3347,7 +3349,7 @@
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/utils/f2fs-tools/Makefile#l11">1.8.0</a></td>
-            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git">1.9.0</a></td>
+            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git">1.10.0</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=f2fs-tools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=f2fs-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3382,14 +3384,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=tree;f=package/utils/jsonfilter">jsonfilter</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="jsonfilter uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=package/utils/jsonfilter/Makefile#l9">dea067ad67d977c247c300c06676a06adf21e0c7</a></td>
-            <td class="upstream"><a href="http://git.openwrt.org/?p=project/jsonpath.git">dea067ad67d977c247c300c06676a06adf21e0c7</a></td>
+            <td class="upstream"><a href="http://git.openwrt.org/?p=project/jsonpath.git">8614470400daf36d9b189d9ea9085ef6e19afd0e</a></td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=jsonfilter"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=jsonfilter"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3678,7 +3680,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="acme uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/acme/Makefile#L11">7b40cbe8c1a52041351524bcde4b37665a7cdf79</a></td>
-            <td class="upstream">fce8223663e1ab4fdd84871ccbf76c1775638b69</td>
+            <td class="upstream">3e101521dd40ba044abb60d96caf055e49d06e18</td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=acme+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=acme"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4116,7 +4118,7 @@ and the repository exists.</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/bash/Makefile#L13">4.3</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/bash/">4.4.12</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/bash/">4.4.18</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=bash+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=bash"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4284,7 +4286,7 @@ and the repository exists.</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/btrfs-progs/Makefile#L11">4.7.2</a></td>
-            <td class="upstream"><a href="http://btrfs.wiki.kernel.org/">4.14.1</a></td>
+            <td class="upstream"><a href="http://btrfs.wiki.kernel.org/">4.15</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=btrfs-progs+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=btrfs-progs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4536,7 +4538,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="coova-chilli uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/coova-chilli/Makefile#L20">b93de20a288c01c2ba28e96e31ad6da01627f45f</a></td>
-            <td class="upstream"><a href="http://www.coova.org/CoovaChilli">e1cae2a79b3e45d61acd544d55f09df1d0e4abd5</a></td>
+            <td class="upstream"><a href="http://www.coova.org/CoovaChilli">8ad8f6178efb1afc31c6ae542bea2d8df3f7b49c</a></td>
             <td class="maintainer"><a href="mailto:kaloz%7B%20at%20%7Dopenwrt(%20dot%20)org">Imre Kaloz</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=coova-chilli+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=coova-chilli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4775,7 +4777,7 @@ and the repository exists.</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/dhcpcd/Makefile#L11">6.4.3</a></td>
-            <td class="upstream"><a href="http://roy.marples.name/projects/dhcpcd">7.0.0</a></td>
+            <td class="upstream"><a href="http://roy.marples.name/projects/dhcpcd">7.0.1</a></td>
             <td class="maintainer"><a href="mailto:roy%7B%20at%20%7Dmarples(%20dot%20)name">Roy Marples</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dhcpcd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=dhcpcd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4817,7 +4819,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="django uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/django/Makefile#L11">1.8.12</a></td>
-            <td class="upstream"><a href="https://www.djangoproject.com/">2.0.1</a></td>
+            <td class="upstream"><a href="https://www.djangoproject.com/">2.0.2</a></td>
             <td class="maintainer"><a href="mailto:mail(%20dot%20)gery%7B%20at%20%7Dgmail(%20dot%20)com">Gergely Kiss</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=django+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=django"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5224,7 +5226,7 @@ and the repository exists.</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/ethtool/Makefile#L11">4.8</a></td>
-            <td class="upstream"><a href="http://www.kernel.org/pub/software/network/ethtool/">4.13</a></td>
+            <td class="upstream"><a href="http://www.kernel.org/pub/software/network/ethtool/">4.15</a></td>
             <td class="maintainer"><a href="mailto:mschiffer%7B%20at%20%7Duniverse-factory(%20dot%20)net">Matthias Schiffer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ethtool+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ethtool"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5478,7 +5480,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="flent-tools uses the git (distributed) version control system"></td>
             <td>util</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/flent-tools/Makefile#L17">03c72cc340def354024351b6500774b11170d5ba</a></td>
-            <td class="upstream"><a href="https://flent.org">8d79bce36d776354dc3564f9670c2967d58cc29f</a></td>
+            <td class="upstream"><a href="https://flent.org">5407203833bd620db282105cb2d5109bc9d42002</a></td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=flent-tools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=flent-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5618,7 +5620,7 @@ and the repository exists.</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/gammu/Makefile#L12">1.37.4</a></td>
-            <td class="upstream"><a href="http://dl.cihar.com/gammu/releases/">Upstream</a></td>
+            <td class="upstream"><a href="http://dl.cihar.com/gammu/releases/">1.39.0</a></td>
             <td class="maintainer"><a href="mailto:villy%7B%20at%20%7Dsft(%20dot%20)ru">Vitaly Protsko</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gammu+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gammu"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5786,7 +5788,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="gnunet uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/gnunet/Makefile#L4">a4295da3df82817ff2fe1fa547374a96a2e0280b</a></td>
-            <td class="upstream"><a href="https://www.gnunet.org/">3f9b17815962021ba69eea1c69ac8f6af787db48</a></td>
+            <td class="upstream"><a href="https://www.gnunet.org/">5c277f0ddb5d8335424157b861ab1003d4a66a63</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gnunet+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gnunet"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6122,7 +6124,7 @@ and the repository exists.</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/hdparm/Makefile#L11">9.50</a></td>
-            <td class="upstream"><a href="http://sourceforge.net/projects/hdparm/">9.53</a></td>
+            <td class="upstream"><a href="http://sourceforge.net/projects/hdparm/">9.54</a></td>
             <td class="maintainer"><a href="mailto:richard(%20dot%20)kunze%7B%20at%20%7Dweb(%20dot%20)de">Richard Kunze</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=hdparm+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=hdparm"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6417,7 +6419,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="iotivity-tinycbor uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/lede-17.01/net/iotivity/Makefile#L165">a088996aa5f59b4f27f20fadad053d88bee357d4</a></td>
-            <td class="upstream">497066ee87dd54341adaa1195bf15ad11ee33b20</td>
+            <td class="upstream">94a4edbbc74c7317ca42a04628151871bf6e0867</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=iotivity-tinycbor+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=iotivity-tinycbor"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6488,7 +6490,7 @@ and the repository exists.</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/isc-dhcp/Makefile#L12">4.3.5</a></td>
-            <td class="upstream"><a href="https://www.isc.org/software/dhcp">4.3.6</a></td>
+            <td class="upstream"><a href="https://www.isc.org/software/dhcp">4.4.0</a></td>
             <td class="maintainer"><a href="mailto:antony%7B%20at%20%7Dphenome(%20dot%20)org">Antony Antony</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=isc-dhcp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=isc-dhcp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7119,7 +7121,7 @@ and the repository exists.</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/libevdev/Makefile#L11">1.4.6</a></td>
-            <td class="upstream"><a href="http://www.freedesktop.org/wiki/Software/libevdev/">1.5.7</a></td>
+            <td class="upstream"><a href="http://www.freedesktop.org/wiki/Software/libevdev/">1.5.8</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libevdev+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libevdev"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7455,7 +7457,7 @@ and the repository exists.</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/libmicrohttpd/Makefile#L11">0.9.52</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/libmicrohttpd/">0.9.58</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/libmicrohttpd/">0.9.59</a></td>
             <td class="maintainer"><a href="mailto:lynxis%7B%20at%20%7Dfe80(%20dot%20)eu">Alexander Couzens</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libmicrohttpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libmicrohttpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7847,7 +7849,7 @@ and the repository exists.</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/libssh2/Makefile#L11">1.7.0</a></td>
-            <td class="upstream"><a href="http://www.libssh2.org/">1.8.0</a></td>
+            <td class="upstream"><a href="https://www.libssh2.org/">1.8.0</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libssh2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=libssh2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8207,7 +8209,7 @@ and the repository exists.</td>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/libs/libxslt">libxslt</a></td>
-            <td></td>
+            <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/libs/libxslt/patches" title="libxslt has a patches subdirectory containing 17 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>17</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/libxslt/Makefile#L11">1.1.28</a></td>
@@ -8408,7 +8410,7 @@ and the repository exists.</td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/devel/lttng-modules/Makefile#L11">2.6.1</a></td>
-            <td class="upstream"><a href="https://lttng.org/">2.10.4</a></td>
+            <td class="upstream"><a href="https://lttng.org/">2.10.5</a></td>
             <td class="maintainer"><a href="mailto:nico%7B%20at%20%7Dopenwrt(%20dot%20)org">Nicolas Thill</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lttng-modules+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=lttng-modules"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8562,7 +8564,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="luajit uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/luajit/Makefile#L12">8e5d7bec0d110aa4ccd7e8492f697ff2a88a55ed</a></td>
-            <td class="upstream"><a href="http://www.luajit.org">c88602f080dcafea6ba222a2f7cc1ea0e41ef3cc</a></td>
+            <td class="upstream"><a href="http://www.luajit.org">03cd5aa749c1bc3bb4b7d4289236b6096cb3dc85</a></td>
             <td class="maintainer"><a href="mailto:milani%7B%20at%20%7Dpichak(%20dot%20)co">Morteza Milani</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=luajit+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=luajit"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9010,7 +9012,7 @@ and the repository exists.</td>
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/mail/mailman/Makefile#L13">2.1.23</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/mailman/">2.1.25</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/mailman/">2.1.26</a></td>
             <td class="maintainer"><a href="mailto:Shulyaka%7B%20at%20%7Dgmail(%20dot%20)com">Denis Shulyaka</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mailman+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mailman"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9080,7 +9082,7 @@ and the repository exists.</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/mdnsresponder/Makefile#L11">576.30.4</a></td>
-            <td class="upstream"><a href="http://developer.apple.com/networking/bonjour/">878.1.1</a></td>
+            <td class="upstream"><a href="http://developer.apple.com/networking/bonjour/">878.20.3</a></td>
             <td class="maintainer"><a href="mailto:cyrus%7B%20at%20%7Dopenwrt(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mdnsresponder+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mdnsresponder"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9108,7 +9110,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="micropython uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/micropython/Makefile#L20">5a1d63fc14dae788f705403a43c2d8639b7dd9cd</a></td>
-            <td class="upstream"><a href="http://micropython.org">a275cb0f487cd6517760271dc01d369c32600c63</a></td>
+            <td class="upstream"><a href="http://micropython.org">253f2bd7be39e201db78960be456ac0f8c61b05f</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=micropython+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=micropython"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9122,7 +9124,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="micropython-lib uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/micropython-lib/Makefile#L20">f81e979c56dddb771ad36ec381b7f2c6cd12111f</a></td>
-            <td class="upstream"><a href="https://github.com/micropython/micropython-lib">0c45f9f6663d2f448564fc8ebf7fa47400138d0a</a></td>
+            <td class="upstream"><a href="https://github.com/micropython/micropython-lib">1e2c8d9ce93908420f0b729d9527bb2a7b50059f</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=micropython-lib+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=micropython-lib"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9319,7 +9321,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="motion uses the git (distributed) version control system"></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/multimedia/motion/Makefile#L20">9479d910f2149b5558788bb86f97f26522794212</a></td>
-            <td class="upstream"><a href="http://www.lavrsen.dk/twiki/bin/view/Motion/WebHome">3d627d5a63a5a02a9883e209b54fae842bb31d94</a></td>
+            <td class="upstream"><a href="http://www.lavrsen.dk/twiki/bin/view/Motion/WebHome">79bd21bb138b0d1e76eca4d5887b595726325721</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=motion+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=motion"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9361,7 +9363,7 @@ and the repository exists.</td>
             <td></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/sound/mpd/Makefile#L11">0.19.19</a></td>
-            <td class="upstream"><a href="http://www.musicpd.org/">0.20.15</a></td>
+            <td class="upstream"><a href="http://www.musicpd.org/">0.20.16</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9585,7 +9587,7 @@ and the repository exists.</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/nano/Makefile#L11">2.7.5</a></td>
-            <td class="upstream"><a href="http://www.nano-editor.org/">2.9.2</a></td>
+            <td class="upstream"><a href="http://www.nano-editor.org/">2.9.3</a></td>
             <td class="maintainer"><a href="mailto:JBennett%7B%20at%20%7Dincomsystems(%20dot%20)biz">Jonathan Bennett</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nano+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=nano"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9606,14 +9608,14 @@ and the repository exists.</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/utils/ncdu">ncdu</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/ncdu/Makefile#L11">1.12</a></td>
-            <td class="upstream"><a href="https://dev.yorhel.nl/ncdu">1.12</a></td>
+            <td class="upstream"><a href="https://dev.yorhel.nl/ncdu">1.13</a></td>
             <td class="maintainer"><a href="mailto:celehner1%7B%20at%20%7Dgmail(%20dot%20)com">Charles Lehner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ncdu+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=ncdu"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9782,7 +9784,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lua-nginx uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/lede-17.01/net/nginx/Makefile#L257">1967998b0eedab1ff51bff8fafa5fc3db47976aa</a></td>
-            <td class="upstream">3078ca6138121a98e22104b9f7015b31d312861b</td>
+            <td class="upstream">a698cb0989b34c1e05cd6af5c0d6d9dbe56edd6b</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lua-nginx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=lua-nginx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9852,7 +9854,7 @@ and the repository exists.</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/node/Makefile#L11">v4.4.5</a></td>
-            <td class="upstream"><a href="http://nodejs.org/">9.4.0</a></td>
+            <td class="upstream"><a href="http://nodejs.org/">9.5.0</a></td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=node"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10259,7 +10261,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="opentracker uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/opentracker/Makefile#L13">ba25d2b2a84a31eac2956b71cb12b4b0748b35f5</a></td>
-            <td class="upstream"><a href="http://erdgeist.org/arts/software/opentracker/">9c7be324f5a4306dd81eab2f982f87e2c42ffdf1</a></td>
+            <td class="upstream"><a href="http://erdgeist.org/arts/software/opentracker/">48c9c6172b2b493291ee46237148d98f91c23ce9</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=opentracker+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=opentracker"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10484,7 +10486,7 @@ and the repository exists.</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/perl-dbi/Makefile#L11">1.634</a></td>
-            <td class="upstream"><a href="http://search.cpan.org/dist/DBI/">1.639</a></td>
+            <td class="upstream"><a href="http://search.cpan.org/dist/DBI/">1.640</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-dbi+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=perl-dbi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10946,7 +10948,7 @@ and the repository exists.</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/php7/Makefile#L9">7.1.1</a></td>
-            <td class="upstream"><a href="http://www.php.net/">7.2.1</a></td>
+            <td class="upstream"><a href="http://www.php.net/">7.2.2</a></td>
             <td class="maintainer"><a href="mailto:mhei%7B%20at%20%7Dheimpold(%20dot%20)de">Michael Heimpold</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=php7+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=php7"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11058,7 +11060,7 @@ and the repository exists.</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/picocom/Makefile#L11">1.7</a></td>
-            <td class="upstream"><a href="http://code.google.com/p/picocom/">3.0</a></td>
+            <td class="upstream"><a href="http://code.google.com/p/picocom/">3.1</a></td>
             <td class="maintainer"><a href="mailto:cyrus%7B%20at%20%7Dopenwrt(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=picocom+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=picocom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11227,7 +11229,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="pps-tools uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/pps-tools/Makefile#L17">0deb9c7e135e9380a6d09e9d2e938a146bb698c8</a></td>
-            <td class="upstream">81394bd538b955b7c48b40d40f7c0032b2ce272c</td>
+            <td class="upstream">cb48b7ecf7079ceba7081c78d4e61e507b0e8d2d</td>
             <td class="maintainer"><a href="mailto:wigyori%7B%20at%20%7Duid0(%20dot%20)hu">Zoltan HERPAI</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=pps-tools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=pps-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11424,7 +11426,7 @@ and the repository exists.</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/python3-setuptools/Makefile#L11">27.2.0</a></td>
-            <td class="upstream"><a href="https://bitbucket.org/pypa/setuptools">38.4.0</a></td>
+            <td class="upstream"><a href="https://bitbucket.org/pypa/setuptools">38.4.1</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python3-setuptools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=python3-setuptools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11816,7 +11818,7 @@ and the repository exists.</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/python-setuptools/Makefile#L11">27.2.0</a></td>
-            <td class="upstream"><a href="https://bitbucket.org/pypa/setuptools">38.4.0</a></td>
+            <td class="upstream"><a href="https://bitbucket.org/pypa/setuptools">38.4.1</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-setuptools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=python-setuptools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12103,14 +12105,14 @@ and the repository exists.</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/net/rsync">rsync</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/net/rsync/files" title="rsync has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/rsync/Makefile#L11">3.1.2</a></td>
-            <td class="upstream"><a href="http://rsync.samba.org/">3.1.2</a></td>
+            <td class="upstream"><a href="http://rsync.samba.org/">3.1.3</a></td>
             <td class="maintainer"><a href="mailto:m(%20dot%20)storchak%7B%20at%20%7Dgmail(%20dot%20)com">Maxim Storchak</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rsync+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=rsync"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12138,7 +12140,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="rtklib uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/utils/rtklib/Makefile#L15">1cec90a9ffa424908ad1a4ca3d52f33f9b94d1f7</a></td>
-            <td class="upstream"><a href="http://www.rtklib.com/">e03ca6ccf9ef8e18014d8b0141d679414ebc995a</a></td>
+            <td class="upstream"><a href="http://www.rtklib.com/">71db0ffa0d9735697c6adfd06fdf766d0e5ce807</a></td>
             <td class="maintainer"><a href="mailto:nunojpg%7B%20at%20%7Dgmail(%20dot%20)com">Nuno Goncalves</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rtklib+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=rtklib"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12306,7 +12308,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="seafile-server uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/seafile-server/Makefile#L18">b9dc96ee845bb0148d9075aec597e6e07652cbdc</a></td>
-            <td class="upstream"><a href="http://seafile.com/">1de7ecd32c0dfaa3fd0eedbd3fc2752d50752dda</a></td>
+            <td class="upstream"><a href="http://seafile.com/">72deafacae9e5c6cfa83f1f466966438449eceef</a></td>
             <td class="maintainer"><a href="mailto:mail(%20dot%20)gery%7B%20at%20%7Dgmail(%20dot%20)com">Gergely Kiss</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=seafile-server+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=seafile-server"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12810,7 +12812,7 @@ and the repository exists.</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/sslh/Makefile#L11">v1.17</a></td>
-            <td class="upstream"><a href="http://rutschle.net/tech/sslh.shtml">v1.19</a></td>
+            <td class="upstream"><a href="http://rutschle.net/tech/sslh.shtml">v1.19b</a></td>
             <td class="maintainer"><a href="mailto:jmccrohan%7B%20at%20%7Dgmail(%20dot%20)com">Jonathan McCrohan</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sslh+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=sslh"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13153,18 +13155,18 @@ and the repository exists.</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/libs/tiff">tiff</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/libs/tiff/patches" title="tiff has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/lede-17.01/libs/tiff/patches" title="tiff has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/tiff/Makefile#L11">4.0.6</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/tiff/Makefile#L11">4.0.9</a></td>
             <td class="upstream"><a href="http://www.remotesensing.org/libtiff/">4.0.9</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tiff+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=tiff"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2015-1547" title="CVE-2015-1547 has a CVSS base score of 4.3">CVE-2015-1547</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-10371" title="CVE-2016-10371 has a CVSS base score of 4.3">CVE-2016-10371</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-3619" title="CVE-2016-3619 has a CVSS base score of 4.3">CVE-2016-3619</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-3620" title="CVE-2016-3620 has a CVSS base score of 5.0">CVE-2016-3620</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-3621" title="CVE-2016-3621 has a CVSS base score of 6.8">CVE-2016-3621</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-3622" title="CVE-2016-3622 has a CVSS base score of 4.3">CVE-2016-3622</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-3623" title="CVE-2016-3623 has a CVSS base score of 5.0">CVE-2016-3623</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-3624" title="CVE-2016-3624 has a CVSS base score of 5.0">CVE-2016-3624</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5102" title="CVE-2016-5102 has a CVSS base score of 4.3">CVE-2016-5102</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5315" title="CVE-2016-5315 has a CVSS base score of 4.3">CVE-2016-5315</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5316" title="CVE-2016-5316 has a CVSS base score of 4.3">CVE-2016-5316</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5317" title="CVE-2016-5317 has a CVSS base score of 4.3">CVE-2016-5317</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5318" title="CVE-2016-5318 has a CVSS base score of 4.3">CVE-2016-5318</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5319" title="CVE-2016-5319 has a CVSS base score of 4.3">CVE-2016-5319</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5321" title="CVE-2016-5321 has a CVSS base score of 4.3">CVE-2016-5321</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5322" title="CVE-2016-5322 has a CVSS base score of 4.3">CVE-2016-5322</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5323" title="CVE-2016-5323 has a CVSS base score of 5.0">CVE-2016-5323</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-5652" title="CVE-2016-5652 has a CVSS base score of 6.8">CVE-2016-5652</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-6223" title="CVE-2016-6223 has a CVSS base score of 6.4">CVE-2016-6223</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-8331" title="CVE-2016-8331 has a CVSS base score of 6.8">CVE-2016-8331</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9273" title="CVE-2016-9273 has a CVSS base score of 4.3">CVE-2016-9273</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9297" title="CVE-2016-9297 has a CVSS base score of 5.0">CVE-2016-9297</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9448" title="CVE-2016-9448 has a CVSS base score of 5.0">CVE-2016-9448</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9532" title="CVE-2016-9532 has a CVSS base score of 4.3">CVE-2016-9532</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9533" title="CVE-2016-9533 has a CVSS base score of 7.5">CVE-2016-9533</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9534" title="CVE-2016-9534 has a CVSS base score of 7.5">CVE-2016-9534</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9535" title="CVE-2016-9535 has a CVSS base score of 7.5">CVE-2016-9535</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9536" title="CVE-2016-9536 has a CVSS base score of 7.5">CVE-2016-9536</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9537" title="CVE-2016-9537 has a CVSS base score of 7.5">CVE-2016-9537</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9538" title="CVE-2016-9538 has a CVSS base score of 7.5">CVE-2016-9538</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9539" title="CVE-2016-9539 has a CVSS base score of 7.5">CVE-2016-9539</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2016-9540" title="CVE-2016-9540 has a CVSS base score of 7.5">CVE-2016-9540</a> </td>
+            <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2017-17095" title="CVE-2017-17095 has a CVSS base score of 6.8">CVE-2017-17095</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2017-17942" title="CVE-2017-17942 has a CVSS base score of 6.8">CVE-2017-17942</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2018-5784" title="CVE-2018-5784 has a CVSS base score of 4.3">CVE-2018-5784</a> </td>
             <td></td>
           </tr>
           <tr class="current" title="Current">
@@ -13258,7 +13260,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="transmission uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/net/transmission/Makefile#L17">35fea28d1a37875ef7480ac061754df617805b19</a></td>
-            <td class="upstream"><a href="http://www.transmissionbt.com">7669c97e12d48334de59929cb18ed5fbf843d726</a></td>
+            <td class="upstream"><a href="http://www.transmissionbt.com">896de2b5931329da7a5733a176cdb9f9e1f159a3</a></td>
             <td class="maintainer"><a href="mailto:cezary%7B%20at%20%7Deko(%20dot%20)one(%20dot%20)pl">Cezary Jackiewicz</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=transmission+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=transmission"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13566,7 +13568,7 @@ and the repository exists.</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/lang/vala/Makefile#L11">0.34.2</a></td>
-            <td class="upstream"><a href="https://wiki.gnome.org/Projects/Vala">0.38.5</a></td>
+            <td class="upstream"><a href="https://wiki.gnome.org/Projects/Vala">0.38.7</a></td>
             <td class="maintainer"><a href="mailto:mail(%20dot%20)gery%7B%20at%20%7Dgmail(%20dot%20)com">Gergely Kiss</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=vala+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=vala"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13608,7 +13610,7 @@ and the repository exists.</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/libs/vips/Makefile#L11">7.42.1</a></td>
-            <td class="upstream"><a href="http://www.vips.ecs.soton.ac.uk/">8.6.1</a></td>
+            <td class="upstream"><a href="http://www.vips.ecs.soton.ac.uk/">8.6.2</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=vips+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=vips"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13931,7 +13933,7 @@ and the repository exists.</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/lede-17.01/multimedia/youtube-dl/Makefile#L11">2016.11.27</a></td>
-            <td class="upstream"><a href="https://youtube-dl.org">2018.01.27</a></td>
+            <td class="upstream"><a href="https://youtube-dl.org">2018.02.04</a></td>
             <td class="maintainer"><a href="mailto:ianchi74%7B%20at%20%7Doutlook(%20dot%20)com">Adrian Panella</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=youtube-dl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=youtube-dl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14244,13 +14246,13 @@ and the repository exists.</td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=bird6-openwrt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt-routing/packages/tree/lede-17.01/bmx6">bmx6</a></td>
-            <td><a href="https://github.com/openwrt-routing/packages/tree/lede-17.01/bmx6/files" title="bmx6 has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
+            <td><a href="https://github.com/openwrt-routing/packages/tree/lede-17.01/bmx6/files" title="bmx6 has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt-routing/packages/tree/lede-17.01/bmx6/patches" title="bmx6 has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bmx6 uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/blob/lede-17.01/bmx6/Makefile#L34">39dd1f2d99ac5a3fa28e92f8173c15039132e181</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt-routing/packages/blob/lede-17.01/bmx6/Makefile#L34">4016a1980d900309771e432d1f7c741d6c48d477</a></td>
             <td class="upstream"><a href="http://bmx6.net/">39dd1f2d99ac5a3fa28e92f8173c15039132e181</a></td>
             <td class="maintainer"><a href="mailto:neumann%7B%20at%20%7Dcgws(%20dot%20)de">Axel Neumann</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=bmx6+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -14368,7 +14370,7 @@ and the repository exists.</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt-routing/packages/blob/lede-17.01/miniupnpd/Makefile#L11">2.0.20170421</a></td>
-            <td class="upstream"><a href="http://miniupnp.free.fr/">2.0.20171212</a></td>
+            <td class="upstream"><a href="http://miniupnp.free.fr/">2.0.20180203</a></td>
             <td class="maintainer"><a href="mailto:fingon%7B%20at%20%7Diki(%20dot%20)fi">Markus Stenberg</a></td>
             <td><a href="https://github.com/openwrt-routing/packages/issues?q=miniupnpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=miniupnpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14725,7 +14727,7 @@ and the repository exists.</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="freeswitch uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/lede-17.01/net/freeswitch/Makefile#L30">cc0a062204cb51311619cd37f51b32b2f266729f</a></td>
-            <td class="upstream"><a href="http://www.freeswitch.org/">87bb7cb5fb6f9fc2ef288b5c3560a85366acead4</a></td>
+            <td class="upstream"><a href="http://www.freeswitch.org/">38153a37ed620234c4c1cdcae5f09868cc164b12</a></td>
             <td class="maintainer"><a href="mailto:openwrt(%20dot%20)mazilo%7B%20at%20%7Drecursor(%20dot%20)net">Mazi Lo</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=freeswitch+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=freeswitch"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15171,12 +15173,12 @@ and the repository exists.</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gcc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gcc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=tree;f=toolchain/gdb">gdb</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=tree;f=toolchain/gdb/patches" title="gdb has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=toolchain/gdb/Makefile#l20">8.0.1</a></td>
-            <td class="upstream">8.0.1</td>
+            <td class="upstream">8.1</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
@@ -15618,7 +15620,7 @@ and the repository exists.</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=tree;f=tools/mkimage/patches" title="mkimage has a patches subdirectory containing 12 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>12</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/lede-17.01;a=blob;f=tools/mkimage/Makefile#l10">2014.10</a></td>
-            <td class="upstream">2018.01-rc3</td>
+            <td class="upstream">2018.03-rc1</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mkimage"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/lede/list/?q=mkimage"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -15929,7 +15931,7 @@ svn: E000110: Error running context: Connection timed out</td>
       </table>
     </details>
     <footer>
-      Last update: Sun, 28 Jan 2018 18:43:00 UTC
+      Last update: Sun, 04 Feb 2018 17:53:51 UTC
       <br>
       Built using <a href="https://manpages.debian.org/man/1/uscan">uscan</a> and <a href="https://github.com/sjvermeu/cvechecker/wiki">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="https://git-scm.com/">Git</a>, <a href="https://www.mercurial-scm.org/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
