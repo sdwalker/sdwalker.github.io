@@ -16,7 +16,7 @@ for (i in areas) {
         areas[i] === "packageKernelLantiq") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else if (areas[i] === "toolchain") {
-      var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "", "", "s", "s"];
+      var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else if (areas[i] === "tools") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else {
