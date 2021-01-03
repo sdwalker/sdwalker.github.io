@@ -222,7 +222,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="arm-trusted-firmware-sunxi uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/boot/arm-trusted-firmware-sunxi/Makefile#l16">dbc8d9496ead9ecdd7c2a276b542a4fbbbf64027</a></td>
-            <td class="upstream">2773536b171ffdc460891d33b3347f9df313a5fc</td>
+            <td class="upstream">c390ecd6db5fadb054466a8d4168d9bbbff2fa95</td>
             <td class="maintainer"><a href="mailto:hauke%7B%20at%20%7Dhauke-m(%20dot%20)de">Hauke Mehrtens</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=arm-trusted-firmware-sunxi"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=arm-trusted-firmware-sunxi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -597,6 +597,7 @@
             <th id="packageDevelHeaderMaintainer">Maintainer</th>
             <th id="packageDevelHeaderTickets" title="Tickets">T</th>
             <th id="packageDevelHeaderPatchwork" title="Patchwork">P</th>
+            <th id="packageDevelHeaderCVE"><abbr title="Common Vulnerabilities and Exposures">CVE</abbr></th>
           </tr>
         </thead>
         <tbody>
@@ -610,6 +611,7 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=binutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=binutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2020-35448" title="CVE-2020-35448 has a CVSS base score of 7.8">CVE-2020-35448</a> </td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -621,6 +623,7 @@
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -632,6 +635,7 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=perf"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -643,17 +647,19 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=strace"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=strace"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/devel/trace-cmd">trace-cmd</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/devel/trace-cmd/patches" title="trace-cmd has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td>devel</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/devel/trace-cmd/Makefile#l4">v2.6.1</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/devel/trace-cmd/Makefile#l4">v2.9.1</a></td>
             <td class="upstream">v2.9.1</td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=trace-cmd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=trace-cmd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -665,6 +671,7 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=valgrind"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=valgrind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
           </tr>
         </tbody>
       </table>
@@ -705,8 +712,8 @@
             <td></td>
             <td></td>
             <td>firmware</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/firmware/ath10k-ct-firmware/Makefile#l4">2020-07-02</a></td>
-            <td class="upstream"><a href="https://www.candelatech.com/downloads/2020-07-02">Upstream</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/firmware/ath10k-ct-firmware/Makefile#l4">2020-11-08</a></td>
+            <td class="upstream"><a href="https://www.candelatech.com/downloads/2020-11-08">Upstream</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ath10k-ct-firmware"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ath10k-ct-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -982,7 +989,7 @@
             <td></td>
             <td>firmware</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/firmware/intel-microcode/Makefile#l11">20200616</a></td>
-            <td class="upstream"><a href="http://ftp.debian.org/debian/pool/non-free/i/intel-microcode/">20201110</a></td>
+            <td class="upstream"><a href="http://ftp.debian.org/debian/pool/non-free/i/intel-microcode/">20201118</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=intel-microcode"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=intel-microcode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1299,13 +1306,13 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=tiacx111usbc1b"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tiacx111usbc1b"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/ath10k-ct">ath10k-ct</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/ath10k-ct/patches" title="ath10k-ct has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ath10k-ct uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/ath10k-ct/Makefile#l12">1d28d176e5b6e63a6583f497adf68e1d9c1dc962</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/ath10k-ct/Makefile#l12">b753e8bf22b94297acbaa370b4cb0be87e3da4b8</a></td>
             <td class="upstream">b753e8bf22b94297acbaa370b4cb0be87e3da4b8</td>
             <td class="maintainer"><a href="mailto:greearb%7B%20at%20%7Dcandelatech(%20dot%20)com">Ben Greear</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ath10k-ct"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -1491,13 +1498,13 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=start4x_elf"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=start4x_elf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/bcm63xx-cfe">bcm63xx-cfe</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bcm63xx-cfe uses the git (distributed) version control system"></td>
             <td>boot</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/bcm63xx-cfe/Makefile#l10">efe3b81121a84c0b8ba6a7d0d47cd5eeeb23808d</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/bcm63xx-cfe/Makefile#l10">c0b36917ea565c4ffac2e723f77c9d27d0691c33</a></td>
             <td class="upstream">c0b36917ea565c4ffac2e723f77c9d27d0691c33</td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bcm63xx-cfe"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -1527,13 +1534,13 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=button-hotplug"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=button-hotplug"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/cryptodev-linux">cryptodev-linux</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/cryptodev-linux/patches" title="cryptodev-linux has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/cryptodev-linux/Makefile#l13">1.10</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/cryptodev-linux/Makefile#l13">1.11</a></td>
             <td class="upstream"><a href="http://cryptodev-linux.org/">1.11</a></td>
             <td class="maintainer"><a href="mailto:ansuelsmth%7B%20at%20%7Dgmail(%20dot%20)com">Ansuel Smith</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=cryptodev-linux"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -1602,7 +1609,7 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211">mac80211</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/files" title="mac80211 has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/patches" title="mac80211 has a patches subdirectory containing 147 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>147</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/files" title="mac80211 has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/patches" title="mac80211 has a patches subdirectory containing 155 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>155</sup></a></td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/mac80211/Makefile#l13">5.8.18-1</a></td>
@@ -2130,14 +2137,14 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=libnl-tiny"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libnl-tiny"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/libs/libpcap">libpcap</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/libs/libpcap/patches" title="libpcap has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/libs/libpcap/Makefile#l11">1.9.1</a></td>
-            <td class="upstream"><a href="http://www.tcpdump.org/">1.9.1</a></td>
+            <td class="upstream"><a href="http://www.tcpdump.org/">1.10.0</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=libpcap"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libpcap"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2382,13 +2389,13 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ustream-ssl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ustream-ssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/libs/wolfssl">wolfssl</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/libs/wolfssl/patches" title="wolfssl has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/libs/wolfssl/Makefile#l11">4.5.0-stable</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/libs/wolfssl/Makefile#l11">4.6.0-stable</a></td>
             <td class="upstream"><a href="http://www.wolfssl.com/">4.6.0-stable</a></td>
             <td class="maintainer"><a href="mailto:cotequeiroz%7B%20at%20%7Dgmail(%20dot%20)com">Eneas U de Queiroz</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=wolfssl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -2493,8 +2500,8 @@
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/config/netifd/files" title="netifd has a files subdirectory containing 12 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>12</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="netifd uses the git (distributed) version control system"></td>
             <td>base</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/config/netifd/Makefile#l9">88c6003e2b4fdc0c990045ff140bf19b37ba745a</a></td>
-            <td class="upstream">88c6003e2b4fdc0c990045ff140bf19b37ba745a</td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/config/netifd/Makefile#l9">39fb8c3edc74a7e419d95e2946a0b5a1206edc25</a></td>
+            <td class="upstream">39fb8c3edc74a7e419d95e2946a0b5a1206edc25</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=netifd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=netifd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2553,7 +2560,7 @@
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/config/vxlan/files" title="vxlan has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/config/vxlan/Makefile#l4">6</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/config/vxlan/Makefile#l4">7</a></td>
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:mschiffer%7B%20at%20%7Duniverse-factory(%20dot%20)net">Matthias Schiffer</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=vxlan"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -2664,13 +2671,13 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=map"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=map"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/ipv6/odhcp6c">odhcp6c</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/ipv6/odhcp6c/files" title="odhcp6c has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="odhcp6c uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/ipv6/odhcp6c/Makefile#l16">0ffa3a31f7146d320214f431291c1196070a010f</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/ipv6/odhcp6c/Makefile#l16">eac1961983b8e7a74c494feedcb878170b135072</a></td>
             <td class="upstream">eac1961983b8e7a74c494feedcb878170b135072</td>
             <td class="maintainer"><a href="mailto:dedeckeh%7B%20at%20%7Dgmail(%20dot%20)com">Hans Dedecker</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=odhcp6c"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -2793,14 +2800,14 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=lldpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lldpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/odhcpd">odhcpd</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/odhcpd/files" title="odhcpd has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="odhcpd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/services/odhcpd/Makefile#l16">b75bcad7bd5fd03f64011a532b9960d78e4aac22</a></td>
-            <td class="upstream">b75bcad7bd5fd03f64011a532b9960d78e4aac22</td>
+            <td class="upstream">3bda90079ec5574ef469e2a7804808302f17769d</td>
             <td class="maintainer"><a href="mailto:dedeckeh%7B%20at%20%7Dgmail(%20dot%20)com">Hans Dedecker</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=odhcpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=odhcpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2820,11 +2827,11 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/ppp">ppp</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/ppp/files" title="ppp has a files subdirectory containing 13 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>13</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/ppp/patches" title="ppp has a patches subdirectory containing 34 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>34</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/ppp/files" title="ppp has a files subdirectory containing 13 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>13</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/ppp/patches" title="ppp has a patches subdirectory containing 33 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>33</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ppp uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/services/ppp/Makefile#l17">ad3937a0a38a696eb1a37dbf8f92e8e6072cdccb</a></td>
-            <td class="upstream"><a href="https://ppp.samba.org/">049d5b842deae68a0e59d5def2c19940c0042084</a></td>
+            <td class="upstream"><a href="https://ppp.samba.org/">952cfa5acc41ad4ceee160420a188a388bb340cf</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ppp"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ppp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2932,7 +2939,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/utils/bpftools/Makefile#l11">5.8.9</a></td>
-            <td class="upstream"><a href="http://www.kernel.org">5.10.3</a></td>
+            <td class="upstream"><a href="http://www.kernel.org">5.10.4</a></td>
             <td class="maintainer"><a href="mailto:itugrok%7B%20at%20%7Dyahoo(%20dot%20)com">Tony Ambardar</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bpftools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bpftools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3003,27 +3010,26 @@
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=iperf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/utils/iperf3">iperf3</a></td>
             <td></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/utils/iperf3/Makefile#l11">3.9</a></td>
-            <td class="upstream"><a href="https://github.com/esnet/iperf">Upstream</a></td>
+            <td class="upstream"><a href="https://github.com/esnet/iperf">3.9</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=iperf3"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=iperf3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td>uscan warn: reading webpage
-  https://downloads.es.net/pub/iperf/ failed: 500 Can't connect to downloads.es.net:443 (Connection refused)</td>
+            <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/utils/iproute2">iproute2</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/utils/iproute2/files" title="iproute2 has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/utils/iproute2/patches" title="iproute2 has a patches subdirectory containing 15 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>15</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/utils/iproute2/Makefile#l11">5.9.0</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/utils/iproute2/Makefile#l11">5.10.0</a></td>
             <td class="upstream"><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2">5.10.0</a></td>
             <td class="maintainer"><a href="mailto:russell%7B%20at%20%7Dpersonaltelco(%20dot%20)net">Russell Senior</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=iproute2"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -3186,14 +3192,14 @@
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rssileds"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/utils/tcpdump">tcpdump</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/utils/tcpdump/patches" title="tcpdump has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/utils/tcpdump/Makefile#l11">4.9.3</a></td>
-            <td class="upstream"><a href="http://www.tcpdump.org/">4.9.3</a></td>
+            <td class="upstream"><a href="http://www.tcpdump.org/">4.99.0</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=tcpdump"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tcpdump"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3586,7 +3592,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adb uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/utils/adb/Makefile#l10">6fe92d1a3fb17545d82d020a3c995f32e6b71f9d</a></td>
-            <td class="upstream"><a href="http://tools.android.com/">f3f83ace672b096d351ded8a1d24b80a5fa1bc23</a></td>
+            <td class="upstream"><a href="http://tools.android.com/">0f2c5417c39ed91fb520f7f2df4fcaeedcc432d0</a></td>
             <td class="maintainer"><a href="mailto:hyniu%7B%20at%20%7Do2(%20dot%20)pl">Henryk Heisig</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=adb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=adb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3622,7 +3628,7 @@
             <td></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/utils/busybox/Makefile#l11">1.31.1</a></td>
-            <td class="upstream"><a href="http://busybox.net/">1.32.0</a></td>
+            <td class="upstream"><a href="http://busybox.net/">1.33.0</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=busybox"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=busybox"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4646,7 +4652,7 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/net/banip/files" title="banip has a files subdirectory containing 8 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>8</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/banip/Makefile#L9">0.3.12</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/banip/Makefile#L9">0.3.13</a></td>
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:dev%7B%20at%20%7Dbrenken(%20dot%20)org">Dirk Brenken</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=banip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -4657,7 +4663,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/bash">bash</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/utils/bash/files" title="bash has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/utils/bash/patches" title="bash has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/utils/bash/files" title="bash has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/utils/bash/patches" title="bash has a patches subdirectory containing 6 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>6</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/bash/Makefile#L11">5.1</a></td>
@@ -4755,7 +4761,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/bfdd">bfdd</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/net/bfdd/files" title="bfdd has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/bfdd/patches" title="bfdd has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/net/bfdd/files" title="bfdd has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/bfdd/patches" title="bfdd has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bfdd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/bfdd/Makefile#L16">c54534beb524afc3972039f57b56ec65332b43f7</a></td>
@@ -5088,14 +5094,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/canutils">canutils</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/canutils/patches" title="canutils has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/canutils/Makefile#L11">2020.11.0</a></td>
-            <td class="upstream"><a href="https://github.com/linux-can/can-utils">2020.11.0</a></td>
+            <td class="upstream"><a href="https://github.com/linux-can/can-utils">2020.12.0</a></td>
             <td class="maintainer"><a href="mailto:anton(%20dot%20)a(%20dot%20)glukhov%7B%20at%20%7Dgmail(%20dot%20)com">Anton Glukhov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=canutils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=canutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5256,14 +5262,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/cifs-utils">cifs-utils</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/cifs-utils/patches" title="cifs-utils has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/cifs-utils/Makefile#L11">6.11</a></td>
-            <td class="upstream"><a href="https://wiki.samba.org/index.php/LinuxCIFS_utils">6.11</a></td>
+            <td class="upstream"><a href="https://wiki.samba.org/index.php/LinuxCIFS_utils">6.12</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=cifs-utils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=cifs-utils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5654,8 +5660,8 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/net/dawn/files" title="dawn has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="dawn uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/dawn/Makefile#L13">b639145ce90230e693c41e71624ea0c0798c424d</a></td>
-            <td class="upstream"><a href="https://github.com/berlin-open-wireless-lab/DAWN.git">b639145ce90230e693c41e71624ea0c0798c424d</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/dawn/Makefile#L13">8ce09d64def9a1ad4bbf57dd3fe724a8a9b93334</a></td>
+            <td class="upstream"><a href="https://github.com/berlin-open-wireless-lab/DAWN.git">8ce09d64def9a1ad4bbf57dd3fe724a8a9b93334</a></td>
             <td class="maintainer"><a href="mailto:vincent%7B%20at%20%7Dsystemli(%20dot%20)org">Nick Hainke</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dawn+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dawn"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5823,7 +5829,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/dhcpcd/Makefile#L11">7.2.2</a></td>
-            <td class="upstream"><a href="http://roy.marples.name/projects/dhcpcd">9.3.4</a></td>
+            <td class="upstream"><a href="http://roy.marples.name/projects/dhcpcd">9.4.0</a></td>
             <td class="maintainer"><a href="mailto:marko(%20dot%20)ratkaj%7B%20at%20%7Dsartura(%20dot%20)hr">Marko Ratkaj</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dhcpcd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dhcpcd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6152,14 +6158,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/dnscrypt-proxy2">dnscrypt-proxy2</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/dnscrypt-proxy2/files" title="dnscrypt-proxy2 has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/dnscrypt-proxy2/Makefile#L11">2.0.44</a></td>
-            <td class="upstream"><a href="https://github.com/DNSCrypt/dnscrypt-proxy">2.0.44</a></td>
+            <td class="upstream"><a href="https://github.com/DNSCrypt/dnscrypt-proxy">2.0.45</a></td>
             <td class="maintainer"><a href="mailto:josef(%20dot%20)schlehofer%7B%20at%20%7Dnic(%20dot%20)cz">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dnscrypt-proxy2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dnscrypt-proxy2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6467,7 +6473,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/etesync-server/Makefile#L4">0.3.0</a></td>
-            <td class="upstream"><a href="https://www.etesync.com/">0.6.1</a></td>
+            <td class="upstream"><a href="https://www.etesync.com/">0.7.0</a></td>
             <td class="maintainer"><a href="mailto:peter(%20dot%20)stadler%7B%20at%20%7Dstudent(%20dot%20)uibk(%20dot%20)ac(%20dot%20)at">Peter Stadler</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=etesync-server+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=etesync-server"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6527,6 +6533,20 @@
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=exfatprogs+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=exfatprogs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/mail/exim">exim</a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/mail/exim/patches" title="exim has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td></td>
+            <td>mail</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/mail/exim/Makefile#L4">4.94</a></td>
+            <td class="upstream"><a href="http://www.exim.org/">4.94</a></td>
+            <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=exim+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=exim"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
@@ -6796,13 +6816,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/fontconfig">fontconfig</a></td>
             <td></td>
             <td></td>
             <td>xorg-util</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/fontconfig/Makefile#L11">2.11.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/fontconfig/Makefile#L11">2.13.93</a></td>
             <td class="upstream"><a href="http://fontconfig.org/">2.13.93</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=fontconfig+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -7160,14 +7180,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/git">git</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/git/patches" title="git has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/git/Makefile#L11">2.29.2</a></td>
-            <td class="upstream"><a href="https://git-scm.com">2.29.2</a></td>
+            <td class="upstream"><a href="https://git-scm.com">2.30.0</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=git+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=git"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7231,20 +7251,19 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/glib2">glib2</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/glib2/patches" title="glib2 has a patches subdirectory containing 6 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>6</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/glib2/Makefile#L11">2.66.3</a></td>
-            <td class="upstream"><a href="http://www.gtk.org/">Upstream</a></td>
+            <td class="upstream"><a href="http://www.gtk.org/">2.67.1</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=glib2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=glib2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: no matching files for watch line
-  https://ftp.gnome.org/pub/gnome/sources/glib/([\d\.]+)/glib-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|zip|tgz|tbz|txz))</td>
+            <td></td>
           </tr>
           <tr class="noWatchFile" title="No watch file">
             <td>!</td>
@@ -7512,35 +7531,33 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/multimedia/grilo">grilo</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/multimedia/grilo/files" title="grilo has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/multimedia/grilo/Makefile#L9">0.3.13</a></td>
-            <td class="upstream"><a href="https://wiki.gnome.org/Projects/Grilo">Upstream</a></td>
+            <td class="upstream"><a href="https://wiki.gnome.org/Projects/Grilo">0.3.13</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=grilo+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=grilo"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: no matching files for watch line
-  https://download.gnome.org/sources/grilo/([\d\.]+)/grilo-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|zip|tgz|tbz|txz))</td>
+            <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/multimedia/grilo-plugins">grilo-plugins</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/multimedia/grilo-plugins/patches" title="grilo-plugins has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/multimedia/grilo-plugins/Makefile#L9">0.3.12</a></td>
-            <td class="upstream"><a href="https://wiki.gnome.org/Projects/Grilo">Upstream</a></td>
+            <td class="upstream"><a href="https://wiki.gnome.org/Projects/Grilo">0.3.12</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=grilo-plugins+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=grilo-plugins"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: no matching files for watch line
-  https://download.gnome.org/sources/grilo-plugins/([\d\.]+)/grilo-plugins-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|zip|tgz|tbz|txz))</td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -7724,14 +7741,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/haveged">haveged</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/haveged/files" title="haveged has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/haveged/Makefile#L11">1.9.13</a></td>
-            <td class="upstream"><a href="http://www.issihosts.com/haveged/">1.9.13</a></td>
+            <td class="upstream"><a href="http://www.issihosts.com/haveged/">1.9.14</a></td>
             <td class="maintainer"><a href="mailto:hannu(%20dot%20)nyman%7B%20at%20%7Diki(%20dot%20)fi">Hannu Nyman</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=haveged+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=haveged"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8179,7 +8196,7 @@
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/multimedia/imagemagick/Makefile#L9">7.0.9-5</a></td>
-            <td class="upstream"><a href="https://www.imagemagick.org/">7.0.10-53</a></td>
+            <td class="upstream"><a href="https://www.imagemagick.org/">7.0.10-54</a></td>
             <td class="maintainer"><a href="mailto:val(%20dot%20)kulkov%7B%20at%20%7Dgmail(%20dot%20)com">Val Kulkov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=imagemagick+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=imagemagick"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8480,20 +8497,19 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/json-glib">json-glib</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/json-glib/patches" title="json-glib has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/json-glib/Makefile#L11">1.6.0</a></td>
-            <td class="upstream"><a href="https://wiki.gnome.org/Projects/JsonGlib">Upstream</a></td>
+            <td class="upstream"><a href="https://wiki.gnome.org/Projects/JsonGlib">1.6.0</a></td>
             <td class="maintainer"><a href="mailto:sebastian_ml%7B%20at%20%7Dgmx(%20dot%20)net">Sebastian Kemper</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=json-glib+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=json-glib"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: no matching files for watch line
-  https://ftp.gnome.org/pub/gnome/sources/json-glib/([\d\.]+)/json-glib-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|zip|tgz|tbz|txz))</td>
+            <td></td>
           </tr>
           <tr class="indeterminable" title="Indeterminable">
             <td>?</td>
@@ -8531,7 +8547,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/kcptun/Makefile#L4">20201010</a></td>
-            <td class="upstream"><a href="https://github.com/xtaci/kcptun">20201126</a></td>
+            <td class="upstream"><a href="https://github.com/xtaci/kcptun">20210103</a></td>
             <td class="maintainer"><a href="mailto:liudf0716%7B%20at%20%7Dgmail(%20dot%20)com">Dengfeng Liu</a>, <a href="mailto:expiron18%7B%20at%20%7Dgmail(%20dot%20)com">Chao Liu</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=kcptun+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=kcptun"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8566,14 +8582,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/keyutils">keyutils</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/keyutils/patches" title="keyutils has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/keyutils/Makefile#L9">1.6.3</a></td>
-            <td class="upstream"><a href="https://people.redhat.com/dhowells/keyutils/">1.6.1</a></td>
+            <td class="upstream"><a href="https://people.redhat.com/dhowells/keyutils/">1.6.3</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=keyutils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=keyutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8692,14 +8708,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ksmbd-tools">ksmbd-tools</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ksmbd-tools/files" title="ksmbd-tools has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/ksmbd-tools/Makefile#L4">3.3.1</a></td>
-            <td class="upstream"><a href="https://github.com/cifsd-team/cifsd-tools">3.3.1</a></td>
+            <td class="upstream"><a href="https://github.com/cifsd-team/cifsd-tools">3.3.2</a></td>
             <td class="maintainer"><a href="mailto:andy(%20dot%20)walsh44+github%7B%20at%20%7Dgmail(%20dot%20)com">Andy Walsh</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ksmbd-tools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ksmbd-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9549,7 +9565,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libimobiledevice">libimobiledevice</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/libs/libimobiledevice/patches" title="libimobiledevice has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/libs/libimobiledevice/patches" title="libimobiledevice has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libimobiledevice/Makefile#L11">1.3.0</a></td>
@@ -9728,14 +9744,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libmicrohttpd">libmicrohttpd</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libmicrohttpd/Makefile#L11">0.9.71</a></td>
-            <td class="upstream"><a href="https://www.gnu.org/software/libmicrohttpd/">0.9.71</a></td>
+            <td class="upstream"><a href="https://www.gnu.org/software/libmicrohttpd/">0.9.72</a></td>
             <td class="maintainer"><a href="mailto:lynxis%7B%20at%20%7Dfe80(%20dot%20)eu">Alexander Couzens</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libmicrohttpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libmicrohttpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10178,6 +10194,20 @@
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/libs/libpqxx">libpqxx</a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/libs/libpqxx/patches" title="libpqxx has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
+            <td><img src="icons/git.png" width="16" height="16" alt="git" title="libpqxx uses the git (distributed) version control system"></td>
+            <td>libs</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libpqxx/Makefile#L4">7.3.0</a></td>
+            <td class="upstream"><a href="http://pqxx.org/development/libpqxx">7.3.0</a></td>
+            <td class="maintainer"><a href="mailto:garikello%7B%20at%20%7Dgmail(%20dot%20)com">Igor Bezzubchenko</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=libpqxx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libpqxx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libpsl">libpsl</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libpsl/patches" title="libpsl has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
@@ -10344,14 +10374,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libshout">libshout</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libshout/patches" title="libshout has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libshout/Makefile#L9">2.4.4</a></td>
-            <td class="upstream"><a href="http://www.icecast.org">2.4.4</a></td>
+            <td class="upstream"><a href="http://www.icecast.org">2.4.5</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libshout+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libshout"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10400,20 +10430,19 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libsoup">libsoup</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libsoup/Makefile#L9">2.72.0</a></td>
-            <td class="upstream"><a href="https://wiki.gnome.org/Projects/libsoup">Upstream</a></td>
+            <td class="upstream"><a href="https://wiki.gnome.org/Projects/libsoup">2.72.0</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libsoup+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libsoup"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: no matching files for watch line
-  https://ftp.gnome.org/pub/gnome/sources/libsoup/([\d\.]+)/libsoup-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|zip|tgz|tbz|txz))</td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -10660,7 +10689,7 @@
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libulfius/Makefile#L4">2.6.9</a></td>
-            <td class="upstream"><a href="https://github.com/babelouest/ulfius">2.7.0</a></td>
+            <td class="upstream"><a href="https://github.com/babelouest/ulfius">2.7.1</a></td>
             <td class="maintainer"><a href="mailto:matzeton%7B%20at%20%7Dgooglemail(%20dot%20)com">Toni Uhlig</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libulfius+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libulfius"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10919,14 +10948,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="noWatchFile" title="No watch file">
-            <td>!</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libx264">libx264</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libx264/patches" title="libx264 has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
-            <td></td>
+            <td><img src="icons/git.png" width="16" height="16" alt="git" title="libx264 uses the git (distributed) version control system"></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libx264/Makefile#L11">snapshot-20190324-2245</a></td>
-            <td class="upstream"><a href="https://www.videolan.org/developers/x264.html">Upstream</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libx264/Makefile#L16">4121277b40a667665d4eea1726aefdc55d12d110</a></td>
+            <td class="upstream"><a href="https://www.videolan.org/developers/x264.html">8bd6d28025c9dcc101cb194f9141bcff3ea91500</a></td>
             <td class="maintainer"><a href="mailto:ianchi74%7B%20at%20%7Doutlook(%20dot%20)com">Adrian Panella</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libx264+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libx264"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11051,8 +11080,8 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/net/lighttpd/files" title="lighttpd has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/lighttpd/patches" title="lighttpd has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/lighttpd/Makefile#L11">1.4.57</a></td>
-            <td class="upstream"><a href="https://www.lighttpd.net/">1.4.57</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/lighttpd/Makefile#L11">1.4.58</a></td>
+            <td class="upstream"><a href="https://www.lighttpd.net/">1.4.58</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lighttpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lighttpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12124,14 +12153,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/minicom">minicom</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/minicom/patches" title="minicom has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/minicom/Makefile#L11">2.7.1</a></td>
-            <td class="upstream"><a href="http://alioth.debian.org/projects/minicom/">2.7.1</a></td>
+            <td class="upstream"><a href="http://alioth.debian.org/projects/minicom/">2.8</a></td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=minicom+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=minicom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12180,13 +12209,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/miniupnpc">miniupnpc</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/miniupnpc/patches" title="miniupnpc has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/miniupnpc/Makefile#L11">2.2.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/miniupnpc/Makefile#L11">2.2.1</a></td>
             <td class="upstream"><a href="https://miniupnp.tuxfamily.org">2.2.1</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=miniupnpc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -12194,13 +12223,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/miniupnpd">miniupnpd</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/miniupnpd/files" title="miniupnpd has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/miniupnpd/patches" title="miniupnpd has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/miniupnpd/Makefile#L11">2.2.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/miniupnpd/Makefile#L11">2.2.1</a></td>
             <td class="upstream"><a href="https://miniupnp.tuxfamily.org/">2.2.1</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=miniupnpd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -12215,7 +12244,7 @@
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/minizip/Makefile#L10">2.9.3</a></td>
-            <td class="upstream"><a href="https://github.com/nmoinvaz/minizip">2.10.5</a></td>
+            <td class="upstream"><a href="https://github.com/nmoinvaz/minizip">2.10.6</a></td>
             <td class="maintainer"><a href="mailto:dwmw2%7B%20at%20%7Dinfradead(%20dot%20)org">David Woodhouse</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=minizip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=minizip"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12349,14 +12378,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/moreutils">moreutils</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/moreutils/patches" title="moreutils has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/moreutils/Makefile#L11">0.64</a></td>
-            <td class="upstream"><a href="https://joeyh.name/code/moreutils/">0.64</a></td>
+            <td class="upstream"><a href="https://joeyh.name/code/moreutils/">0.65</a></td>
             <td class="maintainer"><a href="mailto:nikil(%20dot%20)mehta%7B%20at%20%7Dgmail(%20dot%20)com">Nikil Mehta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=moreutils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=moreutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12580,7 +12609,7 @@
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/mail/mutt/Makefile#L11">1.14.7</a></td>
-            <td class="upstream"><a href="http://www.mutt.org/">2.0.3</a></td>
+            <td class="upstream"><a href="http://www.mutt.org/">2.0.4</a></td>
             <td class="maintainer"><a href="mailto:phil%7B%20at%20%7Dzankapfel(%20dot%20)net">Phil Eichinger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mutt+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mutt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12593,7 +12622,7 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/net/mwan3/files" title="mwan3 has a files subdirectory containing 12 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>12</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/mwan3/src" title="mwan3 has a src subdirectory containing 1 file"><img src="icons/page_code.png" width="16" height="16" alt="src"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/mwan3/Makefile#L11">2.10.5</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/mwan3/Makefile#L11">2.10.6</a></td>
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:fe%7B%20at%20%7Ddev(%20dot%20)tdt(%20dot%20)de">Florian Eckert</a>, <a href="mailto:aaronjg%7B%20at%20%7Dalumni(%20dot%20)stanford(%20dot%20)edu">Aaron Goodman</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mwan3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -13070,7 +13099,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lua-nginx uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/net/nginx/Makefile#L495">e94f2e5d64daa45ff396e262d8dab8e56f5f10e0</a></td>
-            <td class="upstream">138c1b96423aa26defe00fe64dd5760ef17e5ad8</td>
+            <td class="upstream">23e40f3fd29499fef94d9a173bc29ac5dda197fd</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lua-nginx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lua-nginx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13119,14 +13148,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ngircd">ngircd</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ngircd/files" title="ngircd has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/ngircd/Makefile#L11">26</a></td>
-            <td class="upstream"><a href="https://ngircd.barton.de">26</a></td>
+            <td class="upstream"><a href="https://ngircd.barton.de">26.1</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ngircd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ngircd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13245,14 +13274,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-hid">node-hid</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-hid/patches" title="node-hid has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-hid/Makefile#L12">1.3.2</a></td>
-            <td class="upstream"><a href="https://github.com/node-hid/node-hid">2.1.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-hid/Makefile#L12">2.1.1</a></td>
+            <td class="upstream"><a href="https://www.npmjs.com/package/node-hid">2.1.1</a></td>
             <td class="maintainer"><a href="mailto:morikw2%7B%20at%20%7Dgmail(%20dot%20)com">Hirokazu MORIKAWA</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-hid+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=node-hid"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13265,35 +13294,35 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-homebridge/files" title="node-homebridge has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/master/lang/node-homebridge/patches" title="node-homebridge has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-homebridge/Makefile#L9">1.2.3</a></td>
-            <td class="upstream"><a href="https://www.npmjs.org/package/homebridge">1.2.4</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-homebridge/Makefile#L9">1.2.4</a></td>
+            <td class="upstream"><a href="https://www.npmjs.org/package/homebridge">1.2.5</a></td>
             <td class="maintainer"><a href="mailto:morikw2%7B%20at%20%7Dgmail(%20dot%20)com">Hirokazu MORIKAWA</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-homebridge+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=node-homebridge"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-javascript-obfuscator">node-javascript-obfuscator</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-javascript-obfuscator/Makefile#L9">2.9.4</a></td>
-            <td class="upstream"><a href="https://www.npmjs.org/package/javascript-obfuscator">2.9.4</a></td>
+            <td class="upstream"><a href="https://www.npmjs.org/package/javascript-obfuscator">2.10.1</a></td>
             <td class="maintainer"><a href="mailto:zbynek(%20dot%20)kocur%7B%20at%20%7Dfel(%20dot%20)cvut(%20dot%20)cz">Zbynek Kocur</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-javascript-obfuscator+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=node-javascript-obfuscator"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-serialport">node-serialport</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-serialport/patches" title="node-serialport has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-serialport/Makefile#L12">9.0.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-serialport/Makefile#L12">9.0.4</a></td>
             <td class="upstream"><a href="https://serialport.io/">9.0.4</a></td>
             <td class="maintainer"><a href="mailto:morikw2%7B%20at%20%7Dgmail(%20dot%20)com">Hirokazu MORIKAWA</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-serialport+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -13301,13 +13330,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/node-serialport-bindings">node-serialport-bindings</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-serialport-bindings/Makefile#L10">9.0.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node-serialport-bindings/Makefile#L10">9.0.4</a></td>
             <td class="upstream"><a href="https://www.npmjs.com/package/@serialport/bindings">9.0.4</a></td>
             <td class="maintainer"><a href="mailto:morikw2%7B%20at%20%7Dgmail(%20dot%20)com">Hirokazu MORIKAWA</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node-serialport-bindings+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -13497,14 +13526,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/oath-toolkit">oath-toolkit</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/oath-toolkit/Makefile#L11">2.6.4</a></td>
-            <td class="upstream"><a href="http://www.nongnu.org/oath-toolkit/index.html">2.6.4</a></td>
+            <td class="upstream"><a href="http://www.nongnu.org/oath-toolkit/index.html">2.6.5</a></td>
             <td class="maintainer"><a href="mailto:fam%7B%20at%20%7Deuphon(%20dot%20)net">Fam Zheng</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=oath-toolkit+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=oath-toolkit"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13525,19 +13554,20 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ocserv">ocserv</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ocserv/files" title="ocserv has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/ocserv/Makefile#L11">1.1.2</a></td>
-            <td class="upstream"><a href="http://www.infradead.org/ocserv/">1.1.2</a></td>
+            <td class="upstream"><a href="http://www.infradead.org/ocserv/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:n(%20dot%20)mavrogiannopoulos%7B%20at%20%7Dgmail(%20dot%20)com">Nikos Mavrogiannopoulos</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ocserv+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ocserv"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading FTP directory
+  ftp://ftp.infradead.org/pub/ocserv/ failed: 500 Connection refused</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -13623,19 +13653,20 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/openconnect">openconnect</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/openconnect/files" title="openconnect has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/openconnect/Makefile#L11">8.10</a></td>
-            <td class="upstream"><a href="https://www.infradead.org/openconnect/">8.10</a></td>
+            <td class="upstream"><a href="https://www.infradead.org/openconnect/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:n(%20dot%20)mavrogiannopoulos%7B%20at%20%7Dgmail(%20dot%20)com">Nikos Mavrogiannopoulos</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=openconnect+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=openconnect"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading FTP directory
+  ftp://ftp.infradead.org/pub/openconnect/ failed: 500 Connection refused</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -13721,14 +13752,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/openocd">openocd</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/utils/openocd/patches" title="openocd has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
+            <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="openocd uses the git (distributed) version control system"></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/openocd/Makefile#L11">db23c13d42f49da238bed548d3421c1651ad7072</a></td>
-            <td class="upstream"><a href="http://openocd.sf.net/">c69b4deae36a7bcbab5df80ec2a5dbfd652e25ac</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/openocd/Makefile#L12">v0.11.0-rc1</a></td>
+            <td class="upstream"><a href="http://openocd.sf.net/">v0.11.0-rc1</a></td>
             <td class="maintainer"><a href="mailto:fercerpav%7B%20at%20%7Dgmail(%20dot%20)com">Paul Fertser</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=openocd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=openocd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13882,7 +13913,7 @@
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/openzwave/Makefile#L12">1.6.1149</a></td>
-            <td class="upstream"><a href="http://openzwave.com">1.6.1570</a></td>
+            <td class="upstream"><a href="http://openzwave.com">1.6.1710</a></td>
             <td class="maintainer"><a href="mailto:dwmw2%7B%20at%20%7Dinfradead(%20dot%20)org">David Woodhouse</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=openzwave+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=openzwave"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14577,6 +14608,34 @@
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl-mail-spamassassin">perl-mail-spamassassin</a></td>
+            <td></td>
+            <td></td>
+            <td>mail</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-mail-spamassassin/Makefile#L5">3.4.4</a></td>
+            <td class="upstream"><a href="https://spamassassin.apache.org/">3.4.4</a></td>
+            <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=perl-mail-spamassassin+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-mail-spamassassin"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl-netaddr-ip">perl-netaddr-ip</a></td>
+            <td></td>
+            <td></td>
+            <td>lang</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-netaddr-ip/Makefile#L4">4.079</a></td>
+            <td class="upstream"><a href="http://search.cpan.org/dist/NetAddr::IP/">4.079</a></td>
+            <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=perl-netaddr-ip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-netaddr-ip"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl-net-cidr-lite">perl-net-cidr-lite</a></td>
             <td></td>
             <td></td>
@@ -14586,6 +14645,20 @@
             <td class="maintainer"><a href="mailto:philipp%7B%20at%20%7Dredfish-solutions(%20dot%20)com">Philip Prindeville</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-net-cidr-lite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-net-cidr-lite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl-net-dns">perl-net-dns</a></td>
+            <td></td>
+            <td></td>
+            <td>lang</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-net-dns/Makefile#L4">1.29</a></td>
+            <td class="upstream"><a href="https://www.net-dns.org/">1.29</a></td>
+            <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=perl-net-dns+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-net-dns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
@@ -14722,7 +14795,7 @@
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-www/Makefile#L11">6.43</a></td>
-            <td class="upstream"><a href="https://search.cpan.org/dist/libwww-perl/">6.50</a></td>
+            <td class="upstream"><a href="https://search.cpan.org/dist/libwww-perl/">6.51</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-www+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-www"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14791,8 +14864,8 @@
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="phantap uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/phantap/Makefile#L16">fb3be84b4f4e081c35b7d0caa977bc659c02f8f1</a></td>
-            <td class="upstream"><a href="https://github.com/nccgroup/phantap">fb3be84b4f4e081c35b7d0caa977bc659c02f8f1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/phantap/Makefile#L16">a71772357301e10e9d8bc2d512505c9c5a4a18a4</a></td>
+            <td class="upstream"><a href="https://github.com/nccgroup/phantap">a71772357301e10e9d8bc2d512505c9c5a4a18a4</a></td>
             <td class="maintainer"><a href="mailto:diana(%20dot%20)dragusin%7B%20at%20%7Dnccgroup(%20dot%20)com">Diana Dragusin</a>, <a href="mailto:champetier(%20dot%20)etienne%7B%20at%20%7Dgmail(%20dot%20)com">Etienne Champetier</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=phantap+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=phantap"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14883,13 +14956,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/php7-pecl-mcrypt">php7-pecl-mcrypt</a></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/php7-pecl-mcrypt/Makefile#L11">1.0.3</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/php7-pecl-mcrypt/Makefile#L11">1.0.4</a></td>
             <td class="upstream">1.0.4</td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=php7-pecl-mcrypt+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -14925,13 +14998,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/php7-pecl-redis">php7-pecl-redis</a></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/php7-pecl-redis/Makefile#L11">5.3.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/php7-pecl-redis/Makefile#L11">5.3.2</a></td>
             <td class="upstream">5.3.2</td>
             <td class="maintainer"><a href="mailto:mhei%7B%20at%20%7Dheimpold(%20dot%20)de">Michael Heimpold</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=php7-pecl-redis+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -15009,14 +15082,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/pillow">pillow</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/pillow/Makefile#L10">8.0.1</a></td>
-            <td class="upstream"><a href="https://python-pillow.org/">8.0.1</a></td>
+            <td class="upstream"><a href="https://python-pillow.org/">8.1.0</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=pillow+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=pillow"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15142,7 +15215,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="default-policy uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/utils/podman/Makefile#L38">362f70b056a1f5d2bd4184527a0ae0d20c4d35d3</a></td>
-            <td class="upstream">342b8398e2a45a00768d6d82132b5ac53c04733f</td>
+            <td class="upstream">84232cf3069a1b2f94792a28c9c980cea68ac356</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=default-policy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=default-policy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15191,13 +15264,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/mail/postfix">postfix</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/mail/postfix/files" title="postfix has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/master/mail/postfix/patches" title="postfix has a patches subdirectory containing 10 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>10</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/mail/postfix/files" title="postfix has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/master/mail/postfix/patches" title="postfix has a patches subdirectory containing 9 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>9</sup></a></td>
             <td></td>
             <td>mail</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/mail/postfix/Makefile#L11">3.5.7</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/mail/postfix/Makefile#L11">3.5.8</a></td>
             <td class="upstream"><a href="http://www.postfix.org/">3.5.8</a></td>
             <td class="maintainer"><a href="mailto:Shulyaka%7B%20at%20%7Dgmail(%20dot%20)com">Denis Shulyaka</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=postfix+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -15955,7 +16028,7 @@
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-awscli/Makefile#L4">1.16.75</a></td>
-            <td class="upstream"><a href="https://github.com/aws/aws-cli">1.18.203</a></td>
+            <td class="upstream"><a href="https://github.com/aws/aws-cli">1.18.207</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-awscli+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-awscli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15983,7 +16056,7 @@
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-boto3/Makefile#L4">1.9.135</a></td>
-            <td class="upstream"><a href="https://aws.amazon.com/sdk-for-python/">1.16.43</a></td>
+            <td class="upstream"><a href="https://aws.amazon.com/sdk-for-python/">1.16.47</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-boto3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-boto3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15997,7 +16070,7 @@
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-botocore/Makefile#L4">1.12.66</a></td>
-            <td class="upstream"><a href="https://github.com/boto/botocore">1.19.43</a></td>
+            <td class="upstream"><a href="https://github.com/boto/botocore">1.19.47</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-botocore+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-botocore"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16480,14 +16553,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-idna">python-idna</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-idna/Makefile#L11">2.10</a></td>
-            <td class="upstream"><a href="https://github.com/kjd/idna">2.10</a></td>
+            <td class="upstream"><a href="https://github.com/kjd/idna">3.0</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a>, <a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-idna+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-idna"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17852,13 +17925,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/rtl_433">rtl_433</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/rtl_433/Makefile#L10">20.02</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/rtl_433/Makefile#L10">20.11</a></td>
             <td class="upstream"><a href="https://github.com/merbanan/rtl_433">20.11</a></td>
             <td class="maintainer"><a href="mailto:NightNL%7B%20at%20%7Doutlook(%20dot%20)com">Jasper Scholte</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rtl_433+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -18488,8 +18561,8 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/smartmontools/files" title="smartmontools has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/utils/smartmontools/patches" title="smartmontools has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/smartmontools/Makefile#L12">7.1</a></td>
-            <td class="upstream"><a href="https://www.smartmontools.org/">7.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/smartmontools/Makefile#L12">7.2</a></td>
+            <td class="upstream"><a href="https://www.smartmontools.org/">7.2</a></td>
             <td class="maintainer"><a href="mailto:m(%20dot%20)storchak%7B%20at%20%7Dgmail(%20dot%20)com">Maxim Storchak</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=smartmontools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=smartmontools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18796,8 +18869,8 @@
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="sqm-scripts uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/sqm-scripts/Makefile#L12">1.4.0</a></td>
-            <td class="upstream">1.4.0</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/sqm-scripts/Makefile#L12">1.5.0</a></td>
+            <td class="upstream">1.5.0</td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sqm-scripts+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=sqm-scripts"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18839,7 +18912,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="squeezelite uses the git (distributed) version control system"></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/sound/squeezelite/Makefile#L14">1b7a17616cd2bbd9935c710dc33cda11cd0de45e</a></td>
-            <td class="upstream"><a href="https://github.com/ralph-irving/squeezelite">e02fa87128debc65e26c582f1a017a20a53d1bcf</a></td>
+            <td class="upstream"><a href="https://github.com/ralph-irving/squeezelite">78fef68d39704753cb7101231a8d3bc29f2aa2c9</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=squeezelite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=squeezelite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19281,14 +19354,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/tcl">tcl</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/tcl/Makefile#L12">8.6.10</a></td>
-            <td class="upstream"><a href="https://www.tcl.tk/">8.6.10</a></td>
+            <td class="upstream"><a href="https://www.tcl.tk/">8.6.11</a></td>
             <td class="maintainer"><a href="mailto:joe%7B%20at%20%7Dmistachkin(%20dot%20)com">Joe Mistachkin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tcl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tcl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19652,7 +19725,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="transmission-web-control uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/transmission-web-control/Makefile#L9">c27e3ba9f08148f79fb4121d8a1f5906640ff8d6</a></td>
-            <td class="upstream"><a href="https://github.com/ronggang/transmission-web-control">8ee5df65c4556318b841d02eb1d1c82699d71753</a></td>
+            <td class="upstream"><a href="https://github.com/ronggang/transmission-web-control">cdd961a9c7f5bd3bad6631c7fea738faa2ae58e4</a></td>
             <td class="maintainer"><a href="mailto:yurichard3839%7B%20at%20%7Dgmail(%20dot%20)com">Richard Yu</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=transmission-web-control+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=transmission-web-control"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19704,11 +19777,11 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/ttyd">ttyd</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/utils/ttyd/files" title="ttyd has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/utils/ttyd/patches" title="ttyd has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/utils/ttyd/files" title="ttyd has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/utils/ttyd/patches" title="ttyd has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/ttyd/Makefile#L11">1.6.1</a></td>
-            <td class="upstream"><a href="https://github.com/tsl0922/ttyd">1.6.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/ttyd/Makefile#L11">1.6.2</a></td>
+            <td class="upstream"><a href="https://github.com/tsl0922/ttyd">1.6.3</a></td>
             <td class="maintainer"><a href="mailto:tsl0922%7B%20at%20%7Dgmail(%20dot%20)com">Shuanglei Tao</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ttyd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ttyd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19925,13 +19998,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/unrar">unrar</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/unrar/patches" title="unrar has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/unrar/Makefile#L9">6.0.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/unrar/Makefile#L9">6.0.3</a></td>
             <td class="upstream"><a href="https://www.rarlab.com/">6.0.3</a></td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=unrar+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -19960,7 +20033,7 @@
             <td></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/sound/upmpdcli/Makefile#L11">1.5.0</a></td>
-            <td class="upstream"><a href="https://www.lesbonscomptes.com/upmpdcli">1.5.5</a></td>
+            <td class="upstream"><a href="https://www.lesbonscomptes.com/upmpdcli">1.5.7</a></td>
             <td class="maintainer"><a href="mailto:bordjukov%7B%20at%20%7Dgmail(%20dot%20)com">Petko Bordjukov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=upmpdcli+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=upmpdcli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20086,7 +20159,7 @@
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/multimedia/v4l2rtspserver/Makefile#L19">2020.11.29</a></td>
-            <td class="upstream">2020.12.23</td>
+            <td class="upstream">2021.01.01</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=live555+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=live555"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20303,14 +20376,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/wavemon">wavemon</a></td>
             <td></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/wavemon/Makefile#L11">0.9.2</a></td>
-            <td class="upstream"><a href="https://github.com/uoaerg/wavemon/releases">0.9.2</a></td>
+            <td class="upstream"><a href="https://github.com/uoaerg/wavemon/releases">0.9.3</a></td>
             <td class="maintainer"><a href="mailto:jmccrohan%7B%20at%20%7Dgmail(%20dot%20)com">Jonathan McCrohan</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=wavemon+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=wavemon"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20359,14 +20432,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/wget">wget</a></td>
             <td></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/wget/Makefile#L11">1.20.3</a></td>
-            <td class="upstream"><a href="https://www.gnu.org/software/wget/index.html">1.20.3</a></td>
+            <td class="upstream"><a href="https://www.gnu.org/software/wget/index.html">1.21</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=wget+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=wget"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20390,7 +20463,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/whois">whois</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/utils/whois/patches" title="whois has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/utils/whois/patches" title="whois has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/whois/Makefile#L4">5.5.7</a></td>
@@ -20541,13 +20614,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/xr_usb_serial_common">xr_usb_serial_common</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="xr_usb_serial_common uses the git (distributed) version control system"></td>
             <td>kernel</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/xr_usb_serial_common/Makefile#L14">8c21f4afdfd6acd77b6adad59a4dabe5cbf2b947</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/xr_usb_serial_common/Makefile#L6">b8dad8cf15de160afbd9989f880dc74b921a857b</a></td>
             <td class="upstream"><a href="https://www.exar.com/content/document.ashx?id=21651">b8dad8cf15de160afbd9989f880dc74b921a857b</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=xr_usb_serial_common+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -20688,21 +20761,21 @@
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/multimedia/youtube-dl/Makefile#L11">2020.12.7</a></td>
-            <td class="upstream"><a href="https://yt-dl.org">2020.12.26</a></td>
+            <td class="upstream"><a href="https://yt-dl.org">2021.1.3</a></td>
             <td class="maintainer"><a href="mailto:pepe(%20dot%20)schlehofer%7B%20at%20%7Dgmail(%20dot%20)com">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=youtube-dl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=youtube-dl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/yq">yq</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/yq/Makefile#L4">4.1.0</a></td>
-            <td class="upstream"><a href="https://mikefarah.gitbook.io/yq/">4.1.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/yq/Makefile#L4">4.2.0</a></td>
+            <td class="upstream"><a href="https://mikefarah.gitbook.io/yq/">4.2.1</a></td>
             <td class="maintainer"><a href="mailto:cnsztl%7B%20at%20%7Dproject-openwrt(%20dot%20)eu(%20dot%20)org">Tianling Shen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=yq+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=yq"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20799,8 +20872,8 @@
             <td></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/zoneinfo/Makefile#L12">2020d</a></td>
-            <td class="upstream">2020e</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/zoneinfo/Makefile#L12">2020e</a></td>
+            <td class="upstream">2020f</td>
             <td class="maintainer"><a href="mailto:admin%7B%20at%20%7Devl(%20dot%20)su">Vladimir Ulrich</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=zoneinfo+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=zoneinfo"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20813,8 +20886,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/utils/zoneinfo/Makefile#L12">2020d</a></td>
-            <td class="upstream">2020e</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/utils/zoneinfo/Makefile#L12">2020e</a></td>
+            <td class="upstream">2020f</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tzcode+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tzcode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21288,13 +21361,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/net/asterisk">asterisk</a></td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/net/asterisk/files" title="asterisk has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/telephony/tree/master/net/asterisk/patches" title="asterisk has a patches subdirectory containing 8 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>8</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/asterisk/Makefile#L11">18.1.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/asterisk/Makefile#L11">18.1.1</a></td>
             <td class="upstream"><a href="http://www.asterisk.org/">18.1.1</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=asterisk+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -21334,7 +21407,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="asterisk-chan-sccp uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/asterisk-chan-sccp/Makefile#L16">968caa458920965c5dd15c31bcd50d21a891ab20</a></td>
-            <td class="upstream"><a href="https://github.com/chan-sccp/chan-sccp">375ef06d915b002c9eea59d14e8bdc457dcbe163</a></td>
+            <td class="upstream"><a href="https://github.com/chan-sccp/chan-sccp">066a14a1d081fdba52cb30f87a9c760d336e8ae9</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=asterisk-chan-sccp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=asterisk-chan-sccp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21408,7 +21481,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/libs/dahdi-tools">dahdi-tools</a></td>
-            <td><a href="https://github.com/openwrt/telephony/tree/master/libs/dahdi-tools/patches" title="dahdi-tools has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
+            <td><a href="https://github.com/openwrt/telephony/tree/master/libs/dahdi-tools/patches" title="dahdi-tools has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/libs/dahdi-tools/Makefile#L11">3.1.0</a></td>
@@ -21906,7 +21979,7 @@
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=toolchain/glibc">glibc</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=toolchain/glibc/patches" title="glibc has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="glibc uses the git (distributed) version control system"></td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=toolchain/glibc/common.mk#l15">050022910be1d1f5c11cd5168f1685ad4f9580d2</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=toolchain/glibc/common.mk#l15">1d49bede4d8a5448067e8579b14fedf437e75aee</a></td>
             <td class="upstream">268df5a91054fcb4284e8504afd086a769ec4c40</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=glibc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=glibc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22073,12 +22146,12 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/ccache">ccache</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/ccache/files" title="ccache has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/ccache/patches" title="ccache has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=tools/ccache/Makefile#l11">3.7.11</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=tools/ccache/Makefile#l11">4.1</a></td>
             <td class="upstream">4.1</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ccache"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ccache"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22160,7 +22233,7 @@
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/fakeroot">fakeroot</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/fakeroot/patches" title="fakeroot has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/fakeroot/patches" title="fakeroot has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=tools/fakeroot/Makefile#l8">1.24</a></td>
             <td class="upstream">1.25.3</td>
@@ -22398,18 +22471,17 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/mm-macros">mm-macros</a></td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=tools/mm-macros/Makefile#l11">1.0.0</a></td>
-            <td class="upstream">?</td>
+            <td class="upstream">1.0.2</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mm-macros"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mm-macros"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: no matching files for watch line
-  https://ftp.gnome.org/pub/GNOME/sources/mm-common/([\d\.]+)/mm-common-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|zip|tgz|tbz|txz))</td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -22435,17 +22507,18 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/mtd-utils">mtd-utils</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/mtd-utils/patches" title="mtd-utils has a patches subdirectory containing 7 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>7</sup></a></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=tools/mtd-utils/Makefile#l10">2.1.2</a></td>
-            <td class="upstream">2.1.2</td>
+            <td class="upstream">?</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mtd-utils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mtd-utils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading FTP directory
+  ftp://ftp.infradead.org/pub/mtd-utils/ failed: 500 Connection refused</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -22679,7 +22752,7 @@
       </table>
     </details>
     <footer>
-      Last update: Sun, 27 Dec 2020 17:34:09 UTC
+      Last update: Sun, 03 Jan 2021 19:17:16 UTC
       <br>
       Built using <a href="https://manpages.debian.org/man/1/uscan">uscan</a> and <a href="https://github.com/sjvermeu/cvechecker/wiki">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="https://git-scm.com/">Git</a>, <a href="https://www.mercurial-scm.org/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
