@@ -150,14 +150,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/boot/arm-trusted-firmware-mediatek">arm-trusted-firmware-mediatek</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/boot/arm-trusted-firmware-mediatek/patches" title="arm-trusted-firmware-mediatek has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="arm-trusted-firmware-mediatek uses the git (distributed) version control system"></td>
             <td></td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/boot/arm-trusted-firmware-mediatek/Makefile#l17">a63914612904642ed974390fff620f7003ebc20a</a></td>
-            <td class="upstream">8b635f61091f2e5bce88269468c53fc30bb4cd64</td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/boot/arm-trusted-firmware-mediatek/Makefile#l17">d2c75b2139be003887af9cc5a94da5e9bdc59de7</a></td>
+            <td class="upstream">d2c75b2139be003887af9cc5a94da5e9bdc59de7</td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=arm-trusted-firmware-mediatek"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=arm-trusted-firmware-mediatek"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -235,7 +235,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="arm-trusted-firmware-sunxi uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/boot/arm-trusted-firmware-sunxi/Makefile#l16">e2c509a39c6cc4dda8734e6509cdbe6e3603cdfc</a></td>
-            <td class="upstream">08e7cc533e5a019b53e466a3e03eb646980710fa</td>
+            <td class="upstream">57dde21207c7fecbb78c2019a71ffb65ca740dc3</td>
             <td class="maintainer"><a href="mailto:hauke%7B%20at%20%7Dhauke-m(%20dot%20)de">Hauke Mehrtens</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=arm-trusted-firmware-sunxi"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=arm-trusted-firmware-sunxi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -479,7 +479,7 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/boot/uboot-mediatek">uboot-mediatek</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/boot/uboot-mediatek/patches" title="uboot-mediatek has a patches subdirectory containing 35 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>35</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/boot/uboot-mediatek/patches" title="uboot-mediatek has a patches subdirectory containing 37 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>37</sup></a></td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/boot/uboot-mediatek/Makefile#l4">2021.04</a></td>
@@ -624,6 +624,7 @@
             <th id="packageDevelHeaderTickets" title="Tickets">T</th>
             <th id="packageDevelHeaderPatchwork" title="Patchwork">P</th>
             <th id="packageDevelHeaderCVE"><abbr title="Common Vulnerabilities and Exposures">CVE</abbr></th>
+            <th id="packageDevelHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -637,7 +638,8 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=binutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=binutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2020-35448" title="CVE-2020-35448 has a CVSS base score of 7.8">CVE-2020-35448</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2021-20284" title="CVE-2021-20284 has a CVSS base score of 5.5">CVE-2021-20284</a> </td>
+            <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2020-35448" title="CVE-2020-35448 has a CVSS base score of 7.8">CVE-2020-35448</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2021-20284" title="CVE-2021-20284 has a CVSS base score of 5.5">CVE-2021-20284</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2021-20294" title="CVE-2021-20294 has a CVSS base score of 7.8">CVE-2021-20294</a> </td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -650,6 +652,7 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -662,18 +665,21 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=perf"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/devel/strace">strace</a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/devel/strace/Makefile#l12">5.10</a></td>
-            <td class="upstream"><a href="https://strace.io/">5.12</a></td>
+            <td class="upstream"><a href="https://strace.io/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=strace"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=strace"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td>uscan warn: reading webpage
+  https://strace.io/files/ failed: 500 Can't connect to strace.io:443 (certificate verify failed)</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -686,6 +692,7 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=trace-cmd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=trace-cmd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -698,6 +705,7 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=valgrind"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=valgrind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -1362,7 +1370,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bcm27xx-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/bcm27xx-gpu-fw/Makefile#l6">ba6259246c702b04ea56ff1034325e476d460ae8</a></td>
-            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/PKG_RELEASE/boot/">1a46874494146f470d7a61b0b6f4f15a07dd8b35</a></td>
+            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/PKG_RELEASE/boot/">d9c382e0f3a546e9da153673dce5dd4ba1200994</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bcm27xx-gpu-fw"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bcm27xx-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1646,11 +1654,11 @@
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211">mac80211</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/files" title="mac80211 has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/patches" title="mac80211 has a patches subdirectory containing 146 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>146</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/files" title="mac80211 has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/kernel/mac80211/patches" title="mac80211 has a patches subdirectory containing 143 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>143</sup></a></td>
             <td></td>
             <td></td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/mac80211/Makefile#l13">5.10.16-1</a></td>
-            <td class="upstream"><a href="https://wireless.wiki.kernel.org/">5.10.16-1</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/mac80211/Makefile#l13">5.10.34-1</a></td>
+            <td class="upstream"><a href="https://wireless.wiki.kernel.org/">5.10.34-1</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mac80211"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mac80211"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1674,7 +1682,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mt76 uses the git (distributed) version control system"></td>
             <td>devel</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/kernel/mt76/Makefile#l12">bf45b30d891961dd7c4139dddb58b909ea2c2b5a</a></td>
-            <td class="upstream">e5b19336c58e170ca3c55a96f8de018961b2fc2f</td>
+            <td class="upstream">35f189cf81b2bf4661e3394c2e54e77c2f07c36b</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mt76"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mt76"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2774,22 +2782,20 @@
             <th id="packageNetworkServicesHeaderMaintainer">Maintainer</th>
             <th id="packageNetworkServicesHeaderTickets" title="Tickets">T</th>
             <th id="packageNetworkServicesHeaderPatchwork" title="Patchwork">P</th>
-            <th id="packageNetworkServicesHeaderCVE"><abbr title="Common Vulnerabilities and Exposures">CVE</abbr></th>
           </tr>
         </thead>
         <tbody>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/dnsmasq">dnsmasq</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/dnsmasq/files" title="dnsmasq has a files subdirectory containing 9 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>9</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/dnsmasq/patches" title="dnsmasq has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/dnsmasq/files" title="dnsmasq has a files subdirectory containing 9 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>9</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/network/services/dnsmasq/patches" title="dnsmasq has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/services/dnsmasq/Makefile#l11">2.84</a></td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/services/dnsmasq/Makefile#l11">2.85</a></td>
             <td class="upstream"><a href="http://www.thekelleys.org.uk/dnsmasq/">2.85</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=dnsmasq"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dnsmasq"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2021-3448" title="CVE-2021-3448 has a CVSS base score of 4.0">CVE-2021-3448</a> </td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2802,7 +2808,6 @@
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=dropbear"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dropbear"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -2815,7 +2820,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ead"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ead"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -2824,11 +2828,10 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hostapd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/services/hostapd/Makefile#l15">5a8b366233f5585e68a4ffbb604fbb4a848eb325</a></td>
-            <td class="upstream"><a href="http://hostap.epitest.fi/">15b1831a2c623a511d7c6025ec4db8205e34cca6</a></td>
+            <td class="upstream"><a href="http://hostap.epitest.fi/">de4d62dbcd58daa791b5b281d279b269d5ceae82</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=hostapd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=hostapd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2841,7 +2844,6 @@
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ipset-dns"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ipset-dns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -2854,7 +2856,6 @@
             <td class="maintainer"><a href="mailto:stijn%7B%20at%20%7Dlinux-ipv6(%20dot%20)be">Stijn Tintel</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=lldpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lldpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -2867,7 +2868,6 @@
             <td class="maintainer"><a href="mailto:dedeckeh%7B%20at%20%7Dgmail(%20dot%20)com">Hans Dedecker</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=odhcpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=odhcpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2880,7 +2880,6 @@
             <td class="maintainer"><a href="mailto:cyrus%7B%20at%20%7Dopenwrt(%20dot%20)org">Steven Barth</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=omcproxy"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=omcproxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2893,7 +2892,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ppp"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ppp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2906,7 +2904,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=relayd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=relayd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2919,7 +2916,6 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=uhttpd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=uhttpd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -2932,7 +2928,6 @@
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=umdns"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=umdns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"></td>
           </tr>
         </tbody>
       </table>
@@ -2989,7 +2984,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/network/utils/bpftools/Makefile#l11">5.11.16</a></td>
-            <td class="upstream"><a href="http://www.kernel.org">5.12.1</a></td>
+            <td class="upstream"><a href="http://www.kernel.org">5.12.2</a></td>
             <td class="maintainer"><a href="mailto:itugrok%7B%20at%20%7Dyahoo(%20dot%20)com">Tony Ambardar</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bpftools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bpftools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3424,8 +3419,8 @@
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/system/procd/files" title="procd has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="procd uses the git (distributed) version control system"></td>
             <td>base</td>
-            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/system/procd/Makefile#l16">7ee456346baca29af40a6d1a5071e57f32ebf762</a></td>
-            <td class="upstream">7ee456346baca29af40a6d1a5071e57f32ebf762</td>
+            <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/system/procd/Makefile#l16">021ece84de430fca988acd6934f6046ea59d8c37</a></td>
+            <td class="upstream">021ece84de430fca988acd6934f6046ea59d8c37</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=procd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=procd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3442,14 +3437,14 @@
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=refpolicy"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=refpolicy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/system/rpcd">rpcd</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/system/rpcd/files" title="rpcd has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="rpcd uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/system/rpcd/Makefile#l16">ccb75178cf6a726896729c6904bd623636aa0b29</a></td>
-            <td class="upstream">ccb75178cf6a726896729c6904bd623636aa0b29</td>
+            <td class="upstream">7a560a1a5769146ab072f8e0165940459d3e16f7</td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=rpcd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rpcd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3591,7 +3586,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adb uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/utils/adb/Makefile#l10">6fe92d1a3fb17545d82d020a3c995f32e6b71f9d</a></td>
-            <td class="upstream"><a href="http://tools.android.com/">2de90ca52667fa34d3d258985bbfa2d78a808683</a></td>
+            <td class="upstream"><a href="http://tools.android.com/">57b9a5370e7fa5a3f3007a0287f840baa7f3fc6a</a></td>
             <td class="maintainer"><a href="mailto:hyniu%7B%20at%20%7Do2(%20dot%20)pl">Henryk Heisig</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=adb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=adb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3636,14 +3631,14 @@
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bsdiff"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/utils/busybox">busybox</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/utils/busybox/files" title="busybox has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/utils/busybox/patches" title="busybox has a patches subdirectory containing 16 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>16</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/utils/busybox/files" title="busybox has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=package/utils/busybox/patches" title="busybox has a patches subdirectory containing 17 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>17</sup></a></td>
             <td></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/utils/busybox/Makefile#l11">1.33.0</a></td>
-            <td class="upstream"><a href="http://busybox.net/">1.33.0</a></td>
+            <td class="upstream"><a href="http://busybox.net/">1.33.1</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=busybox"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=busybox"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3955,7 +3950,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ucode uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=package/utils/ucode/Makefile#l16">973cc6c865dcf6075c493125313058b650b08234</a></td>
-            <td class="upstream">02629b84de23bdc5896ac4b357e2f16dfb3996ec</td>
+            <td class="upstream">850612f220380ecd8d53c1b7f4132ae468ead2ea</td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ucode"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ucode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4058,7 +4053,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/acme/Makefile#L11">2.8.7</a></td>
-            <td class="upstream"><a href="https://acme.sh">2.8.8</a></td>
+            <td class="upstream"><a href="https://acme.sh">2.8.9</a></td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=acme+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=acme"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4141,8 +4136,8 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/net/adguardhome/files" title="adguardhome has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adguardhome uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/adguardhome/Makefile#L9">0.106.0</a></td>
-            <td class="upstream"><a href="https://github.com/AdguardTeam/AdGuardHome">0.106.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/adguardhome/Makefile#L9">0.106.1</a></td>
+            <td class="upstream"><a href="https://github.com/AdguardTeam/AdGuardHome">0.106.2</a></td>
             <td class="maintainer"><a href="mailto:dobo90%7B%20at%20%7Dgmail(%20dot%20)com">Dobroslaw Kijowski</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=adguardhome+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=adguardhome"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4303,14 +4298,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/apache">apache</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/apache/files" title="apache has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/apache/patches" title="apache has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/apache/Makefile#L11">2.4.46</a></td>
-            <td class="upstream"><a href="https://httpd.apache.org/">2.4.47</a></td>
+            <td class="upstream"><a href="https://httpd.apache.org/">2.4.46</a></td>
             <td class="maintainer"><a href="mailto:heil%7B%20at%20%7Dterminal-consulting(%20dot%20)de">Thomas Heil</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=apache+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=apache"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4715,7 +4710,7 @@
             <td><a href="https://github.com/openwrt/packages/tree/master/net/banip/files" title="banip has a files subdirectory containing 13 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>13</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/banip/Makefile#L9">0.7.7</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/banip/Makefile#L9">0.7.8</a></td>
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:dev%7B%20at%20%7Dbrenken(%20dot%20)org">Dirk Brenken</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=banip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -4758,7 +4753,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bcm27xx-eeprom uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/bcm27xx-eeprom/Makefile#L4">3129546271da09dde04da5c9715db909b8e1e417</a></td>
-            <td class="upstream">34b752e8be6ba41f27f0348a9711107946150c9a</td>
+            <td class="upstream">f7402923bc2f5e0c4e9058eb15050dd1e2bd6c9c</td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=bcm27xx-eeprom+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bcm27xx-eeprom"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4835,14 +4830,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/bigclown/bigclown-control-tool">bigclown-control-tool</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/bigclown/bigclown-control-tool/Makefile#L8">0.2.0</a></td>
-            <td class="upstream"><a href="https://github.com/bigclownlabs/bch-control-tool">0.2.0</a></td>
+            <td class="upstream"><a href="https://github.com/bigclownlabs/bch-control-tool">1.1.0</a></td>
             <td class="maintainer"><a href="mailto:cynerd%7B%20at%20%7Demail(%20dot%20)cz">Karel Kočí</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=bigclown-control-tool+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bigclown-control-tool"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5521,14 +5516,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/containerd">containerd</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/containerd/Makefile#L4">1.4.4</a></td>
-            <td class="upstream"><a href="https://containerd.io/">1.4.4</a></td>
+            <td class="upstream"><a href="https://containerd.io/">1.5.0</a></td>
             <td class="maintainer"><a href="mailto:G(%20dot%20)M0N3Y(%20dot%20)2503%7B%20at%20%7Dgmail(%20dot%20)com">Gerard Ryan</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=containerd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=containerd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5612,7 +5607,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="crun uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/crun/Makefile#L10">496e81bdd69f117f10e4477e4204e4611a94b68f</a></td>
-            <td class="upstream"><a href="https://github.com/containers/crun">3886321243a945d8ae50b19db7d4cdde3d8421f8</a></td>
+            <td class="upstream"><a href="https://github.com/containers/crun">4e968c9edd19e2b6e55016e5218fb459dec08c6d</a></td>
             <td class="maintainer"><a href="mailto:oskari(%20dot%20)rauta%7B%20at%20%7Dgmail(%20dot%20)com">Oskari Rauta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=crun+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=crun"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5829,13 +5824,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/admin/debian-archive-keyring">debian-archive-keyring</a></td>
             <td></td>
             <td></td>
             <td>admin</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/admin/debian-archive-keyring/Makefile#L5">2019.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/admin/debian-archive-keyring/Makefile#L5">2021.1.1</a></td>
             <td class="upstream"><a href="https://salsa.debian.org/release-team/debian-archive-keyring">2021.1.1</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=debian-archive-keyring+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -5969,14 +5964,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/django">django</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/django/Makefile#L11">3.2</a></td>
-            <td class="upstream"><a href="https://www.djangoproject.com/">3.2</a></td>
+            <td class="upstream"><a href="https://www.djangoproject.com/">3.2.2</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a>, <a href="mailto:peter(%20dot%20)stadler%7B%20at%20%7Dstudent(%20dot%20)uibk(%20dot%20)ac(%20dot%20)at">Peter Stadler</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=django+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=django"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6627,13 +6622,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/exfatprogs">exfatprogs</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/exfatprogs/Makefile#L4">1.1.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/exfatprogs/Makefile#L4">1.1.1</a></td>
             <td class="upstream"><a href="https://github.com/exfatprogs/exfatprogs">1.1.1</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=exfatprogs+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -6641,14 +6636,14 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/mail/exim">exim</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/mail/exim/patches" title="exim has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/mail/exim/Makefile#L4">4.94</a></td>
-            <td class="upstream"><a href="http://www.exim.org/">4.94</a></td>
+            <td class="upstream"><a href="http://www.exim.org/">4.94.2</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=exim+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=exim"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7264,7 +7259,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/geth/Makefile#L11">1.9.25</a></td>
-            <td class="upstream"><a href="https://geth.ethereum.org/">1.10.2</a></td>
+            <td class="upstream"><a href="https://geth.ethereum.org/">1.10.3</a></td>
             <td class="maintainer"><a href="mailto:mislav(%20dot%20)novakovic%7B%20at%20%7Dsartura(%20dot%20)hr">Mislav Novakovic</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=geth+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=geth"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7426,13 +7421,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/gnunet-fuse">gnunet-fuse</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/gnunet-fuse/patches" title="gnunet-fuse has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/gnunet-fuse/Makefile#L5">0.13.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/gnunet-fuse/Makefile#L5">0.14.0</a></td>
             <td class="upstream"><a href="https://www.gnunet.org/">0.14.0</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gnunet-fuse+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -7517,7 +7512,7 @@
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/golang/golang/Makefile#L14">1.16.</a></td>
-            <td class="upstream"><a href="https://golang.org/">1.16.3</a></td>
+            <td class="upstream"><a href="https://golang.org/">1.16.4</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=golang+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=golang"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7790,14 +7785,13 @@
             <td class="cve"></td>
             <td></td>
           </tr>
-gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't exist, breaking<br>
           <tr class="current" title="Current">
             <td>&#10003;</td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/boot/gummiboot">gummiboot</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/master/boot/gummiboot/patches" title="gummiboot has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/utils/gummiboot">gummiboot</a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/utils/gummiboot/patches" title="gummiboot has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="gummiboot uses the git (distributed) version control system"></td>
             <td>boot</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/boot/gummiboot/Makefile#L15">eb3daf2ca4cb1657cf1f780957485d690a552bf6</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/gummiboot/Makefile#L15">eb3daf2ca4cb1657cf1f780957485d690a552bf6</a></td>
             <td class="upstream"><a href="https://github.com/rzr/gummiboot">eb3daf2ca4cb1657cf1f780957485d690a552bf6</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gummiboot+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -8050,7 +8044,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hs20 uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/hs20/Makefile#L9">5a8b366233f5585e68a4ffbb604fbb4a848eb325</a></td>
-            <td class="upstream"><a href="http://www.openmobilealliance.org/tech/DTD">15b1831a2c623a511d7c6025ec4db8205e34cca6</a></td>
+            <td class="upstream"><a href="http://www.openmobilealliance.org/tech/DTD">de4d62dbcd58daa791b5b281d279b269d5ceae82</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=hs20+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=hs20"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8135,7 +8129,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="https-dns-proxy uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/https-dns-proxy/Makefile#L10">37511cc08712d7548978a4f6f1cc457b7594fb96</a></td>
-            <td class="upstream"><a href="https://docs.openwrt.melmac.net/https-dns-proxy/">dfbf521c69fd9e96ee9e72670ddb2a49d8f12bdc</a></td>
+            <td class="upstream"><a href="https://docs.openwrt.melmac.net/https-dns-proxy/">a292a578bbe9865dba8526981be66f4c85ef7daa</a></td>
             <td class="maintainer"><a href="mailto:stangri%7B%20at%20%7Dmelmac(%20dot%20)net">Stan Grishin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=https-dns-proxy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=https-dns-proxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8156,14 +8150,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/hwdata">hwdata</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/hwdata/Makefile#L9">0.345</a></td>
-            <td class="upstream"><a href="https://github.com/vcrhonek/hwdata">0.346</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/hwdata/Makefile#L9">0.347</a></td>
+            <td class="upstream"><a href="https://github.com/vcrhonek/hwdata">0.347</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=hwdata+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=hwdata"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8618,13 +8612,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/Jinja2">Jinja2</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/Jinja2/Makefile#L8">2.11.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/Jinja2/Makefile#L8">2.11.3</a></td>
             <td class="upstream"><a href="https://palletsprojects.com/p/jinja/">2.11.3</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=Jinja2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -8660,14 +8654,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/jose">jose</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/jose/patches" title="jose has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/jose/Makefile#L11">10</a></td>
-            <td class="upstream"><a href="https://github.com/latchset/jose">10</a></td>
+            <td class="upstream"><a href="https://github.com/latchset/jose">11</a></td>
             <td class="maintainer"><a href="mailto:tibor(%20dot%20)dudlak%7B%20at%20%7Dgmail(%20dot%20)com">Tibor Dudlák</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=jose+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=jose"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8871,14 +8865,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/knot-resolver">knot-resolver</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/knot-resolver/files" title="knot-resolver has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/knot-resolver/patches" title="knot-resolver has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/knot-resolver/Makefile#L13">5.3.1</a></td>
-            <td class="upstream"><a href="https://www.knot-resolver.cz">5.3.1</a></td>
+            <td class="upstream"><a href="https://www.knot-resolver.cz">5.3.2</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=knot-resolver+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=knot-resolver"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9165,13 +9159,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libassuan">libassuan</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libassuan/Makefile#L4">2.5.4</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libassuan/Makefile#L4">2.5.5</a></td>
             <td class="upstream"><a href="https://gnupg.org/software/libassuan/index.html">2.5.5</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libassuan+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -9543,13 +9537,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libextractor">libextractor</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libextractor/patches" title="libextractor has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libextractor/Makefile#L9">1.10</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libextractor/Makefile#L9">1.11</a></td>
             <td class="upstream"><a href="https://www.gnu.org/software/libextractor/">1.11</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libextractor+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -9857,7 +9851,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libinput/Makefile#L8">1.16.4</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libinput/Makefile#L8">1.17.1</a></td>
             <td class="upstream"><a href="http://freedesktop.org/wiki/Software/libinput/">1.17.2</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libinput+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -9893,13 +9887,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libksba">libksba</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libksba/Makefile#L4">1.5.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libksba/Makefile#L4">1.5.1</a></td>
             <td class="upstream"><a href="https://gnupg.org/software/libksba/index.html">1.5.1</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libksba+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -9977,13 +9971,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/libmaxminddb">libmaxminddb</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libmaxminddb/Makefile#L11">1.5.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libmaxminddb/Makefile#L11">1.6.0</a></td>
             <td class="upstream"><a href="https://maxmind.github.io/libmaxminddb/">1.6.0</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libmaxminddb+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -10474,7 +10468,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libpqxx uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libpqxx/Makefile#L4">7.4.1</a></td>
-            <td class="upstream"><a href="http://pqxx.org/development/libpqxx">7.5.0</a></td>
+            <td class="upstream"><a href="http://pqxx.org/development/libpqxx">7.5.2</a></td>
             <td class="maintainer"><a href="mailto:garikello%7B%20at%20%7Dgmail(%20dot%20)com">Igor Bezzubchenko</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libpqxx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libpqxx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10726,7 +10720,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libsoup/Makefile#L9">2.72.0</a></td>
-            <td class="upstream"><a href="https://wiki.gnome.org/Projects/libsoup">2.99.4</a></td>
+            <td class="upstream"><a href="https://wiki.gnome.org/Projects/libsoup">2.99.5</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libsoup+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libsoup"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11020,7 +11014,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libupnp/Makefile#L4">1.14.5</a></td>
-            <td class="upstream"><a href="http://pupnp.sourceforge.net/">1.14.6</a></td>
+            <td class="upstream"><a href="http://pupnp.sourceforge.net/">1.14.7</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libupnp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libupnp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11244,7 +11238,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libx264 uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/libx264/Makefile#L16">4121277b40a667665d4eea1726aefdc55d12d110</a></td>
-            <td class="upstream"><a href="https://www.videolan.org/developers/x264.html">c347e7a0b476d77674e2c9a6f137f57da026e8fc</a></td>
+            <td class="upstream"><a href="https://www.videolan.org/developers/x264.html">b684ebe04a6f80f8207a57940a1fa00e25274f81</a></td>
             <td class="maintainer"><a href="mailto:ianchi74%7B%20at%20%7Doutlook(%20dot%20)com">Adrian Panella</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libx264+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libx264"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11433,14 +11427,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/lmdb">lmdb</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/lmdb/patches" title="lmdb has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/master/libs/lmdb/src" title="lmdb has a src subdirectory containing 1 file"><img src="icons/page_code.png" width="16" height="16" alt="src"><sup>1</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/lmdb/Makefile#L4">0.9.28</a></td>
-            <td class="upstream"><a href="https://symas.com/lmdb/">0.9.28</a></td>
+            <td class="upstream"><a href="https://symas.com/lmdb/">0.9.29</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lmdb+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lmdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12078,14 +12072,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/lvm2">lvm2</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/lvm2/files" title="lvm2 has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/utils/lvm2/patches" title="lvm2 has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/lvm2/Makefile#L12">2.03.11</a></td>
-            <td class="upstream"><a href="https://sourceware.org/dm/">2.03.11</a></td>
+            <td class="upstream"><a href="https://sourceware.org/dm/">2.03.12</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lvm2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lvm2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12099,7 +12093,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/lxc/Makefile#L12">4.0.5</a></td>
-            <td class="upstream"><a href="https://linuxcontainers.org/">4.0.8</a></td>
+            <td class="upstream"><a href="https://linuxcontainers.org/">4.0.9</a></td>
             <td class="maintainer"><a href="mailto:marko(%20dot%20)ratkaj%7B%20at%20%7Dsartura(%20dot%20)hr">Marko Ratkaj</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lxc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lxc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12814,7 +12808,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/sound/mpg123/Makefile#L11">1.26.3</a></td>
-            <td class="upstream"><a href="http://www.mpg123.de">1.26.5</a></td>
+            <td class="upstream"><a href="http://www.mpg123.de">1.27.2</a></td>
             <td class="maintainer"><a href="mailto:wigyori%7B%20at%20%7Duid0(%20dot%20)hu">Zoltan HERPAI</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mpg123+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mpg123"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12968,7 +12962,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/mail/mutt/Makefile#L11">1.14.7</a></td>
-            <td class="upstream"><a href="http://www.mutt.org/">2.0.6</a></td>
+            <td class="upstream"><a href="http://www.mutt.org/">2.0.7</a></td>
             <td class="maintainer"><a href="mailto:phil%7B%20at%20%7Dzankapfel(%20dot%20)net">Phil Eichinger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mutt+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mutt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12981,7 +12975,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://github.com/openwrt/packages/tree/master/net/mwan3/files" title="mwan3 has a files subdirectory containing 12 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>12</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/mwan3/src" title="mwan3 has a src subdirectory containing 1 file"><img src="icons/page_code.png" width="16" height="16" alt="src"><sup>1</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/mwan3/Makefile#L11">2.10.8</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/mwan3/Makefile#L11">2.10.9</a></td>
             <td class="upstream">N/A</td>
             <td class="maintainer"><a href="mailto:fe%7B%20at%20%7Ddev(%20dot%20)tdt(%20dot%20)de">Florian Eckert</a>, <a href="mailto:aaronjg%7B%20at%20%7Dalumni(%20dot%20)stanford(%20dot%20)edu">Aaron Goodman</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mwan3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -13325,14 +13319,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/nfdump">nfdump</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/nfdump/files" title="nfdump has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/nfdump/Makefile#L9">1.6.22</a></td>
-            <td class="upstream"><a href="https://github.com/phaag/nfdump/">1.6.22</a></td>
+            <td class="upstream"><a href="https://github.com/phaag/nfdump/">1.6.23</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nfdump+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=nfdump"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13472,7 +13466,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lua-nginx uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/net/nginx/Makefile#L494">e94f2e5d64daa45ff396e262d8dab8e56f5f10e0</a></td>
-            <td class="upstream">d3a8626421a86dc8802db1c74bdc4d3b2f065709</td>
+            <td class="upstream">68f6a1498e6a1a8ed20e902b2f44be8d35f43697</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lua-nginx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lua-nginx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13612,7 +13606,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/node/Makefile#L11">v14.16.1</a></td>
-            <td class="upstream"><a href="https://nodejs.org/">16.0.0</a></td>
+            <td class="upstream"><a href="https://nodejs.org/">16.1.0</a></td>
             <td class="maintainer"><a href="mailto:morikw2%7B%20at%20%7Dgmail(%20dot%20)com">Hirokazu MORIKAWA</a>, <a href="mailto:ianchi74%7B%20at%20%7Doutlook(%20dot%20)com">Adrian Panella</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=node"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14269,8 +14263,8 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://github.com/openwrt/packages/tree/master/net/opentracker/files" title="opentracker has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/opentracker/patches" title="opentracker has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="opentracker uses the git (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/opentracker/Makefile#L13">6411f1567f64248b0d145493c2e61004d2822623</a></td>
-            <td class="upstream"><a href="http://erdgeist.org/arts/software/opentracker/">0178c27662bd70640ee17f4659f1f6c482d465be</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/opentracker/Makefile#L13">0178c27662bd70640ee17f4659f1f6c482d465be</a></td>
+            <td class="upstream"><a href="http://erdgeist.org/arts/software/opentracker/">3168071175e9b5792a08adeb4784073f2e5df58b</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=opentracker+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=opentracker"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14403,20 +14397,19 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="indeterminable" title="Indeterminable">
-            <td>?</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ostiary">ostiary</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/ostiary/files" title="ostiary has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a></td>
             <td></td>
             <td>base</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/ostiary/Makefile#L4">4.0</a></td>
-            <td class="upstream"><a href="http://ingles.homeunix.net/software/ost/index.html">Upstream</a></td>
+            <td class="upstream"><a href="http://ingles.homeunix.net/software/ost/index.html">4.0</a></td>
             <td class="maintainer"><a href="mailto:cgretski%7B%20at%20%7Dhotmail(%20dot%20)com">Chris Geraghty</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=ostiary+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ostiary"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td>uscan warn: reading webpage
-  http://ingles.homeunix.net/software/ost/latest/ failed: 500 Can't connect to ingles.homeunix.net:80 (Connection timed out)</td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -14684,19 +14677,20 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl">perl</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl/files" title="perl has a files subdirectory containing 20 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>20</sup></a><a href="https://github.com/openwrt/packages/tree/master/lang/perl/patches" title="perl has a patches subdirectory containing 17 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>17</sup></a></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl/Makefile#L13">5.28.1</a></td>
-            <td class="upstream"><a href="http://www.perl.com/">5.32.1</a></td>
+            <td class="upstream"><a href="http://www.perl.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a>, <a href="mailto:philipp%7B%20at%20%7Dredfish-solutions(%20dot%20)com">Philip Prindeville</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading webpage
+  https://www.perl.org/get.html failed: 503 Service Unavailable</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -14733,7 +14727,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-cgi/Makefile#L11">4.48</a></td>
-            <td class="upstream"><a href="https://search.cpan.org/dist/CGI/">4.51</a></td>
+            <td class="upstream"><a href="https://search.cpan.org/dist/CGI/">4.52</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a>, <a href="mailto:philipp%7B%20at%20%7Dredfish-solutions(%20dot%20)com">Philip Prindeville</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-cgi+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-cgi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15062,18 +15056,18 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl-mail-spamassassin">perl-mail-spamassassin</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/perl-mail-spamassassin/patches" title="perl-mail-spamassassin has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>mail</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-mail-spamassassin/Makefile#L5">3.4.4</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-mail-spamassassin/Makefile#L5">3.4.6</a></td>
             <td class="upstream"><a href="https://spamassassin.apache.org/">3.4.6</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-mail-spamassassin+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-mail-spamassassin"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2020-1946" title="CVE-2020-1946 has a CVSS base score of 9.8">CVE-2020-1946</a> </td>
+            <td class="cve"></td>
             <td></td>
           </tr>
           <tr class="current" title="Current">
@@ -15110,7 +15104,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-net-dns/Makefile#L4">1.29</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-net-dns/Makefile#L4">1.30</a></td>
             <td class="upstream"><a href="https://www.net-dns.org/">1.31</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-net-dns+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -15265,7 +15259,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/perl-www/Makefile#L11">6.43</a></td>
-            <td class="upstream"><a href="https://search.cpan.org/dist/libwww-perl/">6.53</a></td>
+            <td class="upstream"><a href="https://search.cpan.org/dist/libwww-perl/">6.54</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-www+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-www"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15348,8 +15342,8 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/php7/files" title="php7 has a files subdirectory containing 7 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>7</sup></a><a href="https://github.com/openwrt/packages/tree/master/lang/php7/patches" title="php7 has a patches subdirectory containing 7 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>7</sup></a></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/php7/Makefile#L9">7.4.16</a></td>
-            <td class="upstream"><a href="http://www.php.net/">7.4.18</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/php7/Makefile#L9">7.4.18</a></td>
+            <td class="upstream"><a href="http://www.php.net/">7.4.19</a></td>
             <td class="maintainer"><a href="mailto:mhei%7B%20at%20%7Dheimpold(%20dot%20)de">Michael Heimpold</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=php7+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=php7"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15699,7 +15693,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="default-policy uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/utils/podman/Makefile#L37">362f70b056a1f5d2bd4184527a0ae0d20c4d35d3</a></td>
-            <td class="upstream">891d9750a361d1e139fd8ee74d23c592e13bdb78</td>
+            <td class="upstream">b10d3e43a45c28bbff89ec17d2b8973821aafaa3</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=default-policy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=default-policy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15909,7 +15903,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/prometheus-statsd-exporter/Makefile#L4">0.15.0</a></td>
-            <td class="upstream"><a href="http://prometheus.io">0.20.1</a></td>
+            <td class="upstream"><a href="http://prometheus.io">0.20.2</a></td>
             <td class="maintainer"><a href="mailto:a(%20dot%20)heider%7B%20at%20%7Dgmail(%20dot%20)com">Andre Heider</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=prometheus-statsd-exporter+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=prometheus-statsd-exporter"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15937,7 +15931,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/protobuf/Makefile#L11">3.15.6</a></td>
-            <td class="upstream"><a href="https://github.com/google/protobuf">3.15.8</a></td>
+            <td class="upstream"><a href="https://github.com/google/protobuf">3.16.0</a></td>
             <td class="maintainer"><a href="mailto:kkeys%7B%20at%20%7Dcaida(%20dot%20)org">Ken Keys</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=protobuf+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=protobuf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16127,14 +16121,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python3">python3</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python3/files" title="python3 has a files subdirectory containing 25 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>25</sup></a><a href="https://github.com/openwrt/packages/tree/master/lang/python/python3/patches" title="python3 has a patches subdirectory containing 13 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>13</sup></a></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python3/Makefile#L15">3.9.4</a></td>
-            <td class="upstream"><a href="https://www.python.org/">3.9.4</a></td>
+            <td class="upstream"><a href="https://www.python.org/">3.9.5</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a>, <a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16463,14 +16457,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-attrs">python-attrs</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-attrs/Makefile#L11">20.3.0</a></td>
-            <td class="upstream"><a href="https://www.attrs.org/">20.3.0</a></td>
+            <td class="upstream"><a href="https://www.attrs.org/">21.2.0</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-attrs+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-attrs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16512,7 +16506,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-awscli/Makefile#L4">1.16.75</a></td>
-            <td class="upstream"><a href="https://github.com/aws/aws-cli">1.19.62</a></td>
+            <td class="upstream"><a href="https://github.com/aws/aws-cli">1.19.69</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-awscli+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-awscli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16554,7 +16548,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-boto3/Makefile#L4">1.9.135</a></td>
-            <td class="upstream"><a href="https://aws.amazon.com/sdk-for-python/">1.17.62</a></td>
+            <td class="upstream"><a href="https://aws.amazon.com/sdk-for-python/">1.17.69</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-boto3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-boto3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16568,7 +16562,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-botocore/Makefile#L4">1.12.66</a></td>
-            <td class="upstream"><a href="https://github.com/boto/botocore">1.20.62</a></td>
+            <td class="upstream"><a href="https://github.com/boto/botocore">1.20.69</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-botocore+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-botocore"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16897,13 +16891,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-dotenv">python-dotenv</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-dotenv/Makefile#L4">0.17.0</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-dotenv/Makefile#L4">0.17.1</a></td>
             <td class="upstream"><a href="http://github.com/theskumar/python-dotenv">0.17.1</a></td>
             <td class="maintainer"><a href="mailto:javier%7B%20at%20%7Dmarcet(%20dot%20)info">Javier Marcet</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-dotenv+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -16953,14 +16947,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-eventlet">python-eventlet</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-eventlet/Makefile#L11">0.30.2</a></td>
-            <td class="upstream"><a href="https://eventlet.net/">0.30.2</a></td>
+            <td class="upstream"><a href="https://eventlet.net/">0.31.0</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-eventlet+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-eventlet"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17079,13 +17073,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-gnupg">python-gnupg</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-gnupg/Makefile#L8">0.4.6</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-gnupg/Makefile#L8">0.4.7</a></td>
             <td class="upstream"><a href="https://docs.red-dove.com/python-gnupg/">0.4.7</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-gnupg+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -17093,14 +17087,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-greenlet">python-greenlet</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-greenlet/Makefile#L11">1.0.0</a></td>
-            <td class="upstream"><a href="https://github.com/python-greenlet/greenlet">1.0.0</a></td>
+            <td class="upstream"><a href="https://github.com/python-greenlet/greenlet">1.1.0</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-greenlet+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-greenlet"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17352,7 +17346,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-netdisco/Makefile#L11">2.6.0</a></td>
-            <td class="upstream"><a href="https://github.com/home-assistant/netdisco">2.8.2</a></td>
+            <td class="upstream"><a href="https://github.com/home-assistant/netdisco">2.8.3</a></td>
             <td class="maintainer"><a href="mailto:pepe(%20dot%20)schlehofer%7B%20at%20%7Dgmail(%20dot%20)com">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-netdisco+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-netdisco"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17653,14 +17647,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-pytest">python-pytest</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-pytest/Makefile#L11">6.2.3</a></td>
-            <td class="upstream"><a href="https://docs.pytest.org/en/latest/">6.2.3</a></td>
+            <td class="upstream"><a href="https://docs.pytest.org/en/latest/">6.2.4</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-pytest+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-pytest"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17828,7 +17822,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-sentry-sdk/Makefile#L11">0.19.2</a></td>
-            <td class="upstream"><a href="https://github.com/getsentry/sentry-python">1.0.0</a></td>
+            <td class="upstream"><a href="https://github.com/getsentry/sentry-python">1.1.0</a></td>
             <td class="maintainer"><a href="mailto:josef(%20dot%20)schlehofer%7B%20at%20%7Dnic(%20dot%20)cz">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-sentry-sdk+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-sentry-sdk"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17863,14 +17857,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-six">python-six</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-six/Makefile#L11">1.15.0</a></td>
-            <td class="upstream"><a href="https://github.com/benjaminp/six">1.15.0</a></td>
+            <td class="upstream"><a href="https://github.com/benjaminp/six">1.16.0</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a>, <a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-six+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-six"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17884,7 +17878,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-slugify/Makefile#L11">4.0.1</a></td>
-            <td class="upstream"><a href="https://github.com/un33k/python-slugify">5.0.0</a></td>
+            <td class="upstream"><a href="https://github.com/un33k/python-slugify">5.0.2</a></td>
             <td class="maintainer"><a href="mailto:josef(%20dot%20)schlehofer%7B%20at%20%7Dnic(%20dot%20)cz">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-slugify+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-slugify"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17912,7 +17906,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-sqlalchemy/Makefile#L11">1.3.23</a></td>
-            <td class="upstream"><a href="https://www.sqlalchemy.org">1.4.12</a></td>
+            <td class="upstream"><a href="https://www.sqlalchemy.org">1.4.14</a></td>
             <td class="maintainer"><a href="mailto:josef(%20dot%20)schlehofer%7B%20at%20%7Dnic(%20dot%20)cz">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-sqlalchemy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-sqlalchemy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17989,13 +17983,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-typing-extensions">python-typing-extensions</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-typing-extensions/Makefile#L11">3.7.4.3</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-typing-extensions/Makefile#L11">3.10.0.0</a></td>
             <td class="upstream"><a href="https://github.com/python/typing">3.10.0.0</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-typing-extensions+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -18129,14 +18123,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/lang/python/python-zeroconf">python-zeroconf</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/lang/python/python-zeroconf/Makefile#L11">0.29.0</a></td>
-            <td class="upstream"><a href="https://github.com/jstasiak/python-zeroconf">0.29.0</a></td>
+            <td class="upstream"><a href="https://github.com/jstasiak/python-zeroconf">0.30.0</a></td>
             <td class="maintainer"><a href="mailto:pepe(%20dot%20)schlehofer%7B%20at%20%7Dgmail(%20dot%20)com">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-zeroconf+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-zeroconf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18339,14 +18333,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/redis">redis</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/libs/redis/files" title="redis has a files subdirectory containing 1 file"><img src="icons/page.png" width="16" height="16" alt="files"><sup>1</sup></a><a href="https://github.com/openwrt/packages/tree/master/libs/redis/patches" title="redis has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/libs/redis/Makefile#L4">6.2.2</a></td>
-            <td class="upstream"><a href="https://redis.io">6.2.2</a></td>
+            <td class="upstream"><a href="https://redis.io">6.2.3</a></td>
             <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=redis+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=redis"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18507,14 +18501,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/rp-pppoe">rp-pppoe</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/rp-pppoe/files" title="rp-pppoe has a files subdirectory containing 9 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>9</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/rp-pppoe/patches" title="rp-pppoe has a patches subdirectory containing 3 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>3</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/rp-pppoe/Makefile#L11">3.14</a></td>
-            <td class="upstream"><a href="https://dianne.skoll.ca/projects/rp-pppoe/">3.14</a></td>
+            <td class="upstream"><a href="https://dianne.skoll.ca/projects/rp-pppoe/">3.15</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rp-pppoe+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rp-pppoe"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18577,14 +18571,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/rtl_433">rtl_433</a></td>
             <td></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/rtl_433/Makefile#L10">20.11</a></td>
-            <td class="upstream"><a href="https://github.com/merbanan/rtl_433">20.11</a></td>
+            <td class="upstream"><a href="https://github.com/merbanan/rtl_433">21.05</a></td>
             <td class="maintainer"><a href="mailto:NightNL%7B%20at%20%7Doutlook(%20dot%20)com">Jasper Scholte</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rtl_433+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rtl_433"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18709,11 +18703,25 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://github.com/openwrt/packages/tree/master/net/samba4/files" title="samba4 has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/samba4/patches" title="samba4 has a patches subdirectory containing 16 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>16</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/samba4/Makefile#L5">4.13.4</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/samba4/Makefile#L5">4.13.8</a></td>
             <td class="upstream"><a href="https://www.samba.org/">4.14.4</a></td>
             <td class="maintainer"><a href="mailto:andy(%20dot%20)walsh44+github%7B%20at%20%7Dgmail(%20dot%20)com">Andy Walsh</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=samba4+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=samba4"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/net/samplicator">samplicator</a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/net/samplicator/files" title="samplicator has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
+            <td></td>
+            <td>net</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/samplicator/Makefile#L4">1.3.6</a></td>
+            <td class="upstream"><a href="https://github.com/sleinen/samplicator">1.3.6</a></td>
+            <td class="maintainer"><a href="mailto:vincent%7B%20at%20%7Dsystemli(%20dot%20)org">Nick Hainke</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=samplicator+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=samplicator"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
@@ -19473,14 +19481,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/spoofer">spoofer</a></td>
             <td></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/spoofer/Makefile#L11">1.4.6</a></td>
-            <td class="upstream"><a href="https://spoofer.caida.org/">1.4.6</a></td>
+            <td class="upstream"><a href="https://spoofer.caida.org/">1.4.7</a></td>
             <td class="maintainer"><a href="mailto:spoofer-info%7B%20at%20%7Dcaida(%20dot%20)org">Ken Keys</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=spoofer+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=spoofer"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19550,7 +19558,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="squeezelite uses the git (distributed) version control system"></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/sound/squeezelite/Makefile#L14">1b7a17616cd2bbd9935c710dc33cda11cd0de45e</a></td>
-            <td class="upstream"><a href="https://github.com/ralph-irving/squeezelite">6042393115c69280f9891945a57bc81a3e32162d</a></td>
+            <td class="upstream"><a href="https://github.com/ralph-irving/squeezelite">f6244f9009825b14ff5c38b2a65118863fe83962</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=squeezelite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=squeezelite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19718,8 +19726,8 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/stress-ng/patches" title="stress-ng has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/stress-ng/Makefile#L9">0.12.06</a></td>
-            <td class="upstream"><a href="https://kernel.ubuntu.com/~cking/stress-ng/">0.12.07</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/stress-ng/Makefile#L9">0.12.07</a></td>
+            <td class="upstream"><a href="https://kernel.ubuntu.com/~cking/stress-ng/">0.12.08</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=stress-ng+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=stress-ng"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19803,7 +19811,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/sumo/Makefile#L11">1.8.0</a></td>
-            <td class="upstream"><a href="https://sumo.dlr.de/">1.9.0</a></td>
+            <td class="upstream"><a href="https://sumo.dlr.de/">1.9.1</a></td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sumo+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=sumo"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19859,21 +19867,21 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/syncthing/Makefile#L4">1.14.0</a></td>
-            <td class="upstream"><a href="https://syncthing.net">1.15.1</a></td>
+            <td class="upstream"><a href="https://syncthing.net">1.16.1</a></td>
             <td class="maintainer"><a href="mailto:mail%7B%20at%20%7Daparcar(%20dot%20)org">Paul Spooren</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=syncthing+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=syncthing"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/admin/syslog-ng">syslog-ng</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/admin/syslog-ng/files" title="syslog-ng has a files subdirectory containing 5 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>5</sup></a></td>
             <td></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/admin/syslog-ng/Makefile#L4">3.31.2</a></td>
-            <td class="upstream"><a href="https://www.syslog-ng.com/products/open-source-log-management/">3.31.2</a></td>
+            <td class="upstream"><a href="https://www.syslog-ng.com/products/open-source-log-management/">3.32.1</a></td>
             <td class="maintainer"><a href="mailto:josef(%20dot%20)schlehofer%7B%20at%20%7Dnic(%20dot%20)cz">Josef Schlehofer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=syslog-ng+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=syslog-ng"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19938,12 +19946,26 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/net/tailscale">tailscale</a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/master/net/tailscale/files" title="tailscale has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
+            <td></td>
+            <td>net</td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/tailscale/Makefile#L11">1.6.0</a></td>
+            <td class="upstream"><a href="https://tailscale.com">1.8.1</a></td>
+            <td class="maintainer"><a href="mailto:jan(%20dot%20)pavlinec%7B%20at%20%7Dnic(%20dot%20)cz">Jan Pavlinec</a></td>
+            <td><a href="https://github.com/openwrt/packages/issues?q=tailscale+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
+            <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tailscale"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td class="cve"></td>
+            <td></td>
+          </tr>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/tang">tang</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/utils/tang/files" title="tang has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/tang/Makefile#L11">8</a></td>
-            <td class="upstream"><a href="https://github.com/latchset/tang">9</a></td>
+            <td class="upstream"><a href="https://github.com/latchset/tang">10</a></td>
             <td class="maintainer"><a href="mailto:tibor(%20dot%20)dudlak%7B%20at%20%7Dgmail(%20dot%20)com">Tibor Dudlák</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tang+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tang"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20020,18 +20042,18 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/tcpreplay">tcpreplay</a></td>
             <td></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/tcpreplay/Makefile#L11">4.3.3</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/tcpreplay/Makefile#L11">4.3.4</a></td>
             <td class="upstream"><a href="http://tcpreplay.appneta.com/">4.3.4</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tcpreplay+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tcpreplay"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2020-24265" title="CVE-2020-24265 has a CVSS base score of 7.5">CVE-2020-24265</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2020-24266" title="CVE-2020-24266 has a CVSS base score of 7.5">CVE-2020-24266</a> </td>
+            <td class="cve"></td>
             <td></td>
           </tr>
           <tr class="current" title="Current">
@@ -20391,7 +20413,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="transmission-web-control uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/transmission-web-control/Makefile#L9">c27e3ba9f08148f79fb4121d8a1f5906640ff8d6</a></td>
-            <td class="upstream"><a href="https://github.com/ronggang/transmission-web-control">4e0c781669af2f27d959dce80cb4956303375568</a></td>
+            <td class="upstream"><a href="https://github.com/ronggang/transmission-web-control">f28505e81737ba42d5fd8508824eaeb799e3c3d8</a></td>
             <td class="maintainer"><a href="mailto:yurichard3839%7B%20at%20%7Dgmail(%20dot%20)com">Richard Yu</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=transmission-web-control+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=transmission-web-control"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20853,7 +20875,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/multimedia/v4l2rtspserver/Makefile#L19">2021.02.11</a></td>
-            <td class="upstream">2021.04.06</td>
+            <td class="upstream">2021.05.03</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=live555+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=live555"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21343,7 +21365,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/net/xray-core/Makefile#L82">202104010913</a></td>
-            <td class="upstream">202104300531</td>
+            <td class="upstream">202105070029</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=geoip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=geoip"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21357,7 +21379,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/master/net/xray-core/Makefile#L93">20210401091829</a></td>
-            <td class="upstream">20210430100800</td>
+            <td class="upstream">20210508061759</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=geosite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=geosite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21581,7 +21603,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/utils/zile/Makefile#L11">2.3.24</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/zile/">2.6.1</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/zile/">2.6.2</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=zile+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=zile"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21602,19 +21624,20 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/znc">znc</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/master/net/znc/files" title="znc has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/master/net/znc/patches" title="znc has a patches subdirectory containing 4 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>4</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/master/net/znc/Makefile#L11">1.8.2</a></td>
-            <td class="upstream"><a href="https://znc.in/">1.8.2</a></td>
+            <td class="upstream"><a href="https://znc.in/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:jonas(%20dot%20)gorski%7B%20at%20%7Dgmail(%20dot%20)com">Jonas Gorski</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=znc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=znc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading webpage
+  https://znc.in/releases/ failed: 500 Can't connect to znc.in:443 (certificate verify failed)</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -22153,7 +22176,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/asterisk/Makefile#L11">18.2.2</a></td>
-            <td class="upstream"><a href="http://www.asterisk.org/">18.3.0</a></td>
+            <td class="upstream"><a href="http://www.asterisk.org/">18.4.0</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=asterisk+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=asterisk"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22393,14 +22416,14 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=iksemel"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/net/kamailio">kamailio</a></td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/net/kamailio/files" title="kamailio has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://github.com/openwrt/telephony/tree/master/net/kamailio/patches" title="kamailio has a patches subdirectory containing 5 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>5</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/kamailio/Makefile#L12">5.4.2</a></td>
-            <td class="upstream"><a href="http://www.kamailio.org/">5.4.5</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/kamailio/Makefile#L12">5.5.0</a></td>
+            <td class="upstream"><a href="http://www.kamailio.org/">5.5.0</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=kamailio+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=kamailio"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22484,13 +22507,13 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=miax"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/net/pcapsipdump">pcapsipdump</a></td>
             <td><a href="https://github.com/openwrt/telephony/tree/master/net/pcapsipdump/patches" title="pcapsipdump has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td><img src="icons/svn.png" width="16" height="16" alt="subversion" title="pcapsipdump uses the subversion (distributed) version control system"></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/pcapsipdump/Makefile#L14">151</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/pcapsipdump/Makefile#L14">157</a></td>
             <td class="upstream"><a href="http://sourceforge.net/projects/pcapsipdump/">157</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=pcapsipdump+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -22557,7 +22580,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/master/net/rtpengine/Makefile#L12">8.5.3.3</a></td>
-            <td class="upstream"><a href="https://github.com/sipwise/rtpengine">9.3.1.8</a></td>
+            <td class="upstream"><a href="https://github.com/sipwise/rtpengine">9.4.1.1</a></td>
             <td class="maintainer"><a href="mailto:sebastian_ml%7B%20at%20%7Dgmx(%20dot%20)net">Sebastian Kemper</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=rtpengine+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rtpengine"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22666,7 +22689,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td><a href="https://github.com/openwrt/telephony/issues?q=spandsp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=spandsp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td>uscan warn: reading webpage
-  https://www.soft-switch.org/downloads/spandsp/ failed: 500 Can't connect to www.soft-switch.org:443 (No route to host)</td>
+  https://www.soft-switch.org/downloads/spandsp/ failed: 500 Can't connect to www.soft-switch.org:443 (certificate verify failed)</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -23024,7 +23047,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
           <tr class="notApplicable" title="Not applicable">
             <td></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/firmware-utils">firmware-utils</a></td>
-            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/firmware-utils/src" title="firmware-utils has a src subdirectory containing 100 files"><img src="icons/page_code.png" width="16" height="16" alt="src"><sup>100</sup></a></td>
+            <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=tree;f=tools/firmware-utils/src" title="firmware-utils has a src subdirectory containing 101 files"><img src="icons/page_code.png" width="16" height="16" alt="src"><sup>101</sup></a></td>
             <td></td>
             <td class="downstream"></td>
             <td class="upstream">N/A</td>
@@ -23115,7 +23138,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;a=blob;f=tools/libressl/Makefile#l11">3.3.1</a></td>
-            <td class="upstream">3.3.2</td>
+            <td class="upstream">3.3.3</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=libressl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libressl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
@@ -23465,7 +23488,7 @@ gummiboot's SECTION is now boot, but feeds/packages/boot/gummiboot still doesn't
       </table>
     </details>
     <footer>
-      Last update: Sun, 02 May 2021 17:34:50 UTC
+      Last update: Sun, 09 May 2021 16:31:53 UTC
       <br>
       Built using <a href="https://manpages.debian.org/man/1/uscan">uscan</a> and <a href="https://github.com/sjvermeu/cvechecker/wiki">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="https://git-scm.com/">Git</a>, <a href="https://www.mercurial-scm.org/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>

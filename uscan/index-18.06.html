@@ -505,6 +505,7 @@
             <th id="packageDevelHeaderMaintainer">Maintainer</th>
             <th id="packageDevelHeaderTickets" title="Tickets">T</th>
             <th id="packageDevelHeaderPatchwork" title="Patchwork">P</th>
+            <th id="packageDevelHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -518,6 +519,7 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=binutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=binutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -529,6 +531,7 @@
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -540,6 +543,7 @@
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb-arc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gdb-arc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -551,17 +555,20 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=perf"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=tree;f=package/devel/strace">strace</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=tree;f=package/devel/strace/patches" title="strace has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/devel/strace/Makefile#l12">4.22</a></td>
-            <td class="upstream"><a href="http://strace.sourceforge.net/">5.12</a></td>
+            <td class="upstream"><a href="http://strace.sourceforge.net/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=strace"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=strace"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td>uscan warn: reading webpage
+  https://strace.io/files/ failed: 500 Can't connect to strace.io:443 (certificate verify failed)</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -573,6 +580,7 @@
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=trace-cmd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=trace-cmd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -584,6 +592,7 @@
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=valgrind"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=valgrind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -877,7 +886,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="linux-firmware uses the git (distributed) version control system"></td>
             <td>firmware</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/firmware/linux-firmware/Makefile#l16">a61ac5cf8374edbfe692d12f805a1b194f7fead2</a></td>
-            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git">fa0efeff4894e36b9c3964376f2c99fae101d147</a></td>
+            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git">ecdfcf8e2ca15f5682ab94fd30ba29fb869b24a7</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=linux-firmware"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=linux-firmware"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1255,7 +1264,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="brcm2708-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/kernel/brcm2708-gpu-fw/Makefile#l13">b428bdd819df8d0ad3009b64492a4b3d1f9453e4</a></td>
-            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">1a46874494146f470d7a61b0b6f4f15a07dd8b35</a></td>
+            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/$(PKG_RELEASE)/boot/">d9c382e0f3a546e9da153673dce5dd4ba1200994</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=brcm2708-gpu-fw"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=brcm2708-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1519,7 +1528,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mt76 uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/kernel/mt76/Makefile#l12">a5f5605f3246e65341cc11098e8168aff22a824b</a></td>
-            <td class="upstream">e5b19336c58e170ca3c55a96f8de018961b2fc2f</td>
+            <td class="upstream">35f189cf81b2bf4661e3394c2e54e77c2f07c36b</td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mt76"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mt76"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -1991,7 +2000,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libnetfilter-queue uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/libs/libnetfilter-queue/Makefile#l16">601abd1c71ccdf90753cf294c120ad43fb25dc54</a></td>
-            <td class="upstream"><a href="http://www.netfilter.org/projects/libnetfilter_queue/">e6779d6b504b1b976c503699ae9cc8ec469c37ca</a></td>
+            <td class="upstream"><a href="http://www.netfilter.org/projects/libnetfilter_queue/">dc3971e3f5e284dd38e0a434725e7f451baef55c</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=libnetfilter-queue"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libnetfilter-queue"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2646,7 +2655,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hostapd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/network/services/hostapd/Makefile#l15">62566bc23d041e88f8e35933d5fd8c2fd0f7cf2a</a></td>
-            <td class="upstream"><a href="http://hostap.epitest.fi/">15b1831a2c623a511d7c6025ec4db8205e34cca6</a></td>
+            <td class="upstream"><a href="http://hostap.epitest.fi/">de4d62dbcd58daa791b5b281d279b269d5ceae82</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=hostapd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=hostapd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2893,7 +2902,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="conntrack-tools uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/network/utils/conntrack-tools/Makefile#l16">eefe649ca51ed0cbb995454cdc366f5072f6443c</a></td>
-            <td class="upstream"><a href="http://conntrack-tools.netfilter.org/">c0700e2e35c8aee95d388c93986d1dcaae22fadc</a></td>
+            <td class="upstream"><a href="http://conntrack-tools.netfilter.org/">b55717d46ae3b7c3769192a66e565bc7c2d833a1</a></td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=conntrack-tools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=conntrack-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3422,7 +3431,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="procd uses the git (distributed) version control system"></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/system/procd/Makefile#l16">dfb68f8556df63878add145ad9c656381bc20656</a></td>
-            <td class="upstream">7ee456346baca29af40a6d1a5071e57f32ebf762</td>
+            <td class="upstream">021ece84de430fca988acd6934f6046ea59d8c37</td>
             <td class="maintainer"><a href="mailto:john%7B%20at%20%7Dphrozen(%20dot%20)org">John Crispin</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=procd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=procd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3434,7 +3443,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="rpcd uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/system/rpcd/Makefile#l16">7be1f17138f19d1d7a86e0c27b3662d3643ff296</a></td>
-            <td class="upstream">ccb75178cf6a726896729c6904bd623636aa0b29</td>
+            <td class="upstream">7a560a1a5769146ab072f8e0165940459d3e16f7</td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=rpcd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rpcd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3529,7 +3538,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adb uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/utils/adb/Makefile#l10">6fe92d1a3fb17545d82d020a3c995f32e6b71f9d</a></td>
-            <td class="upstream"><a href="http://tools.android.com/">2de90ca52667fa34d3d258985bbfa2d78a808683</a></td>
+            <td class="upstream"><a href="http://tools.android.com/">57b9a5370e7fa5a3f3007a0287f840baa7f3fc6a</a></td>
             <td class="maintainer"><a href="mailto:hyniu%7B%20at%20%7Do2(%20dot%20)pl">Henryk Heisig</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=adb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=adb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3571,7 +3580,7 @@
             <td></td>
             <td>base</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/utils/busybox/Makefile#l11">1.28.4</a></td>
-            <td class="upstream"><a href="http://busybox.net/">1.33.0</a></td>
+            <td class="upstream"><a href="http://busybox.net/">1.33.1</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=busybox"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=busybox"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3907,7 +3916,7 @@
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=package/utils/usbutils/Makefile#l35">0.315</a></td>
-            <td class="upstream">0.346</td>
+            <td class="upstream">0.347</td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=usb_ids"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=usb_ids"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -3987,7 +3996,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/acme/Makefile#L11">2.8.3</a></td>
-            <td class="upstream"><a href="https://acme.sh">2.8.8</a></td>
+            <td class="upstream"><a href="https://acme.sh">2.8.9</a></td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=acme+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=acme"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4155,7 +4164,7 @@
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/apache/Makefile#L11">2.4.28</a></td>
-            <td class="upstream"><a href="http://httpd.apache.org/">2.4.47</a></td>
+            <td class="upstream"><a href="http://httpd.apache.org/">2.4.46</a></td>
             <td class="maintainer"><a href="mailto:heil%7B%20at%20%7Dterminal-consulting(%20dot%20)de">Thomas Heil</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=apache+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=apache"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4701,7 +4710,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="canutils uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/canutils/Makefile#L16">cb33a55720716cbe01e6025a2bda74a1b7e492d3</a></td>
-            <td class="upstream"><a href="https://github.com/linux-can/can-utils">553f0d282b9b93ced1fb372aebdaf812441340ae</a></td>
+            <td class="upstream"><a href="https://github.com/linux-can/can-utils">f8a2cf01fad386e9bbba9f0f35f0bc1d084d2b6b</a></td>
             <td class="maintainer"><a href="mailto:anton(%20dot%20)a(%20dot%20)glukhov%7B%20at%20%7Dgmail(%20dot%20)com">Anton Glukhov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=canutils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=canutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -4771,7 +4780,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="chaosvpn uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/chaosvpn/Makefile#L12">2eb24810b5aa0b2d56f21562e52927020dc3090a</a></td>
-            <td class="upstream"><a href="https://wiki.hamburg.ccc.de/index.php/ChaosVPN::DebianHowto">104075cd2ba6a4bfe72ffa1d0e4fa22856916658</a></td>
+            <td class="upstream"><a href="https://wiki.hamburg.ccc.de/index.php/ChaosVPN::DebianHowto">be8dd3573716addcc8aee2b471ef8f24b9802cc2</a></td>
             <td class="maintainer"><a href="mailto:git%7B%20at%20%7Do-g(%20dot%20)at">Norbert Summer</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=chaosvpn+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=chaosvpn"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5303,7 +5312,7 @@
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/python/django/Makefile#L11">1.8.19</a></td>
-            <td class="upstream"><a href="https://www.djangoproject.com/">3.2</a></td>
+            <td class="upstream"><a href="https://www.djangoproject.com/">3.2.2</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=django+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=django"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6396,7 +6405,7 @@
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/golang/golang/Makefile#L12">1.10.8</a></td>
-            <td class="upstream"><a href="https://golang.org/">1.16.3</a></td>
+            <td class="upstream"><a href="https://golang.org/">1.16.4</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=golang+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=golang"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6774,7 +6783,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="hiredis uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/hiredis/Makefile#L16">010756025e8cefd1bc66c6d4ed3b1648ef6f1f95</a></td>
-            <td class="upstream"><a href="https://github.com/redis/hiredis">dfa33e60b07c13328133a16065d88d171a2a61d4</a></td>
+            <td class="upstream"><a href="https://github.com/redis/hiredis">667dbf536524ba3f28c1d964793db1055c5a64f2</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=hiredis+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=hiredis"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6845,7 +6854,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="https-dns-proxy uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/https-dns-proxy/Makefile#L10">37511cc08712d7548978a4f6f1cc457b7594fb96</a></td>
-            <td class="upstream"><a href="https://docs.openwrt.melmac.net/https-dns-proxy/">dfbf521c69fd9e96ee9e72670ddb2a49d8f12bdc</a></td>
+            <td class="upstream"><a href="https://docs.openwrt.melmac.net/https-dns-proxy/">a292a578bbe9865dba8526981be66f4c85ef7daa</a></td>
             <td class="maintainer"><a href="mailto:stangri%7B%20at%20%7Dmelmac(%20dot%20)net">Stan Grishin</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=https-dns-proxy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=https-dns-proxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -7701,7 +7710,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libcoap uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/libcoap/Makefile#L17">fa5248603049ddf95cc84608aad569120763bf2b</a></td>
-            <td class="upstream"><a href="http://libcoap.net/">421476011784a75936df6eaa7cd50577d26cc439</a></td>
+            <td class="upstream"><a href="http://libcoap.net/">30fead8cf7c622e29f62ad41f368b6457acb062c</a></td>
             <td class="maintainer"><a href="mailto:anton(%20dot%20)a(%20dot%20)glukhov%7B%20at%20%7Dgmail(%20dot%20)com">Anton Glukhov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libcoap+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libcoap"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8065,7 +8074,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libglog uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/libglog/Makefile#L4">v0.3.5</a></td>
-            <td class="upstream"><a href="https://github.com/google/glog">v0.4.0</a></td>
+            <td class="upstream"><a href="https://github.com/google/glog">v0.5.0</a></td>
             <td class="maintainer"><a href="mailto:amir%7B%20at%20%7Dpichak(%20dot%20)co">Amir Sabbaghi</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libglog+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libglog"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8737,7 +8746,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/libsoup/Makefile#L9">2.60.3</a></td>
-            <td class="upstream"><a href="http://live.gnome.org/LibSoup">2.99.4</a></td>
+            <td class="upstream"><a href="http://live.gnome.org/LibSoup">2.99.5</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libsoup+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libsoup"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8989,7 +8998,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/libupnp/Makefile#L11">1.6.19</a></td>
-            <td class="upstream"><a href="http://pupnp.sourceforge.net/">1.14.6</a></td>
+            <td class="upstream"><a href="http://pupnp.sourceforge.net/">1.14.7</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libupnp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libupnp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9059,7 +9068,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="libuvc uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/libuvc/Makefile#L17">2c6403405872aa865999b95ba15944295adf6c38</a></td>
-            <td class="upstream"><a href="https://int80k.com/libuvc">5cddef71b17d41f7e98875a840c50d9704c3d2b2</a></td>
+            <td class="upstream"><a href="https://int80k.com/libuvc">4cf0333cedbe2de6237fa1681fd1eab197254dc4</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libuvc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libuvc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9578,7 +9587,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="luajit uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/luajit/Makefile#L12">71ff7ef8a7e0592dedb3527d4aacc68bf04af0bd</a></td>
-            <td class="upstream"><a href="http://www.luajit.org">75ee3a6159f1831fa57992df3caf5a2c303c281a</a></td>
+            <td class="upstream"><a href="http://www.luajit.org">8dc3cd6c84dfc81539604340b7884408e1c71d55</a></td>
             <td class="maintainer"><a href="mailto:milani%7B%20at%20%7Dpichak(%20dot%20)co">Morteza Milani</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=luajit+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=luajit"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9872,7 +9881,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/lvm2/Makefile#L12">2.02.177</a></td>
-            <td class="upstream"><a href="http://sourceware.org/dm/">2.03.11</a></td>
+            <td class="upstream"><a href="http://sourceware.org/dm/">2.03.12</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lvm2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lvm2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9886,7 +9895,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/lxc/Makefile#L11">2.1.1</a></td>
-            <td class="upstream"><a href="http://lxc.sourceforge.net/">4.0.8</a></td>
+            <td class="upstream"><a href="http://lxc.sourceforge.net/">4.0.9</a></td>
             <td class="maintainer"><a href="mailto:marko(%20dot%20)ratkaj%7B%20at%20%7Dsartura(%20dot%20)hr">Marko Ratkaj</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lxc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lxc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10096,7 +10105,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="micropython uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/python/micropython/Makefile#L20">1f78e7a43130acfa4bedf16c1007a1b0f37c75c3</a></td>
-            <td class="upstream"><a href="http://micropython.org">1e2f0d2809c5431c9baf1d6f447162013f58baac</a></td>
+            <td class="upstream"><a href="http://micropython.org">d0de16266f92de180bd34f03aa43f1c489cd883a</a></td>
             <td class="maintainer"><a href="mailto:rogerdammit%7B%20at%20%7Dgmail(%20dot%20)com">Roger D</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=micropython+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=micropython"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10405,7 +10414,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/sound/mpg123/Makefile#L11">1.25.10</a></td>
-            <td class="upstream"><a href="http://www.mpg123.de">1.26.5</a></td>
+            <td class="upstream"><a href="http://www.mpg123.de">1.27.2</a></td>
             <td class="maintainer"><a href="mailto:wigyori%7B%20at%20%7Duid0(%20dot%20)hu">Zoltan HERPAI</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mpg123+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mpg123"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10531,7 +10540,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/mail/mutt/Makefile#L11">1.9.4</a></td>
-            <td class="upstream"><a href="http://www.mutt.org/">2.0.6</a></td>
+            <td class="upstream"><a href="http://www.mutt.org/">2.0.7</a></td>
             <td class="maintainer"><a href="mailto:phil%7B%20at%20%7Dzankapfel(%20dot%20)net">Phil Eichinger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mutt+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mutt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10825,7 +10834,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="lua-nginx uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/net/nginx/Makefile#L273">cdd2ae921f67bf396c743406493127be496e57ce</a></td>
-            <td class="upstream">d3a8626421a86dc8802db1c74bdc4d3b2f065709</td>
+            <td class="upstream">68f6a1498e6a1a8ed20e902b2f44be8d35f43697</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=lua-nginx+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lua-nginx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -10895,7 +10904,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/node/Makefile#L11">v8.10.0</a></td>
-            <td class="upstream"><a href="http://nodejs.org/">16.0.0</a></td>
+            <td class="upstream"><a href="http://nodejs.org/">16.1.0</a></td>
             <td class="maintainer"><a href="mailto:blogic%7B%20at%20%7Dopenwrt(%20dot%20)org">John Crispin</a>, <a href="mailto:ianchi74%7B%20at%20%7Doutlook(%20dot%20)com">Adrian Panella</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=node"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11329,7 +11338,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="opentracker uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/opentracker/Makefile#L10">9c7be324f5a4306dd81eab2f982f87e2c42ffdf1</a></td>
-            <td class="upstream"><a href="http://erdgeist.org/arts/software/opentracker/">0178c27662bd70640ee17f4659f1f6c482d465be</a></td>
+            <td class="upstream"><a href="http://erdgeist.org/arts/software/opentracker/">3168071175e9b5792a08adeb4784073f2e5df58b</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=opentracker+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=opentracker"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11588,19 +11597,20 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/lang/perl">perl</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/lang/perl/files" title="perl has a files subdirectory containing 19 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>19</sup></a><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/lang/perl/patches" title="perl has a patches subdirectory containing 12 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>12</sup></a></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/perl/Makefile#L13">5.28.0</a></td>
-            <td class="upstream"><a href="http://www.perl.com/">5.32.1</a></td>
+            <td class="upstream"><a href="http://www.perl.com/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a>, <a href="mailto:philipp%7B%20at%20%7Dredfish-solutions(%20dot%20)com">Philip Prindeville</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2018-18311" title="CVE-2018-18311 has a CVSS base score of 9.8">CVE-2018-18311</a> <a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2018-18312" title="CVE-2018-18312 has a CVSS base score of 9.8">CVE-2018-18312</a> </td>
-            <td></td>
+            <td>uscan warn: reading webpage
+  https://www.perl.org/get.html failed: 503 Service Unavailable</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -11637,7 +11647,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/perl-cgi/Makefile#L11">4.38</a></td>
-            <td class="upstream"><a href="http://search.cpan.org/dist/CGI/">4.51</a></td>
+            <td class="upstream"><a href="http://search.cpan.org/dist/CGI/">4.52</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a>, <a href="mailto:philipp%7B%20at%20%7Dredfish-solutions(%20dot%20)com">Philip Prindeville</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-cgi+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-cgi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12071,7 +12081,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/perl-www/Makefile#L11">6.15</a></td>
-            <td class="upstream"><a href="http://search.cpan.org/dist/libwww-perl/">6.53</a></td>
+            <td class="upstream"><a href="http://search.cpan.org/dist/libwww-perl/">6.54</a></td>
             <td class="maintainer"><a href="mailto:naoir%7B%20at%20%7Dgmx(%20dot%20)net">Marcel Denia</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-www+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-www"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12141,7 +12151,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/php7/Makefile#L9">7.2.34</a></td>
-            <td class="upstream"><a href="http://www.php.net/">7.4.18</a></td>
+            <td class="upstream"><a href="http://www.php.net/">7.4.19</a></td>
             <td class="maintainer"><a href="mailto:mhei%7B%20at%20%7Dheimpold(%20dot%20)de">Michael Heimpold</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=php7+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=php7"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12561,7 +12571,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/libs/protobuf/Makefile#L11">3.3.0</a></td>
-            <td class="upstream"><a href="https://github.com/google/protobuf">3.15.8</a></td>
+            <td class="upstream"><a href="https://github.com/google/protobuf">3.16.0</a></td>
             <td class="maintainer"><a href="mailto:per(%20dot%20)j(%20dot%20)sandstrom%7B%20at%20%7Dgmail(%20dot%20)com">Per Sandström</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=protobuf+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=protobuf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12674,7 +12684,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/python/python3/Makefile#L18">3.6.13</a></td>
-            <td class="upstream"><a href="https://www.python.org/">3.9.4</a></td>
+            <td class="upstream"><a href="https://www.python.org/">3.9.5</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -12716,7 +12726,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/python/python-attrs/Makefile#L11">18.1.0</a></td>
-            <td class="upstream"><a href="http://www.attrs.org/">20.3.0</a></td>
+            <td class="upstream"><a href="http://www.attrs.org/">21.2.0</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-attrs+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-attrs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13220,7 +13230,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/lang/python/python-six/Makefile#L11">1.11.0</a></td>
-            <td class="upstream"><a href="https://pypi.python.org/pypi/six">1.15.0</a></td>
+            <td class="upstream"><a href="https://pypi.python.org/pypi/six">1.16.0</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a>, <a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-six+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-six"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13486,7 +13496,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/rp-pppoe/Makefile#L11">3.12</a></td>
-            <td class="upstream"><a href="http://roaringpenguin.com/products/pppoe">3.14</a></td>
+            <td class="upstream"><a href="http://roaringpenguin.com/products/pppoe">3.15</a></td>
             <td class="maintainer"><a href="mailto:lede%7B%20at%20%7Dcshore(%20dot%20)thecshore(%20dot%20)com">Daniel Dickinson</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rp-pppoe+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rp-pppoe"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13556,7 +13566,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="rtl_433 uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/rtl_433/Makefile#L16">6531ea48a7933ac8289724672059e54fd8aad8eb</a></td>
-            <td class="upstream"><a href="https://github.com/merbanan/rtl_433">2ae11deacdadac9395c9991d7d5e628c1b9b7d44</a></td>
+            <td class="upstream"><a href="https://github.com/merbanan/rtl_433">a773fd0a95fe2ab26ad313bc64377398f9a0a961</a></td>
             <td class="maintainer"><a href="mailto:NightNL%7B%20at%20%7Doutlook(%20dot%20)com">Jasper Scholte</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rtl_433+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rtl_433"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14271,7 +14281,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="squashfs-tools uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/squashfs-tools/Makefile#L19">5be5d61e5e5a93911256b5f2106e50da0ca81e8d</a></td>
-            <td class="upstream"><a href="https://github.com/plougher/squashfs-tools">7b8e92175729bfbf08c4827265594cd1772e746b</a></td>
+            <td class="upstream"><a href="https://github.com/plougher/squashfs-tools">a11fee60963854a34196a9b49205cd70c2769975</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=squashfs-tools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=squashfs-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14285,7 +14295,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="squeezelite uses the git (distributed) version control system"></td>
             <td>sound</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/sound/squeezelite/Makefile#L19">e37ed17fed9e11a7346cbe9f1e1deeccc051f42e</a></td>
-            <td class="upstream"><a href="https://github.com/ralph-irving/squeezelite">6042393115c69280f9891945a57bc81a3e32162d</a></td>
+            <td class="upstream"><a href="https://github.com/ralph-irving/squeezelite">f6244f9009825b14ff5c38b2a65118863fe83962</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=squeezelite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=squeezelite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14496,7 +14506,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/sumo/Makefile#L11">0.27.1</a></td>
-            <td class="upstream"><a href="http://sumo-sim.org/">1.9.0</a></td>
+            <td class="upstream"><a href="http://sumo-sim.org/">1.9.1</a></td>
             <td class="maintainer"><a href="mailto:noltari%7B%20at%20%7Dgmail(%20dot%20)com">Álvaro Fernández Rojas</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sumo+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=sumo"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14538,7 +14548,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/admin/syslog-ng/Makefile#L4">3.9.1</a></td>
-            <td class="upstream"><a href="http://www.balabit.com/network-security/syslog-ng/opensource-logging-system/">3.31.2</a></td>
+            <td class="upstream"><a href="http://www.balabit.com/network-security/syslog-ng/opensource-logging-system/">3.32.1</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=syslog-ng+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=syslog-ng"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15196,7 +15206,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/multimedia/v4l2rtspserver/Makefile#L19">2017.10.28</a></td>
-            <td class="upstream">2021.04.06</td>
+            <td class="upstream">2021.05.03</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=live555+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=live555"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15700,7 +15710,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/utils/zile/Makefile#L11">2.3.24</a></td>
-            <td class="upstream"><a href="http://www.gnu.org/software/zile/">2.6.1</a></td>
+            <td class="upstream"><a href="http://www.gnu.org/software/zile/">2.6.2</a></td>
             <td class="maintainer"><a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=zile+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=zile"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15735,19 +15745,20 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/net/znc">znc</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/net/znc/files" title="znc has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a><a href="https://github.com/openwrt/packages/tree/openwrt-18.06/net/znc/patches" title="znc has a patches subdirectory containing 8 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>8</sup></a></td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-18.06/net/znc/Makefile#L11">1.6.6</a></td>
-            <td class="upstream"><a href="https://znc.in/">1.8.2</a></td>
+            <td class="upstream"><a href="https://znc.in/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:jonas(%20dot%20)gorski%7B%20at%20%7Dgmail(%20dot%20)com">Jonas Gorski</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=znc+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=znc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: reading webpage
+  https://znc.in/releases/ failed: 500 Can't connect to znc.in:443 (certificate verify failed)</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -16440,7 +16451,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="freeswitch uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/openwrt-18.06/net/freeswitch/Makefile#L25">77d0cfbf9e9a546b4eee23d9668cf44022f5d454</a></td>
-            <td class="upstream"><a href="http://www.freeswitch.org/">deecaae870dc0caf14bfc421c871bb6660f5e602</a></td>
+            <td class="upstream"><a href="http://www.freeswitch.org/">e53f782456010406b1369b8ff4bab29b265b77e9</a></td>
             <td class="maintainer"><a href="mailto:openwrt(%20dot%20)mazilo%7B%20at%20%7Dxoxy(%20dot%20)net">Mazi Lo</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=freeswitch+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=freeswitch"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16734,7 +16745,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/openwrt-18.06/net/kamailio-5.x/Makefile#L12">5.1.3</a></td>
-            <td class="upstream"><a href="http://www.kamailio.org/">5.4.5</a></td>
+            <td class="upstream"><a href="http://www.kamailio.org/">5.5.0</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=kamailio-5.x+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=kamailio-5.x"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16979,7 +16990,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=spandsp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
             <td>uscan warn: reading webpage
-  https://www.soft-switch.org/downloads/spandsp/ failed: 500 Can't connect to www.soft-switch.org:443 (No route to host)</td>
+  https://www.soft-switch.org/downloads/spandsp/ failed: 500 Can't connect to www.soft-switch.org:443 (certificate verify failed)</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -17406,7 +17417,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-18.06;a=blob;f=tools/libressl/Makefile#l11">2.7.2</a></td>
-            <td class="upstream">3.3.2</td>
+            <td class="upstream">3.3.3</td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=libressl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libressl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"><a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2018-12434" title="CVE-2018-12434 has a CVSS base score of 4.7">CVE-2018-12434</a> </td>
@@ -17800,7 +17811,7 @@ svn: E175003: The server at 'https://ssl.bulix.org/svn/lcd4linux/trunk' does not
       </table>
     </details>
     <footer>
-      Last update: Sun, 02 May 2021 17:36:11 UTC
+      Last update: Sun, 09 May 2021 16:33:37 UTC
       <br>
       Built using <a href="https://manpages.debian.org/man/1/uscan">uscan</a> and <a href="https://github.com/sjvermeu/cvechecker/wiki">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="https://git-scm.com/">Git</a>, <a href="https://www.mercurial-scm.org/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
