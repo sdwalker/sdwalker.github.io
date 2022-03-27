@@ -12,12 +12,11 @@ var areas = ["packageBoot", "packageDevel", "packageFirmware",
 for (i in areas) {
   if (areas.hasOwnProperty(i)) {
     if (areas[i] === "packageDevel" ||
-        areas[i] === "packageNetworkUtilsLayerscape" ||
-        areas[i] === "packageKernelLantiq") {
+        areas[i] === "packageFirmwareLayerscape" ||
+        areas[i] === "packageNetworkUtilsLayerscape") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
-    } else if (areas[i] === "toolchain") {
-      var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
-    } else if (areas[i] === "tools") {
+    } else if (areas[i] === "toolchain" ||
+               areas[i] === "tools") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
