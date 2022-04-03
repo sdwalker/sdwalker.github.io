@@ -13,10 +13,10 @@ for (i in areas) {
   if (areas.hasOwnProperty(i)) {
     if (areas[i] === "packageDevel" ||
         areas[i] === "packageFirmwareLayerscape" ||
-        areas[i] === "packageNetworkUtilsLayerscape") {
+        areas[i] === "packageNetworkUtilsLayerscape" ||
+        areas[i] === "tools") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
-    } else if (areas[i] === "toolchain" ||
-               areas[i] === "tools") {
+    } else if (areas[i] === "toolchain") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
     } else {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];

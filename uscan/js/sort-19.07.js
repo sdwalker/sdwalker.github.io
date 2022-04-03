@@ -12,6 +12,7 @@ var areas = ["packageBoot", "packageDevel", "packageFirmware",
 for (i in areas) {
   if (areas.hasOwnProperty(i)) {
     if (areas[i] === "packageDevel" ||
+        areas[i] === "packageFirmwareLayerscape" ||
         areas[i] === "packageNetworkUtilsLayerscape" ||
         areas[i] === "packageKernelLantiq") {
       var TSort_Data = [areas[i] + "Table", "s", "s", "s", "s", "s", "s", "s", "", "", "s", "s"];
