@@ -274,7 +274,7 @@
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="arm-trusted-firmware-sunxi uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/boot/arm-trusted-firmware-sunxi/Makefile#l16">e2c509a39c6cc4dda8734e6509cdbe6e3603cdfc</a></td>
-            <td class="upstream">fb7aa37560f5302330b1b3e89e6c628fd0c6db0f</td>
+            <td class="upstream">48f1bc9f52491d51ca92a1d396ccbe6a9d09e780</td>
             <td class="maintainer"><a href="mailto:hauke%7B%20at%20%7Dhauke-m(%20dot%20)de">Hauke Mehrtens</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=arm-trusted-firmware-sunxi"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=arm-trusted-firmware-sunxi"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -684,6 +684,7 @@ uscan warn:
             <th id="packageDevelHeaderTickets" title="Tickets">T</th>
             <th id="packageDevelHeaderPatchwork" title="Patchwork">P</th>
             <th id="packageDevelHeaderCVE"><abbr title="Common Vulnerabilities and Exposures">CVE</abbr></th>
+            <th id="packageDevelHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -698,6 +699,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=binutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=binutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2021-46174" title="CVE-2021-46174 has a CVSS base score of 7.5">CVE-2021-46174</a> </td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -710,6 +712,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=gdb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gdb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -722,6 +725,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=perf"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -734,18 +738,21 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=strace"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=strace"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=tree;f=package/devel/trace-cmd">trace-cmd</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=tree;f=package/devel/trace-cmd/patches" title="trace-cmd has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td>devel</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/devel/trace-cmd/Makefile#l4">v2.9.1</a></td>
-            <td class="upstream">v3.2</td>
+            <td class="upstream">?</td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=trace-cmd"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=trace-cmd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td>uscan warn: no matching files for watch line
+  https://git.kernel.org/pub/scm/utils/trace-cmd/trace-cmd.git/ /pub/scm/utils/trace-cmd/trace-cmd.git/snapshot/trace-cmd-(v[\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -758,6 +765,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=valgrind"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=valgrind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -1433,7 +1441,7 @@ uscan warn:
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="bcm27xx-gpu-fw uses the git (distributed) version control system"></td>
             <td>boot</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/kernel/bcm27xx-gpu-fw/Makefile#l6">25e2b597ebfb2495eab4816a276758dcc6ea21f1</a></td>
-            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/PKG_RELEASE/boot/">22d53925f8903b7d345d2ae006bf49dba4cba45b</a></td>
+            <td class="upstream"><a href="@GITHUB/raspberrypi/firmware/PKG_RELEASE/boot/">33aead4c6edca751b33b794c7100fae6cf1d4784</a></td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bcm27xx-gpu-fw"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bcm27xx-gpu-fw"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2427,7 +2435,7 @@ uscan warn:
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/libs/libunwind/Makefile#l12">1.5.0</a></td>
-            <td class="upstream"><a href="http://www.nongnu.org/libunwind/">1.6.2</a></td>
+            <td class="upstream"><a href="http://www.nongnu.org/libunwind/">1.8.1</a></td>
             <td class="maintainer"><a href="mailto:yszhou4tech%7B%20at%20%7Dgmail(%20dot%20)com">Yousong Zhou</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=libunwind"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libunwind"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -2509,7 +2517,7 @@ uscan warn:
             <td class="maintainer"><a href="mailto:cotequeiroz%7B%20at%20%7Dgmail(%20dot%20)com">Eneas U de Queiroz</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=openssl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=openssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
-            <td class="cve"><a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2024-0727" title="CVE-2024-0727 has a CVSS base score of 5.5">CVE-2024-0727</a> </td>
+            <td class="cve"><a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2023-5678" title="CVE-2023-5678 has a CVSS base score of 5.3">CVE-2023-5678</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2024-0727" title="CVE-2024-0727 has a CVSS base score of 5.5">CVE-2024-0727</a> </td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -3733,6 +3741,7 @@ uscan warn:
             <th id="packageUtilsHeaderTickets" title="Tickets">T</th>
             <th id="packageUtilsHeaderPatchwork" title="Patchwork">P</th>
             <th id="packageUtilsHeaderCVE"><abbr title="Common Vulnerabilities and Exposures">CVE</abbr></th>
+            <th id="packageUtilsHeaderUscan">Uscan warnings</th>
           </tr>
         </thead>
         <tbody>
@@ -3743,11 +3752,12 @@ uscan warn:
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="adb uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/utils/adb/Makefile#l10">6fe92d1a3fb17545d82d020a3c995f32e6b71f9d</a></td>
-            <td class="upstream"><a href="http://tools.android.com/">cd3ffd1f2cb91303c6a8caed1429d1fd210de2d7</a></td>
+            <td class="upstream"><a href="http://tools.android.com/">babf597508716d31811ed13867dbf7ddce3001d5</a></td>
             <td class="maintainer"><a href="mailto:hyniu%7B%20at%20%7Do2(%20dot%20)pl">Henryk Heisig</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=adb"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=adb"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3761,6 +3771,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bcm27xx-userland"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bcm27xx-userland"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -3774,6 +3785,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bcm4908img"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bcm4908img"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -3787,6 +3799,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bsdiff"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bsdiff"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3800,6 +3813,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=busybox"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=busybox"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -3813,6 +3827,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=bzip2"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=bzip2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3826,6 +3841,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=checkpolicy"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=checkpolicy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -3839,6 +3855,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ct-bugcheck"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ct-bugcheck"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3852,6 +3869,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=dtc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dtc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3865,19 +3883,22 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=e2fsprogs"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=e2fsprogs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=tree;f=package/utils/f2fs-tools">f2fs-tools</a></td>
             <td><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=tree;f=package/utils/f2fs-tools/patches" title="f2fs-tools has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/utils/f2fs-tools/Makefile#l11">1.14.0</a></td>
-            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git">1.16.0</a></td>
+            <td class="upstream"><a href="http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git">Upstream</a></td>
             <td class="maintainer"><a href="mailto:nbd%7B%20at%20%7Dnbd(%20dot%20)name">Felix Fietkau</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=f2fs-tools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=f2fs-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td>uscan warn: no matching files for watch line
+  https://git.kernel.org/pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git /pub/scm/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -3891,6 +3912,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=fbtest"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=fbtest"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -3904,6 +3926,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=fritz-tools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=fritz-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -3917,6 +3940,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=jboot-tools"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=jboot-tools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -3930,6 +3954,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=jsonfilter"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=jsonfilter"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -3943,6 +3968,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=lua"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lua"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"><a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2014-5461" title="CVE-2014-5461 has a CVSS base score of 5.0">CVE-2014-5461</a> </td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3956,6 +3982,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=lua5.3"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=lua5.3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2019-6706" title="CVE-2019-6706 has a CVSS base score of 7.5">CVE-2019-6706</a> </td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3969,6 +3996,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mdadm"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mdadm"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"><a class="high" href="https://nvd.nist.gov/vuln/detail/CVE-2023-28736" title="CVE-2023-28736 has a CVSS base score of 6.7">CVE-2023-28736</a> <a class="medium" href="https://nvd.nist.gov/vuln/detail/CVE-2023-28938" title="CVE-2023-28938 has a CVSS base score of 4.4">CVE-2023-28938</a> </td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -3982,6 +4010,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=mtd-utils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mtd-utils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -3995,6 +4024,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=nvram"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=nvram"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4008,6 +4038,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=osafeloader"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=osafeloader"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4021,6 +4052,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=oseama"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=oseama"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4034,6 +4066,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=otrx"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=otrx"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4047,6 +4080,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=policycoreutils"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=policycoreutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4060,6 +4094,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=px5g-mbedtls"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=px5g-mbedtls"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4073,6 +4108,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=px5g-wolfssl"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=px5g-wolfssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -4086,6 +4122,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ravpower-mcu"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ravpower-mcu"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4099,6 +4136,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=secilc"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=secilc"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="variable" title="Variable">
             <td></td>
@@ -4112,6 +4150,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=spidev_test"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=spidev_test"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4120,11 +4159,12 @@ uscan warn:
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="ucode uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=package/utils/ucode/Makefile#l16">46d93c9cc5da6fce581df86159bd0fc4357de41c</a></td>
-            <td class="upstream">69dd962870097dcda43af9bee0494ea75bcc0e31</td>
+            <td class="upstream">25d41bae3c571b993022767f77e4bdfc2d8e5e3d</td>
             <td class="maintainer"><a href="mailto:jo%7B%20at%20%7Dmein(%20dot%20)io">Jo-Philipp Wich</a></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ucode"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ucode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4138,6 +4178,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=uencrypt"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=uencrypt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4151,6 +4192,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=ugps"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=ugps"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4164,6 +4206,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=usbmode"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=usbmode"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -4177,6 +4220,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=data"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=data"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -4190,6 +4234,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=util-linux"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=util-linux"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
           <tr class="notApplicable" title="Not applicable">
             <td></td>
@@ -4203,6 +4248,7 @@ uscan warn:
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=zyxel-bootconfig"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=zyxel-bootconfig"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -5343,7 +5389,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="boringssl uses the git (distributed) version control system"></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/boringssl/Makefile#L14">1f54fd9864c054dc33e15b1144e2a6a19fa0a52e</a></td>
-            <td class="upstream"><a href="https://boringssl.googlesource.com/boringssl/">d69e8b46184b6fd844a4a92b4a6f4347d08ee439</a></td>
+            <td class="upstream"><a href="https://boringssl.googlesource.com/boringssl/">3e89a7e8db8139db356b892ca9993172346c80cf</a></td>
             <td class="maintainer"><a href="mailto:martschneider%7B%20at%20%7Dgoogle(%20dot%20)com">Martin Schneider</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=boringssl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=boringssl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5399,7 +5445,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/btrfs-progs/Makefile#L9">6.5.1</a></td>
-            <td class="upstream"><a href="https://btrfs.wiki.kernel.org/">6.8</a></td>
+            <td class="upstream"><a href="https://btrfs.wiki.kernel.org/">6.8.1</a></td>
             <td class="maintainer"><a href="mailto:karel(%20dot%20)koci%7B%20at%20%7Dnic(%20dot%20)cz">Karel Kočí</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=btrfs-progs+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=btrfs-progs"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -5861,7 +5907,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/conmon/Makefile#L4">2.1.0</a></td>
-            <td class="upstream"><a href="https://podman.io">2.1.10</a></td>
+            <td class="upstream"><a href="https://podman.io">2.1.11</a></td>
             <td class="maintainer"><a href="mailto:oskari(%20dot%20)rauta%7B%20at%20%7Dgmail(%20dot%20)com">Oskari Rauta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=conmon+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=conmon"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6029,7 +6075,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="crun uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/crun/Makefile#L10">c677a1cfc04f24499513a743b828a8d9db6d95ce</a></td>
-            <td class="upstream"><a href="https://github.com/containers/crun">6df8cef3206ec5f8928d5342758bbe67c9118c58</a></td>
+            <td class="upstream"><a href="https://github.com/containers/crun">9b0524b7e7bed7995570189fd9b411f96009381c</a></td>
             <td class="maintainer"><a href="mailto:oskari(%20dot%20)rauta%7B%20at%20%7Dgmail(%20dot%20)com">Oskari Rauta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=crun+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=crun"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6576,7 +6622,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/dnsproxy/Makefile#L8">0.52.0</a></td>
-            <td class="upstream"><a href="https://github.com/AdguardTeam/dnsproxy">0.71.0</a></td>
+            <td class="upstream"><a href="https://github.com/AdguardTeam/dnsproxy">0.71.1</a></td>
             <td class="maintainer"><a href="mailto:cnsztl%7B%20at%20%7Dimmortalwrt(%20dot%20)org">Tianling Shen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dnsproxy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dnsproxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6646,7 +6692,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/dockerd/Makefile#L4">20.10.22</a></td>
-            <td class="upstream"><a href="https://www.docker.com/">26.1.0</a></td>
+            <td class="upstream"><a href="https://www.docker.com/">26.1.1</a></td>
             <td class="maintainer"><a href="mailto:G(%20dot%20)M0N3Y(%20dot%20)2503%7B%20at%20%7Dgmail(%20dot%20)com">Gerard Ryan</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=dockerd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=dockerd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6828,7 +6874,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/erlang/Makefile#L11">24.2</a></td>
-            <td class="upstream"><a href="http://www.erlang.org/">26.2.4</a></td>
+            <td class="upstream"><a href="http://www.erlang.org/">26.2.5</a></td>
             <td class="maintainer"><a href="mailto:arnaud(%20dot%20)sautaux%7B%20at%20%7Dinfoteam(%20dot%20)ch">Arnaud Sautaux</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=erlang+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=erlang"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -6905,19 +6951,20 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/evtest">evtest</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/evtest/patches" title="evtest has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/evtest/Makefile#L11">1.34</a></td>
-            <td class="upstream"><a href="https://gitlab.freedesktop.org/libevdev/evtest">1.35</a></td>
+            <td class="upstream"><a href="https://gitlab.freedesktop.org/libevdev/evtest">Upstream</a></td>
             <td class="maintainer"><a href="mailto:psidhu(%20dot%20)devel%7B%20at%20%7Dgmail(%20dot%20)com">Pushpal Sidhu</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=evtest+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=evtest"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: no matching files for watch line
+  https://gitlab.freedesktop.org/libevdev/evtest/-/tags?sort=updated_desc /libevdev/evtest/-/archive/evtest-[\d\.]+/evtest-evtest-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -7684,7 +7731,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/git/Makefile#L11">2.34.8</a></td>
-            <td class="upstream"><a href="https://git-scm.com">2.44.0</a></td>
+            <td class="upstream"><a href="https://git-scm.com">2.45.0</a></td>
             <td class="maintainer"><a href="mailto:tripolar%7B%20at%20%7Dgmx(%20dot%20)at">Peter Wagner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=git+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=git"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8050,7 +8097,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/graphicsmagick/Makefile#L8">1.3.35</a></td>
-            <td class="upstream"><a href="https://www.graphicsmagick.org/">1.4.020240423</a></td>
+            <td class="upstream"><a href="https://www.graphicsmagick.org/">1.4.020240505</a></td>
             <td class="maintainer"><a href="mailto:val(%20dot%20)kulkov%7B%20at%20%7Dgmail(%20dot%20)com">Val Kulkov</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=graphicsmagick+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=graphicsmagick"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8120,7 +8167,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/gst1-libav/Makefile#L11">1.18.5</a></td>
-            <td class="upstream"><a href="https://www.gstreamer.net/modules/gst-libav.html">1.24.2</a></td>
+            <td class="upstream"><a href="https://www.gstreamer.net/modules/gst-libav.html">1.24.3</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gst1-libav+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gst1-libav"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8134,7 +8181,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/gst1-plugins-bad/Makefile#L11">1.18.5</a></td>
-            <td class="upstream"><a href="http://gstreamer.freedesktop.org/">1.24.2</a></td>
+            <td class="upstream"><a href="http://gstreamer.freedesktop.org/">1.24.3</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gst1-plugins-bad+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gst1-plugins-bad"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8148,7 +8195,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/gst1-plugins-base/Makefile#L11">1.18.5</a></td>
-            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.2</a></td>
+            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.3</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gst1-plugins-base+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gst1-plugins-base"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8162,7 +8209,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/gst1-plugins-good/Makefile#L11">1.18.5</a></td>
-            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.2</a></td>
+            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.3</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gst1-plugins-good+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gst1-plugins-good"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8176,7 +8223,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/gst1-plugins-ugly/Makefile#L11">1.18.5</a></td>
-            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.2</a></td>
+            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.3</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gst1-plugins-ugly+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gst1-plugins-ugly"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8190,7 +8237,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>multimedia</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/multimedia/gstreamer1/Makefile#L11">1.18.5</a></td>
-            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.2</a></td>
+            <td class="upstream"><a href="https://gstreamer.freedesktop.org/">1.24.3</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a>, <a href="mailto:thess%7B%20at%20%7Dkitschensync(%20dot%20)net">Ted Hess</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=gstreamer1+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=gstreamer1"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -8582,7 +8629,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/hwdata/Makefile#L9">0.379</a></td>
-            <td class="upstream"><a href="https://github.com/vcrhonek/hwdata">0.381</a></td>
+            <td class="upstream"><a href="https://github.com/vcrhonek/hwdata">0.382</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=hwdata+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=hwdata"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9198,7 +9245,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/kea/Makefile#L12">1.8.2</a></td>
-            <td class="upstream"><a href="https://www.isc.org/kea">2.5.7</a></td>
+            <td class="upstream"><a href="https://www.isc.org/kea">2.5.8</a></td>
             <td class="maintainer"><a href="mailto:banglang(%20dot%20)huang%7B%20at%20%7Dfoxmail(%20dot%20)com">BangLang Huang</a>, <a href="mailto:rosysong%7B%20at%20%7Drosinson(%20dot%20)com">Rosy Song</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=kea+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=kea"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -9219,19 +9266,20 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/libs/keyutils">keyutils</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/libs/keyutils/patches" title="keyutils has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/keyutils/Makefile#L9">1.6.3</a></td>
-            <td class="upstream"><a href="https://people.redhat.com/dhowells/keyutils/">1.6.3</a></td>
+            <td class="upstream"><a href="https://people.redhat.com/dhowells/keyutils/">Upstream</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=keyutils+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=keyutils"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: no matching files for watch line
+  https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git /pub/scm/linux/kernel/git/dhowells/keyutils.git/snapshot/keyutils-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -10311,14 +10359,14 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/libs/libirecovery">libirecovery</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/libirecovery/Makefile#L9">1.0.0</a></td>
-            <td class="upstream"><a href="https://github.com/libimobiledevice/libirecovery">1.0.0</a></td>
+            <td class="upstream"><a href="https://github.com/libimobiledevice/libirecovery">1.2.0</a></td>
             <td class="maintainer"><a href="mailto:rosenp%7B%20at%20%7Dgmail(%20dot%20)com">Rosen Penev</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libirecovery+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libirecovery"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11005,7 +11053,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/libre2/Makefile#L4">2021-02-02</a></td>
-            <td class="upstream"><a href="https://github.com/google/re2">2024-04-01</a></td>
+            <td class="upstream"><a href="https://github.com/google/re2">2024-05-01</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libre2+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libre2"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11138,19 +11186,20 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/libs/libslirp">libslirp</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/libslirp/Makefile#L4">4.6.1</a></td>
-            <td class="upstream"><a href="https://gitlab.freedesktop.org/slirp/libslirp">4.7.0</a></td>
+            <td class="upstream"><a href="https://gitlab.freedesktop.org/slirp/libslirp">Upstream</a></td>
             <td class="maintainer"><a href="mailto:oskari(%20dot%20)rauta%7B%20at%20%7Dgmailcom">Oskari Rauta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libslirp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libslirp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: no matching files for watch line
+  https://gitlab.freedesktop.org/slirp/libslirp/-/tags?sort=updated_desc /slirp/libslirp/-/archive/v[\d\.]+/libslirp-v([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -11537,7 +11586,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/liburing/Makefile#L4">2.3</a></td>
-            <td class="upstream"><a href="https://git.kernel.dk/cgit/liburing">2.5</a></td>
+            <td class="upstream"><a href="https://git.kernel.dk/cgit/liburing">2.6</a></td>
             <td class="maintainer"><a href="mailto:gladiac%7B%20at%20%7Dgmail(%20dot%20)com">Christian Lachner</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=liburing+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=liburing"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -11558,14 +11607,14 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/libs/libusbmuxd">libusbmuxd</a></td>
             <td></td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/libusbmuxd/Makefile#L11">2.0.2</a></td>
-            <td class="upstream"><a href="https://www.libimobiledevice.org/">2.0.2</a></td>
+            <td class="upstream"><a href="https://www.libimobiledevice.org/">2.1.0</a></td>
             <td class="maintainer"><a href="mailto:rosenp%7B%20at%20%7Dgmail(%20dot%20)com">Rosen Penev</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=libusbmuxd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=libusbmuxd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13038,7 +13087,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="micropython-lib uses the git (distributed) version control system"></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/micropython-lib/Makefile#L15">0c31e0b3d712fcd21982daec8bfca48ad5527a72</a></td>
-            <td class="upstream"><a href="https://github.com/micropython/micropython-lib">45ead11f965ddad664b8efe380d83155859e653b</a></td>
+            <td class="upstream"><a href="https://github.com/micropython/micropython-lib">583bc0da70049f3b200d03e919321ac8dbeb2eb8</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=micropython-lib+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=micropython-lib"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13445,7 +13494,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>mail</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/mail/msmtp/Makefile#L12">1.8.24</a></td>
-            <td class="upstream"><a href="https://marlam.de/msmtp">1.8.25</a></td>
+            <td class="upstream"><a href="https://marlam.de/msmtp">1.8.26</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=msmtp+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=msmtp"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13564,14 +13613,14 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="notCurrent" title="Not current">
+            <td>&#10007;</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/mv88e6xxx_dump">mv88e6xxx_dump</a></td>
             <td></td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="mv88e6xxx_dump uses the git (distributed) version control system"></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/mv88e6xxx_dump/Makefile#L17">b4c5247ee8bb5512fb80081503aae183b35ed3c6</a></td>
-            <td class="upstream"><a href="https://github.com/lunn/mv88e6xxx_dump">b4c5247ee8bb5512fb80081503aae183b35ed3c6</a></td>
+            <td class="upstream"><a href="https://github.com/lunn/mv88e6xxx_dump">db229c31fa15ceaee0a0d680f7d873cde1c7424d</a></td>
             <td class="maintainer"><a href="mailto:champetier(%20dot%20)etienne%7B%20at%20%7Dgmail(%20dot%20)com">Etienne Champetier</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=mv88e6xxx_dump+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=mv88e6xxx_dump"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13638,11 +13687,11 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
           <tr class="current" title="Current">
             <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/nano">nano</a></td>
-            <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/nano/files" title="nano has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a></td>
+            <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/nano/files" title="nano has a files subdirectory containing 3 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>3</sup></a><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/nano/patches" title="nano has a patches subdirectory containing 1 file"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>1</sup></a></td>
             <td></td>
             <td>utils</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/nano/Makefile#L11">7.2</a></td>
-            <td class="upstream"><a href="https://www.nano-editor.org/">7.2</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/nano/Makefile#L11">8.0</a></td>
+            <td class="upstream"><a href="https://www.nano-editor.org/">8.0</a></td>
             <td class="maintainer"><a href="mailto:hannu(%20dot%20)nyman%7B%20at%20%7Diki(%20dot%20)fi">Hannu Nyman</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nano+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=nano"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13754,7 +13803,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/netbird/Makefile#L4">0.17.0</a></td>
-            <td class="upstream"><a href="https://netbird.io">0.27.3</a></td>
+            <td class="upstream"><a href="https://netbird.io">0.27.4</a></td>
             <td class="maintainer"><a href="mailto:oskari(%20dot%20)rauta%7B%20at%20%7Dgmail(%20dot%20)com">Oskari Rauta</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=netbird+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=netbird"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13810,7 +13859,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="netifyd uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/netifyd/Makefile#L9">v3.09</a></td>
-            <td class="upstream"><a href="http://www.netify.ai/">v5.0.37</a></td>
+            <td class="upstream"><a href="http://www.netify.ai/">v5.0.39</a></td>
             <td class="maintainer"><a href="mailto:darryl%7B%20at%20%7Degloo(%20dot%20)ca">Darryl Sokoloski</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=netifyd+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=netifyd"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -13929,14 +13978,14 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/net/nextdns">nextdns</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/net/nextdns/files" title="nextdns has a files subdirectory containing 2 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>2</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/nextdns/Makefile#L11">1.42.0</a></td>
-            <td class="upstream"><a href="https://github.com/nextdns/nextdns">1.43.1</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/nextdns/Makefile#L11">1.43.3</a></td>
+            <td class="upstream"><a href="https://github.com/nextdns/nextdns">1.43.3</a></td>
             <td class="maintainer"><a href="mailto:rs%7B%20at%20%7Dnextdns(%20dot%20)io">Olivier Poitrey</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=nextdns+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=nextdns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14216,7 +14265,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/node/Makefile#L11">v16.20.2</a></td>
-            <td class="upstream"><a href="https://nodejs.org/">22.0.0</a></td>
+            <td class="upstream"><a href="https://nodejs.org/">22.1.0</a></td>
             <td class="maintainer"><a href="mailto:morikw2%7B%20at%20%7Dgmail(%20dot%20)com">Hirokazu MORIKAWA</a>, <a href="mailto:ianchi74%7B%20at%20%7Doutlook(%20dot%20)com">Adrian Panella</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=node+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=node"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -14973,7 +15022,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="openwisp-config uses the git (distributed) version control system"></td>
             <td>admin</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/admin/openwisp-config/Makefile#L16">1.0.1</a></td>
-            <td class="upstream"><a href="https://openwisp.org">5eae3b733fe6dca23f2da4e03dab9aa6a41bf177</a></td>
+            <td class="upstream"><a href="https://openwisp.org">9ad45d98550f6990ff5adbaceb9774c75493e40c</a></td>
             <td class="maintainer"><a href="mailto:f(%20dot%20)capoano%7B%20at%20%7Dopenwisp(%20dot%20)io">Federico Capoano</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=openwisp-config+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=openwisp-config"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15353,7 +15402,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/pcsc-lite/Makefile#L11">1.9.9</a></td>
-            <td class="upstream"><a href="https://pcsclite.apdu.fr/">2.1.0</a></td>
+            <td class="upstream"><a href="https://pcsclite.apdu.fr/">2.2.0</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=pcsc-lite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=pcsc-lite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -15871,7 +15920,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/perl-net-dns/Makefile#L4">1.35</a></td>
-            <td class="upstream"><a href="https://www.net-dns.org/">1.44</a></td>
+            <td class="upstream"><a href="https://www.net-dns.org/">1.45</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=perl-net-dns+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=perl-net-dns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -16431,7 +16480,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="default-policy uses the git (distributed) version control system"></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/podman/Makefile#L37">362f70b056a1f5d2bd4184527a0ae0d20c4d35d3</a></td>
-            <td class="upstream">6b69928e1b46ba6ca32f9b0d0cd1eb7a611bc4f3</td>
+            <td class="upstream">8d325c332ee156704faf9e4b7af3d9d8b857fe40</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=default-policy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=default-policy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17271,7 +17320,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-awscli/Makefile#L4">1.16.75</a></td>
-            <td class="upstream"><a href="https://github.com/aws/aws-cli">1.32.93</a></td>
+            <td class="upstream"><a href="https://github.com/aws/aws-cli">1.32.98</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-awscli+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-awscli"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17299,7 +17348,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-bcrypt/Makefile#L9">3.2.2</a></td>
-            <td class="upstream"><a href="https://github.com/pyca/bcrypt/">4.1.2</a></td>
+            <td class="upstream"><a href="https://github.com/pyca/bcrypt/">4.1.3</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-bcrypt+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-bcrypt"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17327,7 +17376,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-boto3/Makefile#L4">1.9.135</a></td>
-            <td class="upstream"><a href="https://aws.amazon.com/sdk-for-python/">1.34.93</a></td>
+            <td class="upstream"><a href="https://aws.amazon.com/sdk-for-python/">1.34.98</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-boto3+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-boto3"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17341,7 +17390,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-botocore/Makefile#L4">1.12.66</a></td>
-            <td class="upstream"><a href="https://github.com/boto/botocore">1.34.93</a></td>
+            <td class="upstream"><a href="https://github.com/boto/botocore">1.34.98</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Ddd-wrt(%20dot%20)com">Daniel Danzberger</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-botocore+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-botocore"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -17565,7 +17614,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-cryptography/Makefile#L11">3.4.8</a></td>
-            <td class="upstream"><a href="https://github.com/pyca/cryptography">42.0.5</a></td>
+            <td class="upstream"><a href="https://github.com/pyca/cryptography">42.0.6</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-cryptography+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-cryptography"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18209,7 +18258,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-jsonschema/Makefile#L4">4.17.3</a></td>
-            <td class="upstream"><a href="https://github.com/Julian/jsonschema">4.21.1</a></td>
+            <td class="upstream"><a href="https://github.com/Julian/jsonschema">4.22.0</a></td>
             <td class="maintainer"><a href="mailto:javier%7B%20at%20%7Dmarcet(%20dot%20)info">Javier Marcet</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-jsonschema+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-jsonschema"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -18664,19 +18713,20 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="current" title="Current">
-            <td>&#10003;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/lang/python/python-pyproject-hooks">python-pyproject-hooks</a></td>
             <td></td>
             <td></td>
             <td>lang</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/lang/python/python-pyproject-hooks/Makefile#L11">1.0.0</a></td>
-            <td class="upstream"><a href="https://github.com/pypa/pyproject-hooks">1.0.0</a></td>
+            <td class="upstream"><a href="https://github.com/pypa/pyproject-hooks">Upstream</a></td>
             <td class="maintainer"><a href="mailto:jeffery(%20dot%20)to%7B%20at%20%7Dgmail(%20dot%20)com">Jeffery To</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=python-pyproject-hooks+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=python-pyproject-hooks"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: no matching files for watch line
+  https://pypi.debian.net/pyproject_hooks/pyproject_hooks-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="notCurrent" title="Not current">
             <td>&#10007;</td>
@@ -19441,7 +19491,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/radsecproxy/Makefile#L11">1.9.0</a></td>
-            <td class="upstream"><a href="https://radsecproxy.github.io/">1.10.0</a></td>
+            <td class="upstream"><a href="https://radsecproxy.github.io/">1.10.1</a></td>
             <td class="maintainer"><a href="mailto:toke%7B%20at%20%7Dtoke(%20dot%20)dk">Toke Høiland-Jørgensen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=radsecproxy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=radsecproxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -19834,7 +19884,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/rtty/Makefile#L11">8.0.1</a></td>
-            <td class="upstream"><a href="https://github.com/zhaojh329/rtty">8.1.1</a></td>
+            <td class="upstream"><a href="https://github.com/zhaojh329/rtty">8.1.2</a></td>
             <td class="maintainer"><a href="mailto:zhaojh329%7B%20at%20%7Dgmail(%20dot%20)com">Jianhui Zhao</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=rtty+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rtty"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20115,7 +20165,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/setools/Makefile#L9">4.4.2</a></td>
-            <td class="upstream"><a href="http://selinuxproject.org/page/Main_Page">4.5.0</a></td>
+            <td class="upstream"><a href="http://selinuxproject.org/page/Main_Page">4.5.1</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=setools+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=setools"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20206,19 +20256,20 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="indeterminable" title="Indeterminable">
+            <td>?</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/shared-mime-info">shared-mime-info</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/utils/shared-mime-info/patches" title="shared-mime-info has a patches subdirectory containing 2 files"><img src="icons/page_attach.png" width="16" height="16" alt="patches"><sup>2</sup></a></td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/shared-mime-info/Makefile#L9">2.1</a></td>
-            <td class="upstream"><a href="https://freedesktop.org/wiki/Software/shared-mime-info/">2.4</a></td>
+            <td class="upstream"><a href="https://freedesktop.org/wiki/Software/shared-mime-info/">Upstream</a></td>
             <td class="maintainer"><a href="mailto:mike%7B%20at%20%7Dflyn(%20dot%20)org">W. Michael Petullo</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=shared-mime-info+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=shared-mime-info"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
             <td class="cve"></td>
-            <td></td>
+            <td>uscan warn: no matching files for watch line
+  https://gitlab.freedesktop.org/xdg/shared-mime-info/-/tags?sort=updated_desc /xdg/shared-mime-info/-/archive/[\d\.]+/shared-mime-info-([\d\.]+)(?i)(?:\.(?:tar\.xz|tar\.bz2|tar\.gz|tar\.zstd?|zip|tgz|tbz|txz))</td>
           </tr>
           <tr class="current" title="Current">
             <td>&#10003;</td>
@@ -20353,7 +20404,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/sispmctl/Makefile#L11">4.8</a></td>
-            <td class="upstream"><a href="http://sispmctl.sourceforge.net">4.11</a></td>
+            <td class="upstream"><a href="http://sispmctl.sourceforge.net">4.12</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=sispmctl+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=sispmctl"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20409,7 +20460,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="smartdns uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/smartdns/Makefile#L14">9bc857f628299573c7eca0833229d9812b1c1de4</a></td>
-            <td class="upstream"><a href="https://www.github.com/pymumu/smartdns/">5b3c47fa72921fd70b6c58e931a5aeb0861cc27b</a></td>
+            <td class="upstream"><a href="https://www.github.com/pymumu/smartdns/">2f57d8d7e77b5aa3c73f72bd6989f0618bc49dfc</a></td>
             <td class="maintainer"><a href="mailto:pymumu%7B%20at%20%7Dgmail(%20dot%20)com">Nick Peng</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=smartdns+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=smartdns"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20549,7 +20600,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/softethervpn5/Makefile#L6">5.02.5180</a></td>
-            <td class="upstream"><a href="http://www.softether.org/">5.02.5183</a></td>
+            <td class="upstream"><a href="http://www.softether.org/">5.02.5184</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=softethervpn5+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=softethervpn5"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20605,7 +20656,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>libs</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/libs/spdlog/Makefile#L9">1.9.2</a></td>
-            <td class="upstream"><a href="https://github.com/gabime/spdlog">1.14.0</a></td>
+            <td class="upstream"><a href="https://github.com/gabime/spdlog">1.14.1</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=spdlog+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=spdlog"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -20971,7 +21022,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/stress-ng/Makefile#L9">0.14.03</a></td>
-            <td class="upstream"><a href="https://github.com/ColinIanKing/stress-ng">0.17.07</a></td>
+            <td class="upstream"><a href="https://github.com/ColinIanKing/stress-ng">0.17.08</a></td>
             <td class="maintainer"><a href="mailto:ardeleanalex%7B%20at%20%7Dgmail(%20dot%20)com">Alexandru Ardelean</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=stress-ng+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=stress-ng"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21546,7 +21597,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>utils</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/utils/tio/Makefile#L11">1.32</a></td>
-            <td class="upstream"><a href="https://tio.github.io/">2.8</a></td>
+            <td class="upstream"><a href="https://tio.github.io/">3.1</a></td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=tio+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=tio"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -21693,13 +21744,13 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td class="cve"></td>
             <td></td>
           </tr>
-          <tr class="notCurrent" title="Not current">
-            <td>&#10007;</td>
+          <tr class="current" title="Current">
+            <td>&#10003;</td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/net/transmission">transmission</a></td>
             <td><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/net/transmission/files" title="transmission has a files subdirectory containing 4 files"><img src="icons/page.png" width="16" height="16" alt="files"><sup>4</sup></a></td>
             <td></td>
             <td>net</td>
-            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/transmission/Makefile#L11">4.0.4</a></td>
+            <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/transmission/Makefile#L11">4.0.5</a></td>
             <td class="upstream"><a href="https://www.transmissionbt.com">4.0.5</a></td>
             <td class="maintainer"><a href="mailto:daniel%7B%20at%20%7Dmakrotopia(%20dot%20)org">Daniel Golle</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=transmission+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
@@ -22289,7 +22340,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/v2ray-core/Makefile#L8">5.7.0</a></td>
-            <td class="upstream"><a href="https://www.v2fly.org">5.15.3</a></td>
+            <td class="upstream"><a href="https://www.v2fly.org">5.16.1</a></td>
             <td class="maintainer"><a href="mailto:cnsztl%7B%20at%20%7Dimmortalwrt(%20dot%20)org">Tianling Shen</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=v2ray-core+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=v2ray-core"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22317,7 +22368,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/net/v2ray-geodata/Makefile#L15">202401250041</a></td>
-            <td class="upstream">202404250042</td>
+            <td class="upstream">202405020039</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=geoip+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=geoip"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -22331,7 +22382,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/tree/openwrt-22.03/net/v2ray-geodata/Makefile#L25">20240123112230</a></td>
-            <td class="upstream">20240426060244</td>
+            <td class="upstream">20240505132300</td>
             <td></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=geosite+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=geosite"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -23059,7 +23110,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/packages/blob/openwrt-22.03/net/zerotier/Makefile#L9">1.12.1</a></td>
-            <td class="upstream"><a href="https://www.zerotier.com">1.12.2</a></td>
+            <td class="upstream"><a href="https://www.zerotier.com">1.14.0</a></td>
             <td class="maintainer"><a href="mailto:moritzwarning%7B%20at%20%7Dweb(%20dot%20)de">Moritz Warning</a></td>
             <td><a href="https://github.com/openwrt/packages/issues?q=zerotier+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=zerotier"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -24069,7 +24120,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/openwrt-22.03/net/rtpengine/Makefile#L12">9.5.8.2</a></td>
-            <td class="upstream"><a href="https://github.com/sipwise/rtpengine">12.3.1.2</a></td>
+            <td class="upstream"><a href="https://github.com/sipwise/rtpengine">12.3.1.3</a></td>
             <td class="maintainer"><a href="mailto:sebastian_ml%7B%20at%20%7Dgmx(%20dot%20)net">Sebastian Kemper</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=rtpengine+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rtpengine"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -24083,7 +24134,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td><img src="icons/git.png" width="16" height="16" alt="git" title="rtpproxy uses the git (distributed) version control system"></td>
             <td>net</td>
             <td class="downstream"><a href="https://github.com/openwrt/telephony/blob/openwrt-22.03/net/rtpproxy/Makefile#L16">aa1f179e09097f467bc4726e3300014c1e35246f</a></td>
-            <td class="upstream"><a href="http://www.rtpproxy.org/">b5b44375445de17be90e4e6d41f93331245cc799</a></td>
+            <td class="upstream"><a href="http://www.rtpproxy.org/">079f51c88a323deb0ce10309d7ae3a2afa02c699</a></td>
             <td class="maintainer"><a href="mailto:jiri%7B%20at%20%7Dslachta(%20dot%20)eu">Jiri Slachta</a></td>
             <td><a href="https://github.com/openwrt/telephony/issues?q=rtpproxy+is%3Aopen"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=rtpproxy"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -24701,7 +24752,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
             <td></td>
             <td></td>
             <td class="downstream"><a href="https://git.openwrt.org/?p=openwrt/openwrt.git;hb=refs/heads/openwrt-22.03;a=blob;f=tools/llvm-bpf/Makefile#l10">13.0.0</a></td>
-            <td class="upstream">18.1.4</td>
+            <td class="upstream">18.1.5</td>
             <td></td>
             <td><a href="https://bugs.openwrt.org/index.php?project=2&string=llvm-bpf"><img src="icons/bug_link.png" width="16" height="16" alt="tickets"></a></td>
             <td><a href="https://patchwork.ozlabs.org/project/openwrt/list/?q=llvm-bpf"><img src="icons/email_link.png" width="16" height="16" alt="patchwork"></a></td>
@@ -25071,7 +25122,7 @@ fatal: Authentication failed for 'https://github.com/klukonin/antfs.git/'</td>
       </table>
     </details>
     <footer>
-      Last update: Sun, 28 Apr 2024 22:05:32 UTC
+      Last update: Sun, 05 May 2024 17:39:28 UTC
       <br>
       Built using <a href="https://manpages.debian.org/man/1/uscan">uscan</a> and <a href="https://github.com/sjvermeu/cvechecker/wiki">cvechecker</a> shell wrappers with "Silk" icons from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a> and (distributed) version control system icons from <a href="https://git-scm.com/">Git</a>, <a href="https://www.mercurial-scm.org/">Mercurial</a> and <a href="https://subversion.apache.org/">Subversion</a>
       <br>
