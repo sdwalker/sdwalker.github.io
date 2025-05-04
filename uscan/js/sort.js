@@ -7,7 +7,8 @@ var areas = ["packageBoot", "packageDevel", "packageFirmware",
              "packageNetworkServices", "packageNetworkUtils",
              "packageNetworkUtilsLayerscape", "packageSystem", "packageUtils",
              "packageFeedsPackages", "packageFeedsRouting",
-             "packageFeedsTelephony", "toolchain", "tools"];
+             "packageFeedsTelephony", "packageFeedsVideo", "toolchain",
+             "tools"];
 
 for (i in areas) {
   if (areas.hasOwnProperty(i)) {
